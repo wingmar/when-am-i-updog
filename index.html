@@ -834,7 +834,7 @@
     <!-- Initial Loading State -->
     <div id="loadingState" class="loading-state">
       <div class="loading-spinner"></div>
-      <p>Fetching live schedule from Google Sheet...</p>
+      <p>Loading live schedule from Google Sheet...</p>
     </div>
 
     <!-- App Content (Hidden until first live fetch completes) -->
@@ -883,8 +883,9 @@
   <div class="toast" id="toast">Link copied to clipboard</div>
 
   <script>
-    // Live Google Sheet Export CSV URL
-    const SHEET_CSV_URL = "https://docs.google.com/spreadsheets/d/11zydir3gG2eQOFpk_N9yVxEW6iRYmbRtJAdeS1R9feI/export?format=csv";
+    // Google Sheets ID and Individual Schedules Sheet GID
+    const SHEET_ID = "11zydir3gG2eQOFpk_N9yVxEW6iRYmbRtJAdeS1R9feI";
+    const SHEET_GID = "1990171013";
 
     // Auto-refresh interval (every 60 seconds)
     const REFRESH_INTERVAL_MS = 60000;
@@ -939,36 +940,32 @@
       };
     }
 
-    function parseCSVLine(line) {
-      const result = [];
-      let cur = "";
-      let inQuotes = false;
-      for (let i = 0; i < line.length; i++) {
-        const c = line[i];
-        if (c === '"') {
-          if (inQuotes && line[i + 1] === '"') {
-            cur += '"';
-            i++;
-          } else {
-            inQuotes = !inQuotes;
-          }
-        } else if (c === "," && !inQuotes) {
-          result.push(cur);
-          cur = "";
-        } else {
-          cur += c;
-        }
+    // JSONP Response Handler - completely bypasses CORS
+    window.handleGvizResponse = function(resp) {
+      state.isFetching = false;
+      const refreshBtn = document.getElementById("refreshBtn");
+      if (refreshBtn) refreshBtn.classList.remove("spinning");
+
+      // Clean up the dynamic script tag
+      const existingScript = document.getElementById("gviz-jsonp-script");
+      if (existingScript) {
+        if (existingScript.parentNode) existingScript.parentNode.removeChild(existingScript);
+        else if (typeof existingScript.remove === "function") existingScript.remove();
       }
-      result.push(cur);
-      return result;
-    }
 
-    function parseCSV(text) {
-      const lines = text.split(/\r?\n/);
-      if (lines.length === 0) return new Map();
+      if (!resp || resp.status !== "ok" || !resp.table || !resp.table.rows) {
+        console.error("Google Sheets GViz error response:", resp);
+        setSyncError();
+        return;
+      }
 
-      const headerRow = parseCSVLine(lines[0]);
-      
+      const rows = resp.table.rows;
+      if (rows.length < 2) return;
+
+      // Extract header row (first row in the sheet)
+      const headerRowCells = rows[0].c || [];
+      const headerRow = headerRowCells.map(c => (c && (c.f || c.v !== undefined && c.v !== null)) ? String(c.f || c.v).trim() : "");
+
       const games = [];
       let currentDayIndex = 0;
 
@@ -990,14 +987,13 @@
 
       const handlers = new Map();
 
-      for (let i = 1; i < lines.length; i++) {
-        const line = lines[i].trim();
-        if (!line) continue;
-        const cols = parseCSVLine(line);
+      for (let r = 1; r < rows.length; r++) {
+        const rCells = rows[r].c || [];
+        const cols = rCells.map(c => (c && (c.f || c.v !== undefined && c.v !== null)) ? String(c.f || c.v).trim() : "");
         if (cols.length < 2) continue;
 
-        const handler = cols[0].trim();
-        const dog = cols[1].trim();
+        const handler = cols[0] ? cols[0].trim() : "";
+        const dog = cols[1] ? cols[1].trim() : "";
         if (!handler) continue;
 
         if (!handlers.has(handler)) {
@@ -1013,7 +1009,7 @@
 
         for (const game of games) {
           if (cols.length > game.index) {
-            const rawVal = cols[game.index].trim();
+            const rawVal = cols[game.index] ? cols[game.index].trim() : "";
             if (rawVal) {
               const parts = rawVal.split("-");
               const ring = parts[0].trim();
@@ -1042,36 +1038,39 @@
         hData.runs.sort((a, b) => a.sortKey - b.sortKey);
       }
 
-      return handlers;
-    }
+      state.handlersMap = handlers;
+      state.allHandlers = Array.from(handlers.values()).sort((a, b) => a.name.localeCompare(b.name));
+      state.lastUpdated = new Date();
 
-    function ingestScheduleData(csvText) {
-      const parsed = parseCSV(csvText);
-      if (parsed.size > 0) {
-        state.handlersMap = parsed;
-        state.allHandlers = Array.from(parsed.values()).sort((a, b) => a.name.localeCompare(b.name));
-        state.lastUpdated = new Date();
+      document.getElementById("loadingState").style.display = "none";
+      document.getElementById("appContent").style.display = "block";
 
-        // Reveal UI
-        document.getElementById("loadingState").style.display = "none";
-        document.getElementById("appContent").style.display = "block";
+      updateSyncBadge();
+      renderPopularChips();
 
-        updateSyncBadge();
-        renderPopularChips();
-
-        const hashParam = getHashParam("handler");
-        const savedHandler = hashParam || localStorage.getItem("updog_selected_handler");
-        if (savedHandler && state.handlersMap.has(savedHandler)) {
-          selectHandler(savedHandler);
-        } else if (state.selectedHandler && state.handlersMap.has(state.selectedHandler)) {
-          renderSchedule();
-        }
+      const hashParam = getHashParam("handler");
+      const savedHandler = hashParam || localStorage.getItem("updog_selected_handler");
+      if (savedHandler && state.handlersMap.has(savedHandler)) {
+        selectHandler(savedHandler);
+      } else if (state.selectedHandler && state.handlersMap.has(state.selectedHandler)) {
+        renderSchedule();
       }
+    };
+
+    function setSyncError() {
+      state.isFetching = false;
+      const dot = document.getElementById("syncDot");
+      const text = document.getElementById("syncText");
+      const refreshBtn = document.getElementById("refreshBtn");
+      if (dot) dot.className = "badge-dot error";
+      if (text) text.textContent = "Sync error";
+      if (refreshBtn) refreshBtn.classList.remove("spinning");
     }
 
     function updateSyncBadge() {
       const dot = document.getElementById("syncDot");
       const text = document.getElementById("syncText");
+      if (!dot || !text) return;
       dot.className = "badge-dot";
       
       if (state.lastUpdated) {
@@ -1082,7 +1081,8 @@
       }
     }
 
-    async function fetchLiveSchedule(manual = false) {
+    // JSONP request to Google Sheets Visualization API
+    function fetchLiveSchedule(manual = false) {
       if (state.isFetching) return;
       state.isFetching = true;
 
@@ -1090,37 +1090,31 @@
       const text = document.getElementById("syncText");
       const refreshBtn = document.getElementById("refreshBtn");
 
-      dot.className = "badge-dot syncing";
-      text.textContent = "Syncing...";
+      if (dot) dot.className = "badge-dot syncing";
+      if (text) text.textContent = "Syncing...";
       if (refreshBtn) refreshBtn.classList.add("spinning");
 
-      if (manual) showToast("Fetching live Google Sheet...");
+      if (manual) showToast("Syncing with Google Sheets...");
 
-      try {
-        const controller = new AbortController();
-        const timeoutId = setTimeout(() => controller.abort(), 10000);
-        
-        // Add cache-busting timestamp parameter so Google Sheets export returns latest live cell updates
-        const fetchUrl = `${SHEET_CSV_URL}&_t=${Date.now()}`;
-        const resp = await fetch(fetchUrl, {
-          cache: "no-store",
-          signal: controller.signal
-        });
-        clearTimeout(timeoutId);
-
-        if (!resp.ok) throw new Error("HTTP error " + resp.status);
-        const csv = await resp.text();
-        ingestScheduleData(csv);
-        if (manual) showToast("Schedule updated from Google Sheet");
-      } catch (e) {
-        console.error("Live fetch error:", e);
-        dot.className = "badge-dot error";
-        text.textContent = "Sync error";
-        if (manual) showToast("Could not reach Google Sheets. Will retry.");
-      } finally {
-        state.isFetching = false;
-        if (refreshBtn) refreshBtn.classList.remove("spinning");
+      // Clean up previous script tag if any
+      const existingScript = document.getElementById("gviz-jsonp-script");
+      if (existingScript) {
+        if (existingScript.parentNode) existingScript.parentNode.removeChild(existingScript);
+        else if (typeof existingScript.remove === "function") existingScript.remove();
       }
+
+      // Create new dynamic script tag (JSONP has ZERO CORS restrictions)
+      const script = document.createElement("script");
+      script.id = "gviz-jsonp-script";
+      script.src = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?gid=${SHEET_GID}&tqx=responseHandler:handleGvizResponse&_t=${Date.now()}`;
+      
+      script.onerror = function() {
+        console.error("Failed to load Google Sheets script via JSONP");
+        setSyncError();
+        if (manual) showToast("Connection failed. Check network.");
+      };
+
+      document.head.appendChild(script);
     }
 
     // Auto-polling periodically and on tab focus
@@ -1129,7 +1123,6 @@
     }, REFRESH_INTERVAL_MS);
 
     window.addEventListener("focus", () => {
-      // If window regains focus and it has been more than 20 seconds since last sync, fetch immediately
       if (!state.lastUpdated || (Date.now() - state.lastUpdated.getTime() > 20000)) {
         fetchLiveSchedule(false);
       }
@@ -1545,7 +1538,7 @@
         .replace(/'/g, "&#039;");
     }
 
-    // Start live fetch on page load
+    // Trigger initial live fetch via JSONP
     fetchLiveSchedule(false);
   </script>
 </body>
