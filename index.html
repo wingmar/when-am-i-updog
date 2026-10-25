@@ -3,22 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>UpDog Challenge &mdash; Personal Schedule</title>
+  <title>Northeast Classic &mdash; UpDog Schedule</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
   <style>
     :root {
-      --bg: #fafafa;
+      --bg: #f8fafc;
       --surface: #ffffff;
-      --surface-subtle: #f4f4f5;
-      --border: #e4e4e7;
-      --border-subtle: #f4f4f5;
-      --text: #09090b;
-      --text-muted: #71717a;
-      --text-faint: #a1a1aa;
-      --primary: #18181b;
-      --primary-fg: #fafafa;
+      --surface-subtle: #f1f5f9;
+      --border: #e2e8f0;
+      --border-subtle: #f1f5f9;
+      --text: #0f172a;
+      --text-muted: #64748b;
+      --text-faint: #94a3b8;
+      --primary: #0f172a;
+      --primary-fg: #f8fafc;
       --accent: #2563eb;
       --ring1-bg: #eff6ff;
       --ring1-text: #1d4ed8;
@@ -36,7 +36,7 @@
       --warning-text: #b91c1c;
       --warning-border: #fecaca;
       --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-      --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.06), 0 2px 4px -2px rgba(0, 0, 0, 0.04);
+      --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.07), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
       --radius: 12px;
       --radius-sm: 8px;
       --radius-full: 9999px;
@@ -96,8 +96,6 @@
       top: 0;
       z-index: 50;
       background: var(--surface);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
       border-bottom: 1px solid var(--border);
       padding: 0.85rem 1.25rem;
     }
@@ -285,7 +283,7 @@
       border-bottom: none;
     }
 
-    .suggestion-item:hover, .suggestion-item.active {
+    .suggestion-item:hover {
       background: var(--surface-subtle);
     }
 
@@ -307,7 +305,7 @@
       padding: 1.25rem;
       margin-bottom: 1.5rem;
       box-shadow: var(--shadow-sm);
-      animation: fadeIn 0.25s ease;
+      animation: fadeIn 0.2s ease;
     }
 
     @keyframes fadeIn {
@@ -320,7 +318,7 @@
       align-items: flex-start;
       justify-content: space-between;
       gap: 1rem;
-      margin-bottom: 1rem;
+      margin-bottom: 0.85rem;
     }
 
     .profile-title {
@@ -346,13 +344,30 @@
       font-weight: 500;
     }
 
-    /* Dog Filters */
-    .dog-filters {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.4rem;
+    /* Filter sections (Days and Dogs) */
+    .filter-section {
       padding-top: 0.85rem;
       border-top: 1px solid var(--border);
+      display: flex;
+      flex-direction: column;
+      gap: 0.65rem;
+    }
+
+    .filter-row {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+    }
+
+    .filter-label {
+      font-size: 0.72rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--text-faint);
+      margin-right: 0.25rem;
+      min-width: 42px;
     }
 
     .filter-btn {
@@ -361,7 +376,7 @@
       color: var(--text-muted);
       font-size: 0.8rem;
       font-weight: 500;
-      padding: 0.35rem 0.75rem;
+      padding: 0.3rem 0.7rem;
       border-radius: var(--radius-full);
       cursor: pointer;
       display: inline-flex;
@@ -384,15 +399,37 @@
     .filter-count {
       font-size: 0.72rem;
       opacity: 0.8;
-      background: rgba(125, 125, 125, 0.15);
+      background: rgba(125, 125, 125, 0.18);
       padding: 0.05rem 0.35rem;
       border-radius: var(--radius-full);
+    }
+
+    /* Day Group Header */
+    .day-header {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin: 1.75rem 0 0.85rem;
+      font-size: 0.82rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--text-muted);
+    }
+
+    .day-header:first-of-type {
+      margin-top: 0.5rem;
+    }
+
+    .day-line {
+      flex: 1;
+      height: 1px;
+      background: var(--border);
     }
 
     /* Timeline Structure */
     .timeline {
       position: relative;
-      margin-top: 1rem;
     }
 
     .timeline-item {
@@ -404,15 +441,15 @@
 
     /* Time Column */
     .timeline-time {
-      width: 80px;
+      width: 76px;
       flex-shrink: 0;
       text-align: right;
-      padding-top: 0.4rem;
+      padding-top: 0.45rem;
     }
 
     .time-val {
       font-family: "JetBrains Mono", monospace;
-      font-size: 0.95rem;
+      font-size: 0.92rem;
       font-weight: 600;
       letter-spacing: -0.02em;
       color: var(--text);
@@ -429,7 +466,7 @@
     /* Timeline Track and Spine */
     .timeline-spine {
       position: relative;
-      width: 16px;
+      width: 14px;
       flex-shrink: 0;
       display: flex;
       flex-direction: column;
@@ -457,7 +494,6 @@
       border: 2px solid var(--text-muted);
       margin-top: 0.65rem;
       z-index: 2;
-      transition: all 0.2s ease;
     }
 
     .timeline-item.has-conflict .timeline-dot {
@@ -475,7 +511,7 @@
       box-shadow: var(--shadow-sm);
       display: flex;
       flex-direction: column;
-      gap: 0.5rem;
+      gap: 0.45rem;
       transition: transform 0.15s ease, box-shadow 0.15s ease;
     }
 
@@ -492,7 +528,7 @@
     }
 
     .game-name {
-      font-size: 1rem;
+      font-size: 0.98rem;
       font-weight: 600;
       letter-spacing: -0.01em;
       color: var(--text);
@@ -549,10 +585,6 @@
       font-weight: 500;
     }
 
-    .dog-paw {
-      font-size: 0.8rem;
-    }
-
     /* Conflict / Overlap Banner */
     .conflict-tag {
       display: inline-flex;
@@ -572,7 +604,7 @@
       display: flex;
       align-items: center;
       gap: 0.75rem;
-      margin: 0.5rem 0 0.85rem 96px;
+      margin: 0.5rem 0 0.85rem 90px;
       color: var(--text-faint);
       font-size: 0.75rem;
       font-weight: 500;
@@ -619,7 +651,7 @@
       flex-wrap: wrap;
       justify-content: center;
       gap: 0.4rem;
-      max-width: 440px;
+      max-width: 460px;
       margin: 0 auto;
     }
 
@@ -668,7 +700,7 @@
         background: #fff;
         color: #000;
       }
-      header, .search-section, .dog-filters, .nav-actions, .break-indicator {
+      header, .search-section, .filter-section, .nav-actions, .break-indicator {
         display: none !important;
       }
       main {
@@ -703,10 +735,10 @@
         font-size: 0.85rem;
       }
       .break-indicator {
-        margin-left: 81px;
+        margin-left: 79px;
       }
       .game-name {
-        font-size: 0.95rem;
+        font-size: 0.92rem;
       }
     }
   </style>
@@ -723,7 +755,7 @@
             <path d="M2 12h20"></path>
           </svg>
         </div>
-        <span>UpDog Schedule</span>
+        <span>Northeast Classic</span>
       </a>
 
       <div class="nav-actions">
@@ -805,7 +837,7 @@
     <div id="welcomeState" class="empty-state">
       <div class="empty-state-icon">🐾</div>
       <h3 class="empty-state-title">Select Your Name</h3>
-      <p class="empty-state-subtitle">Search for a handler or dog above to view your chronological running schedule and ring times.</p>
+      <p class="empty-state-subtitle">Search for your name or dog above to view your personalized running orders, ring assignments, and schedule.</p>
       <div class="popular-chips" id="popularChips"></div>
     </div>
   </main>
@@ -816,27 +848,34 @@
     // Live Google Sheet Export CSV URL
     const SHEET_CSV_URL = "https://docs.google.com/spreadsheets/d/11zydir3gG2eQOFpk_N9yVxEW6iRYmbRtJAdeS1R9feI/export?format=csv";
 
-    // Fallback embedded snapshot ensures instant loading even when completely offline
+    // Embedded CSV fallback snapshot ensures instant loading even when offline
     const FALLBACK_CSV = "Handler,Dog,Far Out,Fireball,,Boom,FS Performance,TimeWarp,7Up,,Spaced Out,FS Criterion,Four Way Play,FunKey,,Throw N Go,Frizgility,Greedy\nAaron Dagres,Yzma,2/3 - 8:00,1 - 11:30,,3 - 11:00,2 - 10:00,1 - 8:00,3 - 4:30,,3 - 8:00,2 - 3:00,1 - 11:00,3 - 1:00,,2 - 1:00,3 - 2:30,1 - 8:00\nAaron Dagres,XS,,,,3 - 11:00,2 - 9:00,,3 - 4:00,,3 - 8:30,2 - 3:30,,3 - 1:30,,2 - 1:30,3 - 3:00,1 - 8:00\nAaron Dagres,Eobard,,1 - 11:00,,3 - 11:30,,,3 - 4:00,,,,1 - 11:30,3 - 2:00,,2 - 1:30,3 - 3:30,1 - 8:30\nAaron Dagres,Maple,,,,,,,3 - 5:00,,,,,3 - 2:00,,,3 - 4:00,\n,,,,,,,,,,,,,,,,,\nAbby House,Xena,,1 - 11:30,,,,1 - 10:00,,,1 - 4:30,,,2 - 5:45,,,,1 - 9:30\nAbby House,Hex,,,,,,,,,,,1 - 11:30,,,,,\nAbby House,Zest,,1 - 10:30,,,,1 - 9:30,,,1 - 5:00,,1 - 10:30,,,,3 - 3:30,1 - 9:30\n,,,,,,,,,,,,,,,,,\nAbi Walker,Bernie,2/3 - 2:00,1 - 9:00,,3 - 9:00,,1 - 11:00,3 - 3:30,,2 - 8:00,,1 - 3:30,3 - 1:30,,2 - 10:00,3 - 3:30,1 - 11:00\nAbi Walker,Elliott,2/3 - 3:00,1 - 10:00,,3 - 8:30,,1 - 11:30,3 - 4:30,,2 - 8:30,,1 - 3:30,3 - 2:00,,2 - 9:30,3 - 4:00,1 - 10:30\nAbi Walker,Biscotti,,,,,,,,,,,,,,,,\n,,,,,,,,,,,,,,,,,\nAdam Lowrance,Lumi,,,,,,,,,3 - 11:00,,1 - 3:30,3 - 1:00,,2 - 2:30,3 - 10:30,1 - 4:30\n,,,,,,,,,,,,,,,,,\nAdriana Nottestad,Mimikyu,,,,,,,3 - 3:00,,,,,3 - 3:00,,,,\nAdriana Nottestad,Ciri,,,,,,,3 - 4:30,,,,,3 - 4:00,,,3 - 10:00,\nAdriana Nottestad,Gambit,,,,,,,3 - 2:00,,,,,3 - 4:30,,,3 - 10:30,\nAdriana Nottestad,Rumi,,,,,,,3 - 4:00,,,,,,,,3 - 9:00,\nAdriana Nottestad,Nimona,,,,,,,3 - 2:30,,,,,3 - 2:30,,,3 - 9:30,\n,,,,,,,,,,,,,,,,,\nAllison Fryer,Paxton,,,,,,,,,,,,,,2 - 9:30,3 - 3:00,\nAllison Fryer,Tucker,,,,,,,,,,,,,,2 - 10:00,,\nAllison Fryer,Nautilus,,,,,,,,,,,,,,,3 - 2:30,\nAllison Fryer,Ryze,,,,,,,,,,,,,,2 - 11:00,3 - 2:00,\nAllison Fryer,Gator,,,,,,,,,,,,,,2 - 8:00,,\nAllison Fryer,Buoy,,,,,,,,,,,,,,2 - 1:00,,\n,,,,,,,,,,,,,,,,,\nAllyson Colburn,Arko,2/3 - 10:30,1 - 8:00,,,,1 - 9:00,3 - 3:30,,3 - 9:30,,1 - 4:00,3 - 1:00,,2 - 2:00,3 - 9:30,1 - 11:00\nAllyson Colburn,Waldo,2/3 - 11:00,1 - 8:30,,,,1 - 10:30,3 - 4:30,,3 - 10:30,,1 - 4:00,3 - 1:30,,2 - 2:30,3 - 10:00,1 - 11:30\n,,,,,,,,,,,,,,,,,\nAmanda Pugh,Tin,2/3 - 2:30,1 - 11:00,,3 - 8:30,2 - 2:30,1 - 11:00,3 - 1:00,,3 - 9:30,2 - 10:30,1 - 4:00,3 - 2:00,,2 - 2:00,3 - 11:00,1 - 9:30\n,,,,,,,,,,,,,,,,,\nAmanda Rose,Wally,,,,,,,,,,,,,,2 - 2:00,3 - 9:30,1 - 10:30\n,,,,,,,,,,,,,,,,,\nAndrea Howard,Gelato,,1 - 9:30,,,,1 - 9:30,3 - 2:30,,2 - 8:00,,1 - 3:30,,,2 - 3:30,3 - 2:00,\nAndrea Howard,Muffin,,1 - 10:00,,,,1 - 8:30,3 - 1:30,,,,1 - 10:30,3 - 2:30,,2 - 4:00,3 - 1:00,\n,,,,,,,,,,,,,,,,,\nAnna Almeida,Pickett,,,,,,,3 - 1:30,,,,,,,,,\nAnna Almeida,Mazikeen,,,,,,,3 - 4:00,,,,,,,,,\nAnna Almeida,Eile,,,,,,,3 - 1:00,,,,,3 - 3:00,,,,\nAnna Almeida,Newt,,,,,,,3 - 3:00,,,,,3 - 3:30,,,,\n,,,,,,,,,,,,,,,,,\nAnya Thurlow,Cheese,,,,,,,,,,,,,,2 - 2:30,3 - 9:00,\n,,,,,,,,,,,,,,,,,\nAshley Kutzli,StreetSauce,,,,,2 - 9:00,1 - 1:00,3 - 5:00,,,2 - 1:30,1 - 8:00,3 - 3:30,,2 - 9:00,3 - 11:00,\nAshley Kutzli,5RingCircus,,,,,2 - 10:00,,3 - 4:30,,,2 - 2:30,,3 - 3:30,,,3 - 10:30,\nAshley Kutzli,Roadrash,,1 - 9:00,,,,,3 - 4:00,,,,,3 - 3:00,,,3 - 11:30,\n,,,,,,,,,,,,,,,,,\nAubree Blakeslee,Jack,,,,,,,,,,,1 - 3:30,,,2 - 1:30,,\nAubree Blakeslee,Benelli,,,,,,,,,,,1 - 4:00,,,2 - 1:00,3 - 8:00,1 - 4:00\n,,,,,,,,,,,,,,,,,\nAva McDonald,Haze,2/3 - 10:00,,,3 - 11:30,,1 - 3:00,,,2 - 8:30,,1 - 9:30,2 - 5:15,,2 - 10:00,3 - 3:00,1 - 8:30\nAva McDonald,Royal,,,,,2 - 11:00,,,,,2 - 1:00,,,,,,\n,,,,,,,,,,,,,,,,,\nBailee Motter,Haven,2/3 - 2:00,1 - 8:00,,,2 - 9:30,1 - 1:00,,,,2 - 1:00,1 - 8:00,,,2 - 1:00,,1 - 8:00\nBailee Motter,Kaine,2/3 - 2:30,,,,,,2 - 4:00,,,,1 - 8:30,2 - 4:15,,2 - 1:30,3 - 10:00,\nBailee Motter,Reign,2/3 - 3:30,1 - 8:30,,,2 - 10:00,1 - 1:30,,,,2 - 2:00,1 - 8:30,,,2 - 2:00,,1 - 9:00\n,,,,,,,,,,,,,,,,,\nBecky Knox,Wizard,2/3 - 10:30,1 - 1:00,,3 - 8:30,,1 - 2:30,,,1 - 4:30,,1 - 10:00,,,2 - 10:00,,1 - 3:30\nBecky Knox,Ruckus,2/3 - 11:30,1 - 1:30,,3 - 9:30,2 - 11:30,1 - 3:00,,,1 - 5:00,2 - 3:00,1 - 10:30,,,2 - 11:00,,1 - 4:00\nBecky Knox,Tetris,,,,3 - 10:00,,,,,,,1 - 11:30,,,2 - 11:30,,1 - 3:00\n,,,,,,,,,,,,,,,,,\nBethany Vallangeon,Tuna,2/3 - 1:00,,,,,,3 - 1:00,,,,,3 - 2:00,,,3 - 10:30,\nBethany Vallangeon,Kylo,2/3 - 1:30,1 - 9:30,,3 - 10:00,,1 - 8:00,3 - 1:30,,3 - 9:30,,1 - 3:30,3 - 1:30,,2 - 3:30,3 - 9:30,1 - 1:30\nBethany Vallangeon,Charlie,2/3 - 2:00,1 - 10:00,,3 - 10:30,,1 - 8:30,3 - 2:00,,3 - 10:00,,1 - 4:00,3 - 1:00,,2 - 4:00,3 - 10:00,1 - 2:00\n,,,,,,,,,,,,,,,,,\nBirgit Locklear,Luna,,1 - 10:00,,,2 - 11:00,1 - 8:00,,,3 - 9:00,2 - 2:30,1 - 11:00,,,2 - 3:00,3 - 9:00,1 - 1:00\nBirgit Locklear,Pyro,,1 - 10:30,,,2 - 11:30,1 - 8:30,3 - 2:30,,3 - 9:30,2 - 3:00,1 - 8:00,2 - 4:45,,2 - 3:30,3 - 9:30,1 - 1:30\nBirgit Locklear,Ahi,,1 - 11:30,,,2 - 10:00,1 - 9:00,3 - 3:30,,3 - 10:30,2 - 1:30,1 - 11:30,2 - 5:15,,2 - 4:30,3 - 10:30,1 - 2:00\n,,,,,,,,,,,,,,,,,\nBob Matteson,Augie,2/3 - 1:00,,,,,1 - 1:00,,,,,,,,,,1 - 1:00\nBob Matteson,Dyno,2/3 - 1:30,,,,,1 - 2:00,,,,,,,,,,1 - 2:00\n,,,,,,,,,,,,,,,,,\nBonnie Scott,Mars,,,,,,1 - 8:30,2 - 4:30,,,,,2 - 5:45,,,3 - 3:00,\nBonnie Scott,Kiddo,,,,,2 - 1:00,1 - 9:00,,,,2 - 10:30,,,,2 - 1:00,,\nBonnie Scott,Kewpie,,,,,2 - 2:00,,,,,2 - 10:00,,,,2 - 2:00,,\n,,,,,,,,,,,,,,,,,\nBreanna Famoso,Sto Lat,2/3 - 3:00,1 - 8:30,,3 - 11:00,,1 - 1:30,3 - 3:30,,2 - 8:00,,1 - 1:30,3 - 3:30,,2 - 11:00,3 - 8:00,1 - 2:00\nBreanna Famoso,Swarley,2/3 - 3:30,1 - 9:00,,3 - 11:30,,1 - 1:30,3 - 3:30,,2 - 8:30,,1 - 1:30,3 - 3:30,,2 - 11:00,3 - 8:30,1 - 2:30\n,,,,,,,,,,,,,,,,,\nBrian Walsh,Lyra,,,,,,,,,3 - 8:00,,1 - 2:30,,,,3 - 8:30,1 - 1:00\nBrian Walsh,Paxton,,1 - 11:00,,3 - 11:30,,1 - 2:00,,,3 - 10:00,,,,,2 - 10:00,,\nBrian Walsh,Tsunami,,1 - 11:30,,3 - 11:00,,1 - 1:00,,,3 - 10:00,,1 - 2:30,,,2 - 10:30,3 - 11:30,1 - 1:30\n,,,,,,,,,,,,,,,,,\nCasey Rhoten,Chloe,2/3 - 9:30,1 - 1:00,,3 - 8:00,,1 - 10:30,2 - 4:00,,3 - 11:30,,1 - 10:00,3 - 2:00,,2 - 1:30,3 - 10:30,1 - 8:30\nCasey Rhoten,Vinyl,2/3 - 10:30,1 - 1:30,,3 - 9:00,,1 - 11:30,2 - 4:30,,3 - 9:30,,1 - 10:30,3 - 3:00,,2 - 2:00,3 - 11:30,1 - 9:00\n,,,,,,,,,,,,,,,,,\nChandler Leiby,Asher,2/3 - 11:00,,,,,,,,,,,,,,3 - 1:30,\nChandler Leiby,Maple,2/3 - 10:30,,,,,,3 - 4:00,,,,,,,,3 - 1:30,\nChandler Leiby,Kahl\u00faa,2/3 - 11:30,,,,,,,,,,1 - 8:00,,,2 - 10:00,3 - 1:00,\nChandler Leiby,Journey,2/3 - 11:00,,,,,,,,,,,,,,,\nChandler Leiby,Rubiks,2/3 - 11:30,,,,,,,,,,,,,,,\n,,,,,,,,,,,,,,,,,\nChris Magruder,Kuma,2/3 - 1:30,1 - 9:30,,,2 - 2:00,1 - 8:00,3 - 5:00,,3 - 8:30,2 - 11:30,1 - 2:00,3 - 5:00,,2 - 1:00,3 - 2:30,1 - 10:00\nChris Magruder,Rook,,,,,,,,,3 - 9:00,,1 - 3:00,,,2 - 3:30,,\n,,,,,,,,,,,,,,,,,\nChristine Crocker,Sally,,1 - 10:30,,3 - 8:30,2 - 11:00,1 - 2:30,3 - 4:00,,3 - 10:30,2 - 3:00,1 - 9:00,3 - 5:30,,2 - 3:00,3 - 11:00,1 - 9:00\n,,,,,,,,,,,,,,,,,\nChristine Farrance,Jinn,,,,,,,,,,,,,,2 - 4:00,3 - 9:30,1 - 1:30\nChristine Farrance,Reyka,,,,,,,,,,,,,,2 - 4:30,3 - 10:00,1 - 2:00\n,,,,,,,,,,,,,,,,,\nChristine Kasparov,Ponchik,,,,,2 - 1:30,,3 - 3:30,,,2 - 9:00,,,,,3 - 9:30,\nChristine Kasparov,Kivi,,,,,2 - 2:30,1 - 8:30,3 - 4:30,,3 - 11:00,2 - 9:30,1 - 4:00,3 - 1:00,,2 - 1:30,3 - 10:00,1 - 3:00\n,,,,,,,,,,,,,,,,,\nCriss Brown,Riot,,1 - 8:30,,3 - 10:00,,1 - 1:30,,,3 - 10:00,,1 - 8:00,,,2 - 9:30,,1 - 11:00\nCriss Brown,Sizzle,,1 - 9:00,,3 - 10:30,2 - 9:30,1 - 2:30,2 - 4:30,,3 - 10:30,2 - 1:30,1 - 8:30,3 - 5:00,,2 - 10:30,3 - 2:30,1 - 1:30\nCriss Brown,Bullet,,1 - 9:30,,,2 - 11:00,,2 - 4:00,,,2 - 2:30,1 - 9:00,3 - 4:30,,,3 - 3:00,\n,,,,,,,,,,,,,,,,,\nDale Christianson,Sparkz,2/3 - 2:30,1 - 10:30,,3 - 9:30,,1 - 11:00,3 - 3:00,,1 - 4:30,,1 - 10:30,3 - 5:30,,2 - 1:00,3 - 10:00,1 - 3:30\nDale Christianson,Chaos,2/3 - 3:30,,,3 - 10:00,,,,,,,1 - 10:00,,,2 - 2:00,,1 - 11:00\n,,,,,,,,,,,,,,,,,\nDan Baxter,Swarley,,,,,,1 - 9:30,,,,,,,,,,\nDan Baxter,Sto Lat,,,,,,,,,,,1 - 10:00,,,,,\n,,,,,,,,,,,,,,,,,\nDan Ebner,Kora,2/3 - 1:00,1 - 11:00,,2 - 8:00,,1 - 11:30,,,3 - 11:00,,1 - 1:00,,,,,\nDan Ebner,Vivid,2/3 - 1:30,1 - 11:30,,,,1 - 11:00,,,3 - 11:30,,1 - 1:30,,,,,\n,,,,,,,,,,,,,,,,,\nDi Matteson,Augie,2/3 - 8:00,,,,2 - 9:30,1 - 11:00,2 - 4:00,,3 - 8:00,2 - 1:30,1 - 11:00,2 - 4:15,,,3 - 8:00,1 - 2:30\nDi Matteson,Dyno,2/3 - 8:30,,,,2 - 10:00,1 - 11:30,2 - 4:30,,3 - 8:30,2 - 2:00,1 - 11:30,2 - 4:45,,,3 - 8:30,1 - 3:00\n,,,,,,,,,,,,,,,,,\nDyane Tower,Lumi,,,,,,,,,3 - 9:00,,1 - 10:00,2 - 5:15,,2 - 1:30,3 - 9:00,1 - 3:30\n,,,,,,,,,,,,,,,,,\nEden Proctor,Neverland,,,,,2 - 1:30,,2 - 4:30,,,,,,,,,\n,,,,,,,,,,,,,,,,,\nEli McDonald,Haze,2/3 - 11:00,1 - 8:00,,3 - 8:00,2 - 1:00,1 - 2:00,,,3 - 9:00,2 - 11:30,1 - 2:30,3 - 4:00,,2 - 11:00,3 - 4:00,1 - 11:30\nEli McDonald,Mousse,,,,,,,,,,,,,,2 - 11:30,,1 - 2:30\nEli McDonald,Journey,2/3 - 11:30,,,3 - 9:30,,,,,,,1 - 1:00,,,,,1 - 1:00\n,,,,,,,,,,,,,,,,,\nEllie Knieriem,Tigger,2/3 - 3:00,,,,,,,,,,1 - 9:00,,,2 - 2:30,,\nEllie Knieriem,Rivet,,,,,,,,,,,,,,,3 - 3:00,\nEllie Knieriem,Mingo,,,,,,,,,,,,,,,3 - 3:30,\nEllie Knieriem,Saga,,,,,,1 - 8:30,,,,,,,,,,\nEllie Knieriem,MC's Banana,,,,,,1 - 11:30,,,,,,,,,,\n,,,,,,,,,,,,,,,,,\nEmi McDonald,Mousse,2/3 - 10:30,1 - 2:00,,3 - 11:00,2 - 10:00,,2 - 4:30,,,2 - 1:30,1 - 11:00,,,2 - 10:00,,\n,,,,,,,,,,,,,,,,,\nEmily Allred,Captain Eo,,,,,2 - 2:00,,3 - 4:00,,,2 - 10:00,1 - 1:00,3 - 5:00,,2 - 8:00,3 - 2:00,\nEmily Allred,Cheese,2/3 - 1:00,,,,,,,,,,,,,2 - 8:00,3 - 2:30,\nEmily Allred,Chef,2/3 - 1:30,,,,,,,,,,,,,2 - 8:30,,1 - 4:30\nEmily Allred,Constance,,,,,,,3 - 3:00,,,,,3 - 5:30,,2 - 9:00,3 - 1:30,\nEmily Allred,Idol,,,,,,,,,,,,3 - 4:30,,2 - 9:00,,\nEmily Allred,Boba,2/3 - 2:30,,,,,,,,,,1 - 8:00,,,2 - 9:30,,\n,,,,,,,,,,,,,,,,,\nEmily Leiby,Journey,2/3 - 9:30,1 - 1:00,,3 - 8:00,,,,,3 - 8:00,,1 - 11:00,,,2 - 8:00,,1 - 11:30\nEmily Leiby,Kahl\u00faa,2/3 - 10:00,,,3 - 8:30,,,3 - 1:30,,,,1 - 11:00,3 - 3:00,,2 - 8:30,3 - 2:00,1 - 11:30\nEmily Leiby,Gecko,2/3 - 11:00,1 - 2:00,,3 - 9:00,,1 - 9:30,,,3 - 9:00,,1 - 11:30,,,2 - 9:00,,1 - 11:00\nEmily Leiby,Maple,2/3 - 9:00,,,,,,3 - 1:00,,,,,3 - 3:30,,,3 - 2:30,\nEmily Leiby,Asher,2/3 - 8:00,,,,,,,,,,1 - 11:30,,,,,\nEmily Leiby,Bark Wahlberg,2/3 - 11:30,1 - 1:30,,3 - 9:00,,1 - 10:00,3 - 1:00,,3 - 8:30,,1 - 1:30,3 - 2:30,,2 - 8:30,3 - 9:00,1 - 10:30\n,,,,,,,,,,,,,,,,,\nErika Proctor,Rumor,,,,,,,3 - 5:00,,,,,,,,,\n,,,,,,,,,,,,,,,,,\nEvan Beatty,Lasso,2/3 - 8:00,1 - 1:00,,,,1 - 8:30,3 - 5:00,,3 - 10:00,,1 - 11:00,3 - 1:30,,2 - 1:00,3 - 10:00,1 - 2:30\nEvan Beatty,MJ,2/3 - 8:00,1 - 1:30,,3 - 11:30,,1 - 9:30,,,3 - 9:30,,1 - 1:00,,,2 - 1:00,,1 - 3:00\nEvan Beatty,Quentin,2/3 - 8:30,1 - 2:00,,3 - 11:30,,1 - 8:30,,,3 - 9:00,,1 - 11:30,,,2 - 1:30,,1 - 3:30\nEvan Beatty,Ruckus,2/3 - 9:00,,,,,,,,,,,,,,,\nEvan Beatty,Wizard,2/3 - 9:00,,,,,,,,,,,,,,,\nEvan Beatty,Tetris,2/3 - 9:30,,,,,,,,,,,,,,,\n,,,,,,,,,,,,,,,,,\nFinn Proctor,WTF,,,,3 - 8:00,2 - 10:30,1 - 1:00,,,,,,,,,,\nFinn Proctor,Figment,,,,,,1 - 2:00,,,,,,,,,,\nFinn Proctor,MC's Banana,,,,3 - 9:00,,1 - 2:30,,,,,,,,,,\nFinn Proctor,Neverland,,,,3 - 9:30,2 - 11:30,1 - 3:00,,,,,,,,,,\n,,,,,,,,,,,,,,,,,\nFrances Hannan,Willow,,,,,,,,,1 - 4:30,,1 - 9:30,,,2 - 2:30,3 - 11:00,\n,,,,,,,,,,,,,,,,,\nFrank Montgomery,Jagger,,1 - 11:30,,,2 - 1:30,1 - 8:30,3 - 3:30,,3 - 11:00,2 - 9:30,1 - 3:00,,,,,\nFrank Montgomery,Fever,,1 - 10:30,,,2 - 2:30,,3 - 4:00,,3 - 11:30,2 - 10:30,1 - 4:00,,,2 - 4:30,3 - 11:00,1 - 9:30\n,,,,,,,,,,,,,,,,,\nGreg Leiby,McGee,2/3 - 11:00,,,3 - 11:30,,1 - 1:00,,,,,,,,2 - 9:00,,\n,,,,,,,,,,,,,,,,,\nHarper Reigart,Daunte,2/3 - 8:00,,,3 - 9:30,,,,,,,1 - 3:00,,,2 - 9:00,,\nHarper Reigart,Solo,2/3 - 9:00,1 - 1:00,,3 - 11:00,,1 - 8:30,3 - 1:30,,3 - 9:00,,1 - 1:30,3 - 4:00,,2 - 10:00,3 - 1:30,\n,,,,,,,,,,,,,,,,,\nHillary Brown,Sev,,1 - 1:00,,3 - 10:30,,1 - 1:30,,,2 - 8:00,,1 - 11:00,3 - 1:30,,2 - 8:00,3 - 1:30,1 - 3:30\nHillary Brown,Paxil,2/3 - 11:00,1 - 1:30,,3 - 11:00,,1 - 2:00,,,2 - 8:30,,1 - 11:00,3 - 1:00,,2 - 8:30,3 - 1:00,1 - 4:00\nHillary Brown,Panko,2/3 - 11:30,,,3 - 11:30,,1 - 1:00,,,,,1 - 11:30,3 - 1:30,,2 - 9:00,3 - 2:00,1 - 4:30\n,,,,,,,,,,,,,,,,,\nIlene Fischman,Shayna,,,,,,,,,,,,,,2 - 9:30,3 - 1:30,1 - 3:00\nIlene Fischman,Micki,,,,,,,,,,,,,,2 - 10:30,3 - 2:30,1 - 3:30\n,,,,,,,,,,,,,,,,,\nIsaac Lorio,Skye,2/3 - 3:00,1 - 11:00,,3 - 9:00,2 - 10:30,1 - 2:00,3 - 5:00,,3 - 8:00,2 - 11:30,1 - 3:00,2 - 4:45,,2 - 4:00,3 - 11:30,1 - 9:00\nIsaac Lorio,Ricochet,2/3 - 3:30,1 - 11:30,,3 - 8:30,2 - 2:30,1 - 8:00,3 - 1:30,,3 - 8:30,2 - 9:30,1 - 3:00,2 - 5:15,,2 - 4:30,3 - 11:30,1 - 9:30\n,,,,,,,,,,,,,,,,,\nJack Fahle,Ferris,,1 - 9:00,,2 - 8:00,,,,,1 - 4:30,,,,,,,1 - 9:00\nJack Fahle,Remix,,1 - 8:00,,2 - 8:30,,,,,1 - 5:00,,,,,,,1 - 9:30\nJack Fahle,Wham!,,1 - 9:30,,2 - 8:00,2 - 3:00,,,,2 - 8:00,2 - 3:30,,,,,,1 - 10:00\nJack Fahle,Doc Brown,,1 - 8:30,,2 - 8:30,,,,,1 - 4:30,,,,,,,1 - 10:30\n,,,,,,,,,,,,,,,,,\nJaime Yaukey,Gecko,2/3 - 10:00,1 - 1:00,,2 - 8:00,,1 - 3:00,,,3 - 11:00,,1 - 9:30,,,2 - 11:30,,1 - 3:00\n,,,,,,,,,,,,,,,,,\nJames Tang,Morgan,,,,,2 - 1:30,1 - 9:30,,,,2 - 9:30,1 - 3:30,,,2 - 4:00,,1 - 9:00\nJames Tang,Lyle,,,,,2 - 2:30,1 - 10:30,,,,2 - 11:30,1 - 4:00,,,2 - 2:00,,1 - 11:00\n,,,,,,,,,,,,,,,,,\nJasmine Ramos,Yzma,,1 - 10:00,,,2 - 1:00,1 - 10:00,,,,2 - 10:30,1 - 2:00,3 - 4:30,,,3 - 2:30,1 - 10:30\n,,,,,,,,,,,,,,,,,\nJason Baldwin,Theo,,,,,,,,,,,,,,2 - 11:30,,1 - 4:30\nJason Baldwin,Gracie,,,,,,,,,,,,,,2 - 10:30,,1 - 4:30\nJason Baldwin,Maple,,,,,,,,,,,,,,2 - 11:00,,\nJason Baldwin,Asher,,,,,,,,,,,,,,2 - 10:00,,\n,,,,,,,,,,,,,,,,,\nJason Rigler,Zing,2/3 - 11:30,,,,,,2 - 4:30,,,,1 - 8:00,,,2 - 9:00,,\n,,,,,,,,,,,,,,,,,\nJeff Love,Sonata,,1 - 11:00,,2 - 8:00,,1 - 10:30,3 - 1:00,,3 - 10:30,,1 - 8:30,3 - 5:30,,2 - 2:30,3 - 11:30,1 - 9:30\n,,,,,,,,,,,,,,,,,\nJen Reigart,Daunte,2/3 - 8:00,1 - 1:00,,3 - 9:30,,1 - 8:00,,,3 - 8:30,,1 - 3:00,,,2 - 9:00,,1 - 3:00\nJen Reigart,Solo,2/3 - 9:00,1 - 1:00,,3 - 11:00,,1 - 8:30,3 - 1:30,,3 - 9:00,,1 - 1:30,3 - 4:00,,2 - 10:00,3 - 1:30,1 - 3:30\nJen Reigart,Soka,2/3 - 8:30,1 - 1:30,,3 - 10:00,,1 - 9:00,3 - 2:00,,3 - 9:30,,1 - 2:00,3 - 4:30,,2 - 8:30,3 - 1:00,1 - 4:00\nJen Reigart,Twix,2/3 - 9:30,1 - 2:00,,3 - 10:30,,1 - 9:00,3 - 3:00,,3 - 10:00,,1 - 2:30,3 - 5:00,,2 - 9:30,3 - 2:00,1 - 4:30\n,,,,,,,,,,,,,,,,,\nJessie Bustin,Lucy,2/3 - 1:00,1 - 8:00,,3 - 8:00,,1 - 2:30,3 - 4:30,,3 - 8:30,,,3 - 4:00,,2 - 8:30,3 - 1:00,\nJessie Bustin,Speck,2/3 - 1:30,1 - 8:30,,,2 - 1:30,1 - 11:30,3 - 5:00,,3 - 8:00,2 - 9:00,,3 - 4:30,,2 - 9:00,3 - 1:30,1 - 2:30\nJessie Bustin,Buttercup,2/3 - 2:00,1 - 9:00,,3 - 8:30,,1 - 3:00,3 - 5:00,,3 - 11:30,,,3 - 3:00,,2 - 9:30,3 - 2:00,1 - 8:00\n,,,,,,,,,,,,,,,,,\nJordan Thompson,Newt,2/3 - 8:00,,,3 - 10:30,,,3 - 1:00,,,,,3 - 1:30,,,3 - 10:30,1 - 1:00\nJordan Thompson,Mazikeen,2/3 - 8:30,,,,,1 - 8:30,3 - 1:30,,,,1 - 8:00,,,2 - 3:30,3 - 11:00,\nJordan Thompson,Pickett,2/3 - 9:30,,,3 - 11:30,2 - 9:00,,3 - 4:00,,,2 - 2:00,1 - 8:30,,,,3 - 9:30,1 - 1:30\nJordan Thompson,Eile,2/3 - 10:00,1 - 1:00,,3 - 11:00,,1 - 8:00,3 - 3:00,,3 - 11:00,,1 - 9:00,3 - 2:00,,2 - 4:00,3 - 10:00,1 - 2:00\nJordan Thompson,Nimona,,,,,,,,,3 - 11:30,,1 - 9:30,,,2 - 4:30,,1 - 2:30\n,,,,,,,,,,,,,,,,,\nKaia Miller,Gracie,,,,,,,,,,,,,,2 - 8:00,3 - 3:00,1 - 1:00\nKaia Miller,Theo,,,,,,,,,,,,,,2 - 8:30,,1 - 1:00\nKaia Miller,Maple,,,,,,,,,,,,,,2 - 8:00,3 - 3:30,\nKaia Miller,Asher,,,,,,,,,,,,,,2 - 9:00,3 - 3:30,\n,,,,,,,,,,,,,,,,,\nKalyn Quill,Scythe,,1 - 10:30,,3 - 10:30,,1 - 1:30,2 - 4:00,,2 - 8:00,,1 - 9:30,2 - 5:45,,2 - 1:00,3 - 2:30,1 - 10:30\nKalyn Quill,Mingo,,,,,,1 - 3:00,,,,,,,,,,1 - 9:30\n,,,,,,,,,,,,,,,,,\nKaren Schutz,Rubiks,2/3 - 8:30,1 - 2:00,,3 - 9:00,2 - 11:30,1 - 10:00,3 - 2:30,,3 - 8:00,2 - 2:30,1 - 1:00,3 - 5:30,,2 - 8:00,3 - 10:30,1 - 4:00\nKaren Schutz,Flare,,,,,,1 - 10:30,3 - 3:00,,,,1 - 1:30,3 - 4:00,,2 - 8:30,3 - 10:00,1 - 4:30\n,,,,,,,,,,,,,,,,,\nKat Fahle,Remix,,1 - 11:00,,,,1 - 3:30,,,2 - 8:30,,,,,,,\nKat Fahle,Doc Brown,,1 - 11:30,,,,1 - 3:30,,,2 - 8:00,,,,,,,\n,,,,,,,,,,,,,,,,,\nKate Castiglia,Mavis,2/3 - 8:00,1 - 2:00,,2 - 8:00,,1 - 11:30,3 - 2:00,,3 - 8:00,,1 - 1:00,3 - 4:30,,2 - 11:00,3 - 8:30,1 - 2:30\nKate Castiglia,Sailor,2/3 - 8:30,,,2 - 8:30,,1 - 11:30,,,3 - 8:30,,1 - 1:30,,,2 - 11:30,3 - 8:00,\nKate Castiglia,Sev,2/3 - 9:00,,,,,,,,,,,,,,,\nKate Castiglia,Paxil,2/3 - 9:00,,,,,,,,,,,,,,,\nKate Castiglia,Panko,,,,,,,3 - 2:30,,,,,,,,,\n,,,,,,,,,,,,,,,,,\nKate McGarry,Magpie,,1 - 10:00,,2 - 8:00,,1 - 10:00,3 - 2:30,,3 - 10:30,,1 - 9:00,2 - 5:45,,2 - 3:00,3 - 11:30,1 - 10:00\n,,,,,,,,,,,,,,,,,\nKatelyn Walters,Paisley,,,,,,,,,,,,,,2 - 2:30,3 - 8:30,\n,,,,,,,,,,,,,,,,,\nKatrina Winsor,Ash,,,,,,,,,1 - 4:30,,1 - 9:30,3 - 2:00,,2 - 3:00,3 - 9:30,1 - 10:30\nKatrina Winsor,Cirrus,,,,,,,,,1 - 5:00,,1 - 10:30,3 - 2:30,,2 - 3:30,3 - 9:00,1 - 11:00\n,,,,,,,,,,,,,,,,,\nKaylyn Jones,Fay,,,,2 - 8:30,,1 - 10:30,,,,,1 - 9:00,,,2 - 2:30,,\n,,,,,,,,,,,,,,,,,\nKen Kutzli,HomeFry,,1 - 10:00,,3 - 10:30,,1 - 1:30,,,3 - 9:30,,,,,2 - 10:00,3 - 1:30,1 - 3:30\nKen Kutzli,5RingCircus,2/3 - 2:30,,,,,1 - 2:00,,,3 - 10:00,,,,,,,1 - 3:00\nKen Kutzli,StreetSauce,2/3 - 3:30,1 - 10:30,,3 - 11:00,,1 - 2:30,,,3 - 10:30,,,,,2 - 1:00,3 - 2:00,1 - 4:00\nKen Kutzli,Roadrash,,1 - 11:00,,3 - 11:30,,,,,3 - 11:30,,,,,,3 - 2:30,1 - 4:30\n,,,,,,,,,,,,,,,,,\nKevin Proctor,Figment,,,,3 - 10:00,,1 - 1:00,3 - 5:00,,,,,,,,,\nKevin Proctor,MC's Banana,,,,,,1 - 1:30,,,,,,,,,,\nKevin Proctor,Saga,,,,3 - 10:30,,1 - 2:00,,,,,,,,,,\n,,,,,,,,,,,,,,,,,\nKimberly Dickson,Badger,,,,,,1 - 9:00,3 - 2:30,,1 - 4:30,,1 - 10:00,3 - 2:30,,2 - 3:30,3 - 10:30,1 - 1:30\nKimberly Dickson,Shiner,,,,,,1 - 10:00,3 - 3:30,,1 - 5:00,,1 - 10:30,3 - 3:30,,2 - 4:30,3 - 11:30,1 - 3:00\n,,,,,,,,,,,,,,,,,\nKristina Ebner,Kora,2/3 - 3:00,1 - 8:00,,3 - 10:00,,1 - 2:30,2 - 4:30,,3 - 8:00,,1 - 2:30,3 - 5:00,,2 - 11:00,3 - 4:00,1 - 8:00\nKristina Ebner,Vivid,2/3 - 3:30,1 - 8:30,,3 - 8:30,,1 - 3:00,,,3 - 9:00,,1 - 3:00,,,2 - 11:00,,1 - 8:30\nKristina Ebner,Drift,,,,3 - 9:30,,,,,,,1 - 9:30,,,2 - 11:30,,1 - 9:00\n,,,,,,,,,,,,,,,,,\nKristina Everetts,Riot,2/3 - 10:30,1 - 8:00,,2 - 8:00,,1 - 11:00,3 - 3:30,,3 - 9:30,,1 - 8:30,3 - 5:30,,2 - 4:30,3 - 9:30,1 - 1:30\n,,,,,,,,,,,,,,,,,\nKrysthel Moore,Arishem,,1 - 10:30,,3 - 10:30,2 - 3:00,1 - 9:00,3 - 2:00,,3 - 10:30,2 - 2:00,1 - 8:30,2 - 5:45,,2 - 4:30,3 - 3:00,1 - 10:00\n,,,,,,,,,,,,,,,,,\nKyle Hand,Risk,2/3 - 10:00,1 - 11:30,,3 - 9:00,2 - 10:30,1 - 1:30,,,3 - 8:00,2 - 3:30,1 - 11:00,,,2 - 11:00,,1 - 8:00\nKyle Hand,Data,2/3 - 10:30,,,3 - 8:30,,1 - 1:00,,,3 - 8:30,,1 - 11:30,,,2 - 11:30,,1 - 8:30\nKyle Hand,GIR,,,,,,,,,,,,,,2 - 4:30,,1 - 9:00\n,,,,,,,,,,,,,,,,,\nLaura O'Neill,Rogue,,,,2 - 8:00,,1 - 3:30,2 - 4:30,,2 - 8:00,,1 - 4:00,2 - 5:15,,2 - 8:00,3 - 1:00,1 - 4:00\nLaura O'Neill,Keen,,,,2 - 8:00,,1 - 3:30,,,2 - 8:00,,1 - 4:00,,,2 - 8:30,3 - 1:30,1 - 4:30\nLaura O'Neill,Lark,,,,2 - 8:30,,1 - 3:30,,,2 - 8:30,,1 - 4:00,,,2 - 9:00,3 - 2:00,1 - 4:30\n,,,,,,,,,,,,,,,,,\nLex Vega,Brooklyn,,1 - 10:30,,,,1 - 10:00,,,,,1 - 8:30,,,,,\nLex Vega,Squeegee,,,,,,,,,,,,,,2 - 2:00,3 - 11:30,\nLex Vega,Crush,,,,,,,,,,,1 - 9:30,,,2 - 3:00,,\n,,,,,,,,,,,,,,,,,\nLily Martinez,Mamba,2/3 - 1:00,1 - 8:00,,,,1 - 8:00,3 - 5:00,,3 - 8:30,,1 - 1:00,2 - 4:45,,2 - 4:00,3 - 8:30,\nLily Martinez,Rumble,2/3 - 2:00,1 - 8:30,,,,,3 - 4:00,,,,1 - 1:30,2 - 5:15,,2 - 4:30,3 - 9:00,\nLily Martinez,Saucy,2/3 - 2:30,1 - 9:00,,,,1 - 9:00,,,,,1 - 2:00,,,2 - 3:30,3 - 8:00,1 - 10:00\nLily Martinez,Rush,2/3 - 3:00,1 - 9:30,,,,1 - 10:00,,,,,1 - 2:30,,,2 - 3:00,,1 - 9:30\nLily Martinez,Zuka,2/3 - 1:30,1 - 10:00,,,,1 - 11:00,,,,,1 - 3:00,,,2 - 2:30,,1 - 11:00\n,,,,,,,,,,,,,,,,,\nLindsay Kelly,Mable,2/3 - 3:00,1 - 9:30,,,2 - 11:00,,3 - 2:30,,,2 - 11:30,1 - 8:30,3 - 3:00,,2 - 10:30,3 - 8:00,\n,,,,,,,,,,,,,,,,,\nLogan Schutz,Rubiks,2/3 - 9:30,1 - 1:30,,3 - 8:00,,1 - 1:30,3 - 4:30,,3 - 10:00,,1 - 9:00,2 - 4:15,,2 - 9:30,3 - 3:00,1 - 11:30\nLogan Schutz,Flare,,,,,,,3 - 4:00,,,,1 - 10:30,2 - 4:45,,,,\nLogan Schutz,Rivet,2/3 - 1:00,,,,,1 - 2:30,,,3 - 9:30,,,,,,,1 - 11:00\nLogan Schutz,Mingo,2/3 - 3:30,1 - 2:00,,,,1 - 11:30,,,,,1 - 11:30,,,,,1 - 1:00\nLogan Schutz,Journey,,,,,,,,,,,,,,2 - 9:30,,1 - 1:30\nLogan Schutz,Maple,2/3 - 8:30,,,3 - 8:30,,1 - 2:00,3 - 4:30,,,,1 - 11:00,2 - 5:15,,,3 - 2:00,\n,,,,,,,,,,,,,,,,,\nMarianne Pieper,Ozuye,2/3 - 2:00,1 - 9:30,,3 - 10:00,,1 - 11:30,2 - 4:00,,3 - 9:00,,1 - 2:30,3 - 3:30,,,3 - 8:30,1 - 10:00\n,,,,,,,,,,,,,,,,,\nMegan Pyles,Nyx,,1 - 9:00,,3 - 10:30,,1 - 2:30,,,3 - 9:00,,1 - 3:30,,,2 - 2:30,,1 - 11:00\n,,,,,,,,,,,,,,,,,\nMichele Cardone,Dani,2/3 - 2:00,1 - 10:00,,3 - 9:00,,1 - 10:30,2 - 4:30,,3 - 9:30,,1 - 3:30,3 - 1:00,,2 - 9:30,3 - 2:30,1 - 4:00\nMichele Cardone,Ember,2/3 - 3:00,,,3 - 9:30,,1 - 11:00,,,3 - 10:00,,1 - 4:00,,,2 - 10:00,,1 - 3:30\n,,,,,,,,,,,,,,,,,\nMichelle Dudley,Kane,,,,,,,,,,,,,,2 - 10:30,3 - 4:00,1 - 1:00\n,,,,,,,,,,,,,,,,,\nMike Meyers,Bigby,2/3 - 8:30,,,,,,,,,,,,,2 - 10:30,,\nMike Meyers,Flirt,2/3 - 9:00,,,,,,,,,,,,,2 - 10:30,,\nMike Meyers,Muffin,2/3 - 1:30,,,,,1 - 2:30,,,,,,,,2 - 11:00,,1 - 10:00\nMike Meyers,Nimble,2/3 - 10:00,,,,,1 - 1:30,,,,,,,,2 - 11:30,,1 - 1:30\n,,,,,,,,,,,,,,,,,\nNick Sikora,Jack,2/3 - 9:30,1 - 11:30,,2 - 8:30,,1 - 10:30,3 - 2:00,,3 - 9:30,,1 - 2:00,3 - 1:00,,2 - 9:30,3 - 3:00,1 - 11:30\nNick Sikora,Benelli,,,,,,,,,,,1 - 9:00,3 - 3:00,,,,1 - 11:30\nNick Sikora,Asher,2/3 - 10:00,,,,,,,,,,,,,,,\n,,,,,,,,,,,,,,,,,\nNikki McDonald,Haze,,,,,2 - 9:00,,,,,2 - 10:00,,,,,,\nNikki McDonald,Royal,,1 - 11:30,,3 - 10:00,,1 - 8:00,3 - 3:30,,2 - 8:00,,1 - 9:30,3 - 4:30,,2 - 10:30,3 - 1:30,1 - 9:00\nNikki McDonald,Vibrant,,1 - 11:00,,3 - 10:30,,1 - 8:00,3 - 3:00,,2 - 8:00,,1 - 9:30,3 - 4:00,,2 - 10:30,3 - 2:00,1 - 9:00\n,,,,,,,,,,,,,,,,,\nNikki Sheckells,Cortado,2/3 - 10:30,,,,2 - 9:00,,3 - 2:30,,,2 - 3:30,1 - 8:00,,,2 - 1:00,3 - 8:00,\nNikki Sheckells,Muffin,,,,,,,2 - 4:30,,,,1 - 8:30,2 - 4:15,,,3 - 8:30,\nNikki Sheckells,Flirt,,,,,,,,,,,1 - 9:00,,,2 - 1:30,,\nNikki Sheckells,Nimble,,,,,2 - 9:30,,2 - 4:00,,,2 - 2:30,1 - 1:00,2 - 4:45,,,3 - 9:00,\nNikki Sheckells,Bigby,2/3 - 11:00,,,,2 - 10:30,,3 - 1:30,,,2 - 3:00,1 - 1:30,2 - 5:15,,2 - 1:30,3 - 8:00,\n,,,,,,,,,,,,,,,,,\nNils Johnson,Freya,2/3 - 1:00,1 - 11:30,,3 - 9:30,2 - 2:30,1 - 11:00,3 - 1:00,,3 - 9:00,2 - 10:30,1 - 2:00,2 - 4:15,,2 - 2:00,3 - 3:30,1 - 8:30\n,,,,,,,,,,,,,,,,,\nOllie Proctor,WTF,,,,3 - 10:00,,,2 - 4:00,,,,,,,,,\n,,,,,,,,,,,,,,,,,\nRachael Blakesslee,Benelli,,,,,,,,,1 - 4:30,,1 - 10:30,,,2 - 9:30,,\nRachael Blakesslee,Jack,,,,,,,,,1 - 5:00,,1 - 10:00,,,2 - 10:30,,\nRachael Blakesslee,Asher,,,,,,,,,2 - 8:30,,1 - 9:00,,,2 - 8:00,3 - 4:00,1 - 11:30\n,,,,,,,,,,,,,,,,,\nRachel Ortiz,Layla,2/3 - 2:00,1 - 8:30,,,,1 - 8:30,3 - 1:00,,,2 - 10:00,1 - 1:30,3 - 4:00,,2 - 3:00,,\nRachel Ortiz,Zealous,2/3 - 2:30,1 - 9:00,,,2 - 3:00,1 - 9:30,3 - 1:30,,3 - 8:30,2 - 11:30,1 - 2:00,3 - 4:30,,2 - 3:30,3 - 9:30,\nRachel Ortiz,Zoe,2/3 - 3:00,1 - 9:30,,,,,3 - 2:00,,,,1 - 2:30,3 - 5:00,,2 - 4:00,3 - 10:30,\nRachel Ortiz,Guacamole,2/3 - 3:30,,,,,1 - 10:30,,,,,1 - 3:00,,,2 - 4:30,,\n,,,,,,,,,,,,,,,,,\nRaena Lorio,Skye,2/3 - 1:30,1 - 8:00,,3 - 11:00,2 - 1:00,1 - 9:30,3 - 4:30,,3 - 10:00,2 - 9:30,1 - 1:00,3 - 3:30,,2 - 1:00,3 - 10:30,1 - 8:00\nRaena Lorio,Ricochet,2/3 - 2:00,1 - 8:30,,3 - 11:30,2 - 3:00,1 - 9:30,3 - 5:00,,3 - 10:30,2 - 2:00,1 - 1:00,3 - 4:00,,2 - 1:30,3 - 10:30,1 - 8:30\n,,,,,,,,,,,,,,,,,\nRobby Rocco,Eros,,1 - 9:00,,3 - 11:30,,1 - 9:00,3 - 1:00,,2 - 8:00,,1 - 10:00,2 - 4:45,,2 - 3:00,3 - 11:00,1 - 8:00\nRobby Rocco,Melora,,1 - 9:30,,3 - 11:30,,,3 - 1:30,,2 - 8:30,,1 - 10:30,2 - 4:15,,2 - 3:00,3 - 11:00,1 - 8:30\n,,,,,,,,,,,,,,,,,\nRowe Galt,Ladybug,,1 - 9:30,,,2 - 3:00,1 - 9:30,,,3 - 10:30,2 - 1:00,1 - 8:30,3 - 2:30,,2 - 3:00,3 - 8:30,1 - 10:00\nRowe Galt,Tuile,2/3 - 1:00,,,,,,,,,,1 - 2:30,3 - 3:00,,2 - 4:30,3 - 8:00,\n,,,,,,,,,,,,,,,,,\nRyan Gilmore,Lucy,2/3 - 2:30,1 - 10:00,,3 - 10:00,,1 - 3:00,,,3 - 11:00,,1 - 1:30,3 - 2:30,,2 - 10:30,3 - 3:30,1 - 4:30\nRyan Gilmore,Speck,2/3 - 3:00,1 - 10:30,,3 - 9:00,,1 - 2:30,,,3 - 11:30,,1 - 2:00,,,2 - 11:00,3 - 3:30,1 - 8:00\nRyan Gilmore,Buttercup,2/3 - 3:30,1 - 11:00,,3 - 10:30,2 - 2:00,1 - 11:30,,,3 - 8:00,2 - 1:00,1 - 2:30,,,2 - 11:30,3 - 4:00,1 - 1:00\n,,,,,,,,,,,,,,,,,\nSam Marion,Josie,,,,,,,,,,,,,,,3 - 8:30,\nSam Marion,Jack Skellington,,,,,,,,,,,,,,2 - 2:30,,\nSam Marion,GIR,,,,,,,,,,,,,,2 - 1:30,3 - 8:00,1 - 3:00\n,,,,,,,,,,,,,,,,,\nSam Taylor,Nero,2/3 - 8:00,,,,,,3 - 2:30,,,,,3 - 1:00,,,3 - 9:30,\nSam Taylor,Atlas,2/3 - 9:00,,,,,,3 - 3:00,,,,1 - 10:00,3 - 1:30,,2 - 3:30,3 - 10:00,\nSam Taylor,Vesper,2/3 - 10:00,,,,,1 - 8:00,3 - 2:00,,,,1 - 8:00,3 - 2:00,,,3 - 10:30,\nSam Taylor,Cinder,2/3 - 9:30,,,,,,3 - 3:30,,,,1 - 9:00,3 - 2:30,,2 - 4:00,3 - 11:00,1 - 2:00\n,,,,,,,,,,,,,,,,,\nSandra Taylor,Nero,2/3 - 10:30,1 - 1:30,,2 - 8:00,,1 - 9:30,3 - 1:00,,3 - 9:30,,1 - 11:30,3 - 3:00,,2 - 4:30,3 - 11:30,1 - 2:00\nSandra Taylor,Atlas,2/3 - 11:00,,,,,,3 - 1:30,,,,,,,,,\nSandra Taylor,Cinder,2/3 - 11:30,,,,,,3 - 2:00,,,,,,,,,\n,,,,,,,,,,,,,,,,,\nSara Gagnon,Kaianne,2/3 - 11:30,1 - 9:00,,3 - 8:30,,1 - 10:00,3 - 2:30,,1 - 4:30,,1 - 9:30,3 - 5:30,,2 - 2:00,3 - 11:00,1 - 9:30\n,,,,,,,,,,,,,,,,,\nSarah Indano,Lyra,,,,3 - 11:00,2 - 9:30,,3 - 4:30,,,2 - 1:00,,2 - 5:45,,,3 - 11:30,1 - 4:00\nSarah Indano,Paxton,,1 - 8:30,,,,1 - 1:30,,,3 - 11:30,2 - 9:00,,,,2 - 8:00,,1 - 4:30\nSarah Indano,Tsunami,2/3 - 1:00,1 - 9:00,,3 - 8:00,2 - 10:30,1 - 2:00,3 - 4:30,,3 - 11:30,2 - 1:30,1 - 8:00,2 - 5:15,,2 - 8:30,3 - 1:00,1 - 3:30\n,,,,,,,,,,,,,,,,,\nSarah Stoodley,Mingo,,1 - 1:00,,3 - 8:00,2 - 9:30,1 - 1:00,3 - 5:00,,3 - 8:00,2 - 1:00,1 - 10:00,2 - 4:15,,2 - 11:30,3 - 8:30,1 - 2:30\nSarah Stoodley,Rivet,,1 - 2:00,,3 - 8:30,2 - 10:30,1 - 1:00,3 - 4:30,,3 - 8:30,2 - 2:00,1 - 10:30,2 - 4:15,,,3 - 8:00,1 - 2:00\nSarah Stoodley,Firefinch,,,,,,,,,,,1 - 10:30,,,,,1 - 2:30\nSarah Stoodley,Asher,,,,,,1 - 1:30,3 - 5:00,,,,1 - 10:00,,,,,\n,,,,,,,,,,,,,,,,,\nShelby Dumond,Remi,2/3 - 11:30,1 - 8:30,,3 - 8:00,2 - 10:30,1 - 9:00,3 - 3:30,,3 - 10:00,2 - 3:00,1 - 11:00,3 - 5:00,,2 - 1:30,3 - 4:00,1 - 10:00\nShelby Dumond,Anchor,,,,,,1 - 9:30,,,,,1 - 10:30,,,2 - 2:30,,\n,,,,,,,,,,,,,,,,,\nSkyelar Lattimore,Ketziya,2/3 - 10:30,,,,,,,,,,1 - 8:30,,,,,1 - 10:00\nSkyelar Lattimore,Emi,2/3 - 10:00,1 - 8:00,,3 - 8:00,2 - 11:30,1 - 1:00,3 - 2:30,,3 - 11:00,2 - 2:30,1 - 8:00,2 - 5:45,,2 - 11:30,3 - 2:30,1 - 10:30\n,,,,,,,,,,,,,,,,,\nTara Bauer-Williamson,Apple,,1 - 10:30,,,,,3 - 2:00,,,,1 - 8:30,3 - 2:30,,2 - 9:30,3 - 2:30,\nTara Bauer-Williamson,Bourbon,,1 - 11:30,,,,,3 - 3:00,,,,1 - 9:30,3 - 5:30,,2 - 10:30,3 - 3:30,\n,,,,,,,,,,,,,,,,,\nTina van Schilt,Airielle,2/3 - 1:30,1 - 8:00,,3 - 8:00,,1 - 11:00,2 - 4:00,,2 - 8:00,,1 - 1:30,2 - 4:15,,2 - 8:00,3 - 1:00,1 - 2:30\nTina van Schilt,Marceaux,2/3 - 2:00,1 - 8:30,,,,1 - 11:30,2 - 4:30,,,,1 - 1:00,2 - 4:45,,2 - 8:30,3 - 1:30,\nTina van Schilt,Miquette,,,,,,,,,,,1 - 1:00,,,,,\n,,,,,,,,,,,,,,,,,\nTom Bridges,Wally,,,,,,,,,,,,,,,3 - 11:30,\n,,,,,,,,,,,,,,,,,\nTom Skleros,Bark Wahlberg,2/3 - 10:00,1 - 8:00,,3 - 9:30,2 - 11:30,1 - 2:30,2 - 4:00,,3 - 11:00,2 - 3:30,1 - 9:30,3 - 5:00,,2 - 10:00,3 - 11:30,1 - 11:00\nTom Skleros,Lloyd,,,,,,,2 - 4:30,,,,1 - 10:00,3 - 4:30,,,3 - 11:00,\n,,,,,,,,,,,,,,,,,\nTracy Love,Rhythm,,1 - 10:00,,2 - 8:00,,1 - 10:30,3 - 1:00,,3 - 9:30,,1 - 3:30,3 - 2:00,,2 - 2:00,3 - 10:00,\nTracy Love,Brio,,1 - 10:30,,2 - 8:30,,1 - 11:00,3 - 2:00,,3 - 10:30,,1 - 4:00,3 - 2:30,,2 - 3:00,3 - 11:00,\n,,,,,,,,,,,,,,,,,\nTy Fox,Sheik,,1 - 9:30,,3 - 9:00,2 - 1:00,,3 - 5:00,,3 - 10:30,2 - 9:00,1 - 3:00,3 - 5:00,,2 - 4:00,3 - 1:00,1 - 8:00\nTy Fox,Urbosa,,1 - 10:30,,3 - 9:30,2 - 2:00,,3 - 4:00,,3 - 11:00,2 - 10:00,1 - 3:30,3 - 5:00,,2 - 3:30,3 - 1:30,1 - 8:30\nTy Fox,Majora,,,,,,,,,,,1 - 3:30,,,2 - 4:00,,\n,,,,,,,,,,,,,,,,,\nZack McDonald,Mousse,2/3 - 9:30,,,2 - 8:30,,1 - 2:00,,,3 - 10:00,,1 - 3:00,,,2 - 8:30,3 - 3:30,1 - 1:00\nZack McDonald,Royal,2/3 - 8:30,,,,,,,,,,,,,,,\n,,,,,,,,,,,,,,,,,\nZoey Proctor,Figment,,,,,2 - 11:00,1 - 3:00,,,,,,,,,,";
+
+    // Days mapping corresponding to the four game sections separated by blank columns
+    const DAY_CONFIG = [
+      { name: "Thursday", short: "Thu", order: 0 },
+      { name: "Friday", short: "Fri", order: 1 },
+      { name: "Saturday", short: "Sat", order: 2 },
+      { name: "Sunday", short: "Sun", order: 3 }
+    ];
 
     // App state
     let state = {
-      handlersMap: new Map(), // handlerName -> { dogs: Set, runs: [] }
+      handlersMap: new Map(),
       allHandlers: [],
       selectedHandler: null,
       selectedDog: null,
+      selectedDay: "all",
       isLive: false
     };
 
-    // Parse time like "8:00", "11:30", "1:00", "4:15" into minutes from midnight (smart AM/PM)
     function parseTimeToMinutes(timeStr) {
       if (!timeStr) return 0;
       const [hStr, mStr] = timeStr.trim().split(":");
       let h = parseInt(hStr, 10);
       const m = parseInt(mStr, 10) || 0;
       
-      // UpDog competitions run 8am - 6pm:
-      // Hours 8..11 are AM; 12 is noon; 1..6 are PM
+      // Competitions run 8:00 AM - 6:00 PM
       if (h >= 7 && h <= 11) {
         // AM
       } else if (h === 12) {
@@ -847,7 +886,6 @@
       return h * 60 + m;
     }
 
-    // Format minutes from midnight to "8:00 AM", "01:30 PM"
     function formatMinutesToTime(totalMin) {
       const h24 = Math.floor(totalMin / 60);
       const m = totalMin % 60;
@@ -862,20 +900,55 @@
       };
     }
 
-    // Parse CSV data
+    function parseCSVLine(line) {
+      const result = [];
+      let cur = "";
+      let inQuotes = false;
+      for (let i = 0; i < line.length; i++) {
+        const c = line[i];
+        if (c === '"') {
+          if (inQuotes && line[i + 1] === '"') {
+            cur += '"';
+            i++;
+          } else {
+            inQuotes = !inQuotes;
+          }
+        } else if (c === "," && !inQuotes) {
+          result.push(cur);
+          cur = "";
+        } else {
+          cur += c;
+        }
+      }
+      result.push(cur);
+      return result;
+    }
+
     function parseCSV(text) {
       const lines = text.split(/\r?\n/);
       if (lines.length === 0) return new Map();
 
-      // Parse header row
       const headerRow = parseCSVLine(lines[0]);
-      // Identify game columns (index >= 2, non-empty header)
+      
+      // Determine day mapping based on column groups separated by blank headers
+      // Columns: Handler, Dog, Far Out, Fireball, [blank], Boom, FS Performance, TimeWarp, 7Up, [blank], Spaced Out, FS Criterion, Four Way Play, FunKey, [blank], Throw N Go, Frizgility, Greedy
       const games = [];
+      let currentDayIndex = 0;
+
       for (let i = 2; i < headerRow.length; i++) {
         const title = headerRow[i].trim();
-        if (title) {
-          games.push({ index: i, title: title });
+        if (!title) {
+          currentDayIndex++;
+          continue;
         }
+        const dayInfo = DAY_CONFIG[currentDayIndex] || { name: "Day " + (currentDayIndex + 1), short: "D" + (currentDayIndex + 1), order: currentDayIndex };
+        games.push({
+          index: i,
+          title: title,
+          day: dayInfo.name,
+          dayShort: dayInfo.short,
+          dayOrder: dayInfo.order
+        });
       }
 
       const handlers = new Map();
@@ -901,63 +974,40 @@
         const handlerData = handlers.get(handler);
         if (dog) handlerData.dogs.add(dog);
 
-        // Check each game column
         for (const game of games) {
           if (cols.length > game.index) {
             const rawVal = cols[game.index].trim();
             if (rawVal) {
-              // Format: "Ring - Time" e.g. "1 - 11:30" or "2/3 - 8:00"
               const parts = rawVal.split("-");
               const ring = parts[0].trim();
               const time = parts[1] ? parts[1].trim() : "";
               const minutes = parseTimeToMinutes(time);
+              const sortKey = (game.dayOrder * 1440) + minutes;
 
               handlerData.runs.push({
                 handler: handler,
                 dog: dog,
                 game: game.title,
+                day: game.day,
+                dayShort: game.dayShort,
+                dayOrder: game.dayOrder,
                 ring: ring,
                 time: time,
-                minutes: minutes
+                minutes: minutes,
+                sortKey: sortKey
               });
             }
           }
         }
       }
 
-      // Sort all runs chronologically
       for (const hData of handlers.values()) {
-        hData.runs.sort((a, b) => a.minutes - b.minutes);
+        hData.runs.sort((a, b) => a.sortKey - b.sortKey);
       }
 
       return handlers;
     }
 
-    function parseCSVLine(line) {
-      const result = [];
-      let cur = "";
-      let inQuotes = false;
-      for (let i = 0; i < line.length; i++) {
-        const c = line[i];
-        if (c === '"'') {
-          if (inQuotes && line[i + 1] === '"'') {
-            cur += '"'';
-            i++;
-          } else {
-            inQuotes = !inQuotes;
-          }
-        } else if (c === "," && !inQuotes) {
-          result.push(cur);
-          cur = "";
-        } else {
-          cur += c;
-        }
-      }
-      result.push(cur);
-      return result;
-    }
-
-    // Ingest data and refresh views
     function ingestScheduleData(csvText, isLiveSource) {
       try {
         const parsed = parseCSV(csvText);
@@ -966,7 +1016,6 @@
           state.allHandlers = Array.from(parsed.values()).sort((a, b) => a.name.localeCompare(b.name));
           state.isLive = isLiveSource;
 
-          // Update sync status indicator
           const dot = document.getElementById("syncDot");
           const text = document.getElementById("syncText");
           dot.classList.remove("syncing");
@@ -975,12 +1024,11 @@
             dot.style.background = "#10b981";
           } else {
             text.textContent = "Cached";
-            dot.style.background = "#6b7280";
+            dot.style.background = "#64748b";
           }
 
           renderPopularChips();
 
-          // Restore selection from URL hash or localStorage
           const hashParam = getHashParam("handler");
           const savedHandler = hashParam || localStorage.getItem("updog_selected_handler");
           if (savedHandler && state.handlersMap.has(savedHandler)) {
@@ -994,7 +1042,6 @@
       }
     }
 
-    // Live Fetch with timeout
     async function fetchLiveSchedule(manual = false) {
       const dot = document.getElementById("syncDot");
       const text = document.getElementById("syncText");
@@ -1025,7 +1072,6 @@
       }
     }
 
-    // URL Hash param helper
     function getHashParam(key) {
       try {
         const hash = window.location.hash.substring(1);
@@ -1047,11 +1093,11 @@
       window.history.replaceState(null, "", "#" + params.toString());
     }
 
-    // Handler Selection
     function selectHandler(name) {
       if (!state.handlersMap.has(name)) return;
       state.selectedHandler = name;
       state.selectedDog = null;
+      state.selectedDay = "all";
       localStorage.setItem("updog_selected_handler", name);
       setHashParam("handler", name);
 
@@ -1066,6 +1112,7 @@
     function clearHandlerSelection() {
       state.selectedHandler = null;
       state.selectedDog = null;
+      state.selectedDay = "all";
       localStorage.removeItem("updog_selected_handler");
       setHashParam("handler", null);
 
@@ -1082,11 +1129,14 @@
       renderSchedule();
     }
 
-    // Render Popular Quick Chips
+    function selectDay(dayName) {
+      state.selectedDay = dayName;
+      renderSchedule();
+    }
+
     function renderPopularChips() {
       const container = document.getElementById("popularChips");
       if (!container) return;
-      // Show first 6 handlers with most runs
       const sortedByRuns = [...state.allHandlers]
         .sort((a, b) => b.runs.length - a.runs.length)
         .slice(0, 8);
@@ -1098,7 +1148,6 @@
       `).join("");
     }
 
-    // Render Main Schedule Timeline & Profile
     function renderSchedule() {
       const welcome = document.getElementById("welcomeState");
       const profile = document.getElementById("profileContainer");
@@ -1118,20 +1167,19 @@
       const allRuns = handlerData.runs;
       const dogs = Array.from(handlerData.dogs).sort();
 
-      // Filter runs by selected dog
-      const filteredRuns = state.selectedDog 
-        ? allRuns.filter(r => r.dog === state.selectedDog)
-        : allRuns;
+      // Available competition days for this handler
+      const activeDays = DAY_CONFIG.filter(d => allRuns.some(r => r.day === d.name));
 
-      // Span calculation
-      let timeSpan = "None";
-      if (allRuns.length > 0) {
-        const first = formatMinutesToTime(allRuns[0].minutes);
-        const last = formatMinutesToTime(allRuns[allRuns.length - 1].minutes);
-        timeSpan = `${first.formatted} ${first.period} &ndash; ${last.formatted} ${last.period}`;
+      // Filter runs by selected dog and selected day
+      let filteredRuns = allRuns;
+      if (state.selectedDog) {
+        filteredRuns = filteredRuns.filter(r => r.dog === state.selectedDog);
+      }
+      if (state.selectedDay !== "all") {
+        filteredRuns = filteredRuns.filter(r => r.day === state.selectedDay);
       }
 
-      // Render Profile Card
+      // Render Profile Card with Dog and Day filters
       profile.innerHTML = `
         <div class="profile-card">
           <div class="profile-header">
@@ -1140,60 +1188,105 @@
               <div class="profile-stats">
                 <span class="stat-chip">${allRuns.length} Total Runs</span>
                 <span class="stat-chip">${dogs.length} ${dogs.length === 1 ? "Dog" : "Dogs"}</span>
-                <span class="stat-chip">${timeSpan}</span>
+                <span class="stat-chip">${activeDays.length} Competition ${activeDays.length === 1 ? "Day" : "Days"}</span>
               </div>
             </div>
           </div>
-          ${dogs.length > 1 ? `
-            <div class="dog-filters">
+
+          <div class="filter-section">
+            <!-- Day Filters -->
+            <div class="filter-row">
+              <span class="filter-label">Day:</span>
               <button 
-                class="filter-btn ${state.selectedDog === null ? "active" : ""}" 
-                onclick="selectDog(null)"
+                class="filter-btn ${state.selectedDay === "all" ? "active" : ""}" 
+                onclick="selectDay('all')"
               >
-                <span>All Dogs</span>
-                <span class="filter-count">${allRuns.length}</span>
+                <span>All Days</span>
+                <span class="filter-count">${state.selectedDog ? allRuns.filter(r => r.dog === state.selectedDog).length : allRuns.length}</span>
               </button>
-              ${dogs.map(dog => {
-                const count = allRuns.filter(r => r.dog === dog).length;
+              ${activeDays.map(d => {
+                const dayRuns = allRuns.filter(r => r.day === d.name && (!state.selectedDog || r.dog === state.selectedDog));
                 return `
                   <button 
-                    class="filter-btn ${state.selectedDog === dog ? "active" : ""}" 
-                    onclick="selectDog('${escapeHtml(dog)}')"
+                    class="filter-btn ${state.selectedDay === d.name ? "active" : ""}" 
+                    onclick="selectDay('${d.name}')"
                   >
-                    <span>🐾 ${escapeHtml(dog)}</span>
-                    <span class="filter-count">${count}</span>
+                    <span>${d.name}</span>
+                    <span class="filter-count">${dayRuns.length}</span>
                   </button>
                 `;
               }).join("")}
             </div>
-          ` : ""}
+
+            <!-- Dog Filters (if handler has multiple dogs) -->
+            ${dogs.length > 1 ? `
+              <div class="filter-row">
+                <span class="filter-label">Dog:</span>
+                <button 
+                  class="filter-btn ${state.selectedDog === null ? "active" : ""}" 
+                  onclick="selectDog(null)"
+                >
+                  <span>All Dogs</span>
+                </button>
+                ${dogs.map(dog => {
+                  const dogCount = allRuns.filter(r => r.dog === dog && (state.selectedDay === "all" || r.day === state.selectedDay)).length;
+                  return `
+                    <button 
+                      class="filter-btn ${state.selectedDog === dog ? "active" : ""}" 
+                      onclick="selectDog('${escapeHtml(dog)}')"
+                    >
+                      <span>🐾 ${escapeHtml(dog)}</span>
+                      <span class="filter-count">${dogCount}</span>
+                    </button>
+                  `;
+                }).join("")}
+              </div>
+            ` : ""}
+          </div>
         </div>
       `;
 
-      // Render Timeline
       if (filteredRuns.length === 0) {
         schedule.innerHTML = `
           <div class="empty-state">
-            <p>No runs found for this selection.</p>
+            <p>No runs match the current day and dog filter.</p>
           </div>
         `;
         return;
       }
 
-      // Check for concurrent/overlapping runs across all handler runs
-      const timeCountMap = new Map();
+      // Check conflicts per day & minute
+      const dayMinuteCountMap = new Map();
       allRuns.forEach(r => {
-        timeCountMap.set(r.minutes, (timeCountMap.get(r.minutes) || 0) + 1);
+        const key = `${r.day}_${r.minutes}`;
+        dayMinuteCountMap.set(key, (dayMinuteCountMap.get(key) || 0) + 1);
       });
 
-      let timelineHtml = '<div class="timeline">';
+      // Group runs by Day
+      let currentDay = null;
+      let timelineHtml = "";
 
       for (let i = 0; i < filteredRuns.length; i++) {
         const run = filteredRuns[i];
         const prevRun = i > 0 ? filteredRuns[i - 1] : null;
 
-        // Gap/Break indicator if > 45 minutes between runs
-        if (prevRun) {
+        // Start new Day group
+        if (run.day !== currentDay) {
+          if (currentDay !== null) {
+            timelineHtml += `</div>`; // Close previous timeline
+          }
+          currentDay = run.day;
+          timelineHtml += `
+            <div class="day-header">
+              <span>${run.day}</span>
+              <span class="day-line"></span>
+            </div>
+            <div class="timeline">
+          `;
+        }
+
+        // Break indicator if > 45 minutes between runs on the same day
+        if (prevRun && prevRun.day === run.day) {
           const gapMin = run.minutes - prevRun.minutes;
           if (gapMin >= 45) {
             const hrs = Math.floor(gapMin / 60);
@@ -1211,7 +1304,8 @@
 
         const formattedTime = formatMinutesToTime(run.minutes);
         const ringClass = getRingClass(run.ring);
-        const hasConflict = timeCountMap.get(run.minutes) > 1;
+        const conflictKey = `${run.day}_${run.minutes}`;
+        const hasConflict = dayMinuteCountMap.get(conflictKey) > 1;
 
         timelineHtml += `
           <div class="timeline-item ${hasConflict ? "has-conflict" : ""}">
@@ -1229,7 +1323,7 @@
               </div>
               <div class="run-card-bottom">
                 <span class="dog-tag">
-                  <span class="dog-paw">🐾</span>
+                  <span>🐾</span>
                   <span>${escapeHtml(run.dog || "Unassigned")}</span>
                 </span>
                 ${hasConflict ? `
@@ -1248,7 +1342,10 @@
         `;
       }
 
-      timelineHtml += "</div>";
+      if (currentDay !== null) {
+        timelineHtml += `</div>`;
+      }
+
       schedule.innerHTML = timelineHtml;
     }
 
@@ -1275,7 +1372,6 @@
         return;
       }
 
-      // Search by handler name or dog name
       const matches = [];
       for (const h of state.allHandlers) {
         const handlerMatch = h.name.toLowerCase().includes(q);
@@ -1298,7 +1394,6 @@
       if (e.target.value.trim()) {
         e.target.dispatchEvent(new Event("input"));
       } else {
-        // Show recent/top handlers on click
         const top = state.allHandlers.slice(0, 10);
         renderSuggestions(top.map(h => ({
           name: h.name,
@@ -1344,7 +1439,6 @@
       }
     });
 
-    // Share link
     function copyShareLink() {
       const url = window.location.href;
       navigator.clipboard.writeText(url).then(() => {
@@ -1363,7 +1457,6 @@
       }, 2600);
     }
 
-    // Theme toggle
     function toggleTheme() {
       const cur = document.documentElement.getAttribute("data-theme");
       const next = cur === "dark" ? "light" : "dark";
@@ -1377,7 +1470,6 @@
       document.getElementById("sunIcon").style.display = theme === "dark" ? "block" : "none";
     }
 
-    // Init theme
     const savedTheme = localStorage.getItem("updog_theme") || 
       (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
     setTheme(savedTheme);
@@ -1392,7 +1484,6 @@
         .replace(/'/g, "&#039;");
     }
 
-    // Initialize with fallback CSV immediately for instant UI, then trigger live fetch
     ingestScheduleData(FALLBACK_CSV, false);
     fetchLiveSchedule(false);
   </script>
