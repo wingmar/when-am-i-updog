@@ -1,7 +1,5 @@
-import { App } from "./app";
+import { createApp } from "vue";
+import App from "./App.vue";
 import "./style.css";
 
-document.addEventListener("DOMContentLoaded", () => {
-  const app = new App();
-  app.init().catch((err) => console.error("Initialization error:", err));
-});
+createApp(App).mount("#app");
