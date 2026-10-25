@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>When Am I UpDog? &mdash; Canonical Run Orders</title>
+  <title>When Am I UpDog? &mdash; Personal Schedule</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet">
@@ -220,7 +220,6 @@
       padding: 1.5rem 1.25rem 4rem;
     }
 
-    /* Loading Banner */
     .loading-state {
       text-align: center;
       padding: 4rem 1.5rem;
@@ -237,7 +236,6 @@
       animation: spin 0.7s linear infinite;
     }
 
-    /* Search & Selector Card */
     .search-section {
       margin-bottom: 1.5rem;
       position: relative;
@@ -292,7 +290,6 @@
       color: var(--text);
     }
 
-    /* Autocomplete Dropdown */
     .suggestions-list {
       position: absolute;
       top: calc(100% + 6px);
@@ -338,7 +335,6 @@
       color: var(--text-muted);
     }
 
-    /* Handler Profile Card */
     .profile-card {
       background: var(--surface);
       border: 1px solid var(--border);
@@ -385,7 +381,6 @@
       font-weight: 500;
     }
 
-    /* Filter sections (Days, Dogs, Fields) */
     .filter-section {
       padding-top: 0.85rem;
       border-top: 1px solid var(--border);
@@ -445,7 +440,6 @@
       border-radius: var(--radius-full);
     }
 
-    /* Day Group Header */
     .day-header {
       display: flex;
       align-items: center;
@@ -468,7 +462,6 @@
       background: var(--border);
     }
 
-    /* Timeline Structure */
     .timeline {
       position: relative;
     }
@@ -477,35 +470,45 @@
       position: relative;
       display: flex;
       gap: 1rem;
-      margin-bottom: 0.85rem;
+      margin-bottom: 0.95rem;
     }
 
-    /* Order Column (Left side of spine) */
-    .timeline-order {
-      width: 72px;
+    .timeline-time-col {
+      width: 78px;
       flex-shrink: 0;
       text-align: right;
       padding-top: 0.35rem;
     }
 
-    .order-badge {
+    .block-time {
       font-family: "JetBrains Mono", monospace;
-      font-size: 1.05rem;
+      font-size: 0.98rem;
       font-weight: 700;
-      letter-spacing: -0.03em;
+      letter-spacing: -0.02em;
       color: var(--text);
       line-height: 1.1;
     }
 
-    .order-total {
-      display: block;
+    .block-period {
       font-size: 0.7rem;
-      font-weight: 500;
-      color: var(--text-faint);
-      margin-top: 2px;
+      font-weight: 600;
+      color: var(--text-muted);
+      margin-left: 2px;
     }
 
-    /* Timeline Track and Spine */
+    .block-ordinal-badge {
+      display: inline-block;
+      margin-top: 4px;
+      font-size: 0.72rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      background: var(--surface-subtle);
+      padding: 0.1rem 0.4rem;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border);
+      white-space: nowrap;
+    }
+
     .timeline-spine {
       position: relative;
       width: 14px;
@@ -543,7 +546,6 @@
       background: var(--warning-bg);
     }
 
-    /* Run Card */
     .run-card {
       flex: 1;
       background: var(--surface);
@@ -576,7 +578,6 @@
       color: var(--text);
     }
 
-    /* Field Badges */
     .field-pill {
       font-family: "JetBrains Mono", monospace;
       font-size: 0.74rem;
@@ -670,7 +671,22 @@
       border: 1px solid var(--warning-border);
     }
 
-    /* Empty & Initial State */
+    .break-indicator {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin: 0.5rem 0 0.85rem 92px;
+      color: var(--text-faint);
+      font-size: 0.75rem;
+      font-weight: 500;
+    }
+
+    .break-line {
+      flex: 1;
+      height: 1px;
+      border-bottom: 1px dashed var(--border);
+    }
+
     .empty-state {
       text-align: center;
       padding: 3.5rem 1.5rem;
@@ -724,7 +740,6 @@
       border-color: var(--text-muted);
     }
 
-    /* Toast Notification */
     .toast {
       position: fixed;
       bottom: 1.5rem;
@@ -748,13 +763,12 @@
       opacity: 1;
     }
 
-    /* Print Styles */
     @media print {
       body {
         background: #fff;
         color: #000;
       }
-      header, .search-section, .filter-section, .nav-actions {
+      header, .search-section, .filter-section, .nav-actions, .break-indicator {
         display: none !important;
       }
       main {
@@ -769,8 +783,8 @@
       .timeline-spine {
         display: none;
       }
-      .timeline-order {
-        width: 60px;
+      .timeline-time-col {
+        width: 70px;
         text-align: left;
       }
       .run-card {
@@ -782,14 +796,17 @@
     }
 
     @media (max-width: 520px) {
-      .timeline-order {
-        width: 62px;
+      .timeline-time-col {
+        width: 68px;
       }
-      .order-badge {
-        font-size: 0.95rem;
+      .block-time {
+        font-size: 0.9rem;
+      }
+      .break-indicator {
+        margin-left: 82px;
       }
       .game-name {
-        font-size: 0.92rem;
+        font-size: 0.95rem;
       }
     }
   </style>
@@ -810,12 +827,12 @@
       </a>
 
       <div class="nav-actions">
-        <span class="badge" id="syncStatus" title="Live sync status across 13 canonical event sheets">
+        <span class="badge" id="syncStatus" title="Live sync status across all event sheets">
           <span class="badge-dot syncing" id="syncDot"></span>
           <span id="syncText">Loading...</span>
         </span>
 
-        <button class="btn-icon" id="refreshBtn" title="Sync live updates from Google Sheet" onclick="fetchAllEventTabs(true)">
+        <button class="btn-icon" id="refreshBtn" title="Sync live updates from Google Sheet" onclick="fetchAllEventData(true)">
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M21 12a9 9 0 0 0-9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path>
             <path d="M3 3v5h5"></path>
@@ -853,15 +870,12 @@
   </header>
 
   <main>
-    <!-- Initial Loading State -->
     <div id="loadingState" class="loading-state">
       <div class="loading-spinner"></div>
-      <p id="loadingMsg">Loading canonical running orders from 13 event sheets...</p>
+      <p id="loadingMsg">Loading running orders & block times...</p>
     </div>
 
-    <!-- App Content (Hidden until fetch completes) -->
     <div id="appContent" style="display: none;">
-      <!-- Search / Handler Selector -->
       <div class="search-section">
         <div class="search-box">
           <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -886,17 +900,13 @@
         <ul class="suggestions-list" id="suggestionsList"></ul>
       </div>
 
-      <!-- Active Handler Profile -->
       <div id="profileContainer" style="display: none;"></div>
-
-      <!-- Timeline Container -->
       <div id="scheduleContainer"></div>
 
-      <!-- Welcome / Empty State -->
       <div id="welcomeState" class="empty-state">
         <div class="empty-state-icon">🐾</div>
         <h3 class="empty-state-title">Select Your Name</h3>
-        <p class="empty-state-subtitle">Search for your name or dog above to view your canonical run orders, fields, and divisions across all 13 events.</p>
+        <p class="empty-state-subtitle">Search for your name or dog above to view your scheduled block times, block running orders, and fields.</p>
         <div class="popular-chips" id="popularChips"></div>
       </div>
     </div>
@@ -906,26 +916,26 @@
 
   <script>
     const SHEET_ID = "11zydir3gG2eQOFpk_N9yVxEW6iRYmbRtJAdeS1R9feI";
+    const GID_INDIVIDUAL_SCHEDULES = "1990171013";
     const REFRESH_INTERVAL_MS = 60000;
 
-    // Canonical 13 Event Tabs with metadata and session ordering
     const EVENT_TABS = [
-      { id: "farout", name: "Far Out", gid: "0", day: "Thursday", dayOrder: 0, sessionOrder: 0 },
-      { id: "fireball", name: "Fireball", gid: "306313736", day: "Thursday", dayOrder: 0, sessionOrder: 1 },
+      { id: "farout", name: "Far Out", mapKey: "far out", gid: "0", day: "Thursday", dayOrder: 0 },
+      { id: "fireball", name: "Fireball", mapKey: "fireball", gid: "306313736", day: "Thursday", dayOrder: 0 },
       
-      { id: "boom", name: "Boom!", gid: "919833849", day: "Friday", dayOrder: 1, sessionOrder: 0 },
-      { id: "timewarp", name: "TimeWarp", gid: "698159220", day: "Friday", dayOrder: 1, sessionOrder: 1 },
-      { id: "fs_fri", name: "Freestyle Performance", gid: "1789212166", day: "Friday", dayOrder: 1, sessionOrder: 2 },
-      { id: "sevenup", name: "7Up", gid: "1717217507", day: "Friday", dayOrder: 1, sessionOrder: 3 },
+      { id: "boom", name: "Boom!", mapKey: "boom", gid: "919833849", day: "Friday", dayOrder: 1 },
+      { id: "timewarp", name: "TimeWarp", mapKey: "timewarp", gid: "698159220", day: "Friday", dayOrder: 1 },
+      { id: "fs_fri", name: "Freestyle Performance", mapKey: "fs performance", gid: "1789212166", day: "Friday", dayOrder: 1 },
+      { id: "sevenup", name: "7Up", mapKey: "7up", gid: "1717217507", day: "Friday", dayOrder: 1 },
       
-      { id: "spacedout", name: "Spaced Out", gid: "1732980814", day: "Saturday", dayOrder: 2, sessionOrder: 0 },
-      { id: "fourway", name: "Four Way Play", gid: "159025477", day: "Saturday", dayOrder: 2, sessionOrder: 1 },
-      { id: "fs_sat", name: "Freestyle Criterion", gid: "1374816905", day: "Saturday", dayOrder: 2, sessionOrder: 2 },
-      { id: "funkey", name: "FunKey", gid: "1289351842", day: "Saturday", dayOrder: 2, sessionOrder: 3 },
+      { id: "spacedout", name: "Spaced Out", mapKey: "spaced out", gid: "1732980814", day: "Saturday", dayOrder: 2 },
+      { id: "fourway", name: "Four Way Play", mapKey: "four way play", gid: "159025477", day: "Saturday", dayOrder: 2 },
+      { id: "fs_sat", name: "Freestyle Criterion", mapKey: "fs criterion", gid: "1374816905", day: "Saturday", dayOrder: 2 },
+      { id: "funkey", name: "FunKey", mapKey: "funkey", gid: "1289351842", day: "Saturday", dayOrder: 2 },
       
-      { id: "throwngo", name: "Throw N Go", gid: "1968227423", day: "Sunday", dayOrder: 3, sessionOrder: 0 },
-      { id: "frizgility", name: "Frizgility", gid: "2097815225", day: "Sunday", dayOrder: 3, sessionOrder: 1 },
-      { id: "greedy", name: "Greedy", gid: "291836125", day: "Sunday", dayOrder: 3, sessionOrder: 2 }
+      { id: "throwngo", name: "Throw N Go", mapKey: "throw n go", gid: "1968227423", day: "Sunday", dayOrder: 3 },
+      { id: "frizgility", name: "Frizgility", mapKey: "frizgility", gid: "2097815225", day: "Sunday", dayOrder: 3 },
+      { id: "greedy", name: "Greedy", mapKey: "greedy", gid: "291836125", day: "Sunday", dayOrder: 3 }
     ];
 
     const DAYS_ORDER = ["Thursday", "Friday", "Saturday", "Sunday"];
@@ -941,83 +951,129 @@
       isFetching: false
     };
 
-    // Parallel multi-tab JSONP fetcher
-    function fetchAllEventTabs(manual = false) {
+    function parseTimeToMinutes(timeStr) {
+      if (!timeStr) return 0;
+      const [hStr, mStr] = timeStr.trim().split(":");
+      let h = parseInt(hStr, 10);
+      const m = parseInt(mStr, 10) || 0;
+      
+      if (h >= 7 && h <= 11) {
+        // AM
+      } else if (h === 12) {
+        // PM
+      } else if (h < 7) {
+        h += 12; // PM
+      }
+      return h * 60 + m;
+    }
+
+    function formatMinutesToTime(totalMin) {
+      const h24 = Math.floor(totalMin / 60);
+      const m = totalMin % 60;
+      const period = h24 >= 12 ? "PM" : "AM";
+      let h12 = h24 % 12;
+      if (h12 === 0) h12 = 12;
+      const mPadded = m < 10 ? "0" + m : m;
+      return {
+        formatted: `${h12}:${mPadded}`,
+        period: period,
+        raw: `${h12}:${mPadded} ${period}`
+      };
+    }
+
+    function formatBlockTimeWindow(timeStr) {
+      const min = parseTimeToMinutes(timeStr);
+      const start = formatMinutesToTime(min);
+      const end = formatMinutesToTime(min + 30);
+      return {
+        start: start,
+        end: end,
+        range: `${start.formatted} ${start.period} &ndash; ${end.formatted} ${end.period}`
+      };
+    }
+
+    function fetchGvizJsonp(gid, id) {
+      return new Promise((resolve) => {
+        const callbackName = "gvizCallback_" + id;
+        
+        window[callbackName] = function(resp) {
+          delete window[callbackName];
+          const s = document.getElementById("script_" + id);
+          if (s) {
+            if (s.parentNode) s.parentNode.removeChild(s);
+            else if (typeof s.remove === "function") s.remove();
+          }
+          if (resp && resp.status === "ok" && resp.table) {
+            resolve({ id: id, gid: gid, table: resp.table });
+          } else {
+            console.warn("GViz query failed for " + id, resp);
+            resolve({ id: id, gid: gid, table: null });
+          }
+        };
+
+        const oldScript = document.getElementById("script_" + id);
+        if (oldScript) {
+          if (oldScript.parentNode) oldScript.parentNode.removeChild(oldScript);
+          else if (typeof oldScript.remove === "function") oldScript.remove();
+        }
+
+        const script = document.createElement("script");
+        script.id = "script_" + id;
+        script.src = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?gid=${gid}&tqx=responseHandler:${callbackName}&_t=${Date.now()}`;
+        script.onerror = function() {
+          delete window[callbackName];
+          resolve({ id: id, gid: gid, table: null });
+        };
+        document.head.appendChild(script);
+      });
+    }
+
+    function fetchAllEventData(manual = false) {
       if (state.isFetching) return;
       state.isFetching = true;
 
       const dot = document.getElementById("syncDot");
       const text = document.getElementById("syncText");
       const refreshBtn = document.getElementById("refreshBtn");
+      const loadingMsg = document.getElementById("loadingMsg");
 
       if (dot) dot.className = "badge-dot syncing";
       if (text) text.textContent = "Syncing...";
       if (refreshBtn) refreshBtn.classList.add("spinning");
 
-      if (manual) showToast("Syncing with canonical event sheets...");
+      if (manual) showToast("Syncing running orders & block times...");
 
-      let completedCount = 0;
-      const allResults = [];
+      const allPromises = [
+        fetchGvizJsonp(GID_INDIVIDUAL_SCHEDULES, "master_grid"),
+        ...EVENT_TABS.map(tab => fetchGvizJsonp(tab.gid, tab.id))
+      ];
 
-      const tabPromises = EVENT_TABS.map(tab => {
-        return new Promise((resolve) => {
-          const callbackName = "gvizCallback_" + tab.id;
-          
-          window[callbackName] = function(resp) {
-            delete window[callbackName];
-            const s = document.getElementById("script_" + tab.id);
-            if (s) {
-              if (s.parentNode) s.parentNode.removeChild(s);
-              else if (typeof s.remove === "function") s.remove();
-            }
+      let completed = 0;
+      allPromises.forEach(p => p.then(() => {
+        completed++;
+        if (loadingMsg) loadingMsg.textContent = `Loading event blocks (${completed}/${allPromises.length})...`;
+      }));
 
-            completedCount++;
-            const loadingMsg = document.getElementById("loadingMsg");
-            if (loadingMsg) loadingMsg.textContent = `Loading canonical running orders (${completedCount}/${EVENT_TABS.length})...`;
-
-            if (resp && resp.status === "ok" && resp.table) {
-              resolve({ tab: tab, table: resp.table });
-            } else {
-              console.warn("Failed response for tab " + tab.name, resp);
-              resolve({ tab: tab, table: null });
-            }
-          };
-
-          const oldScript = document.getElementById("script_" + tab.id);
-          if (oldScript) {
-            if (oldScript.parentNode) oldScript.parentNode.removeChild(oldScript);
-            else if (typeof oldScript.remove === "function") oldScript.remove();
-          }
-
-          const script = document.createElement("script");
-          script.id = "script_" + tab.id;
-          script.src = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?gid=${tab.gid}&tqx=responseHandler:${callbackName}&_t=${Date.now()}`;
-          script.onerror = function() {
-            delete window[callbackName];
-            resolve({ tab: tab, table: null });
-          };
-          document.head.appendChild(script);
-        });
-      });
-
-      Promise.all(tabPromises).then(results => {
+      Promise.all(allPromises).then(results => {
         state.isFetching = false;
         if (refreshBtn) refreshBtn.classList.remove("spinning");
 
-        const successful = results.filter(r => r.table !== null);
-        if (successful.length === 0) {
+        const masterResult = results.find(r => r.id === "master_grid");
+        const eventResults = results.filter(r => r.id !== "master_grid" && r.table !== null);
+
+        if (!masterResult || !masterResult.table || eventResults.length === 0) {
           if (dot) dot.className = "badge-dot error";
           if (text) text.textContent = "Sync error";
-          if (manual) showToast("Could not reach Google Sheets.");
+          if (manual) showToast("Could not load sheets. Check network.");
           return;
         }
 
-        processAllEventResults(results);
+        processCombinedData(masterResult.table, eventResults);
         state.lastUpdated = new Date();
         updateSyncBadge();
-        if (manual) showToast("Running orders updated from all 13 event sheets");
+        if (manual) showToast("Schedule updated with canonical block orders");
       }).catch(err => {
-        console.error("Error in tab promises:", err);
+        console.error("Error fetching data:", err);
         state.isFetching = false;
         if (refreshBtn) refreshBtn.classList.remove("spinning");
         if (dot) dot.className = "badge-dot error";
@@ -1025,16 +1081,45 @@
       });
     }
 
-    function processAllEventResults(results) {
+    function processCombinedData(masterTable, eventResults) {
+      const timeMap = new Map();
+      const mRows = masterTable.rows || [];
+      if (mRows.length > 0) {
+        const mHeader = (mRows[0].c || []).map(c => getCellText(c));
+        const gameColMap = new Map();
+        for (let i = 2; i < mHeader.length; i++) {
+          const colName = mHeader[i].toLowerCase().trim();
+          if (colName) gameColMap.set(i, colName);
+        }
+
+        for (let r = 1; r < mRows.length; r++) {
+          const cells = mRows[r].c || [];
+          const handler = getCellText(cells[0]).toLowerCase();
+          const dog = getCellText(cells[1]).toLowerCase();
+          if (!handler) continue;
+
+          gameColMap.forEach((gKey, colIdx) => {
+            const val = getCellText(cells[colIdx]);
+            if (val && val.includes("-")) {
+              const parts = val.split("-");
+              const timeStr = parts[1].trim();
+              const key = `${handler}_${dog}_${gKey}`;
+              timeMap.set(key, timeStr);
+            }
+          });
+        }
+      }
+
       const handlers = new Map();
 
-      for (const res of results) {
-        if (!res.table) continue;
-        const tab = res.tab;
-        const cols = res.table.cols || [];
-        const rows = res.table.rows || [];
+      for (const evRes of eventResults) {
+        const tab = EVENT_TABS.find(t => t.id === evRes.id);
+        if (!tab) continue;
 
-        // Identify Field groups within this tab
+        const table = evRes.table;
+        const cols = table.cols || [];
+        const rows = table.rows || [];
+
         const handlerCols = [];
         for (let i = 0; i < cols.length; i++) {
           const lbl = (cols[i].label || "").toLowerCase();
@@ -1043,22 +1128,15 @@
           }
         }
 
-        const groups = [];
-        for (let i = 0; i < handlerCols.length; i++) {
-          const hIdx = handlerCols[i];
-          const nextHIdx = (i + 1 < handlerCols.length) ? handlerCols[i + 1] : cols.length;
+        for (let gIdx = 0; gIdx < handlerCols.length; gIdx++) {
+          const hIdx = handlerCols[gIdx];
+          const nextHIdx = (gIdx + 1 < handlerCols.length) ? handlerCols[gIdx + 1] : cols.length;
           const hCol = cols[hIdx];
           const headerLabel = hCol.label || "";
 
-          // Extract Field Name: e.g. "Field 1", "Field 2", "Field 3", "Field 2/3"
           const fieldMatch = headerLabel.match(/Field\s+[\d\/]+/i);
           const fieldName = fieldMatch ? fieldMatch[0] : "Field 1";
 
-          // Extract session time window if present: e.g. "8:00am-12:00pm"
-          const timeMatch = headerLabel.match(/\d{1,2}:\d{2}\s*(?:am|pm)?\s*-\s*\d{1,2}:\d{2}\s*(?:am|pm)?(?:,\s*\d{1,2}:\d{2}\s*(?:am|pm)?\s*-\s*\d{1,2}:\d{2}\s*(?:am|pm)?)?/i);
-          const sessionWindow = timeMatch ? timeMatch[0].trim() : "";
-
-          // Identify sub-columns
           let dogIdx = hIdx + 1;
           let utnIdx = -1;
           let divIdx = -1;
@@ -1072,84 +1150,87 @@
             else if (subLabel.includes("jump")) jumpIdx = c;
           }
 
-          groups.push({
-            field: fieldName,
-            sessionWindow: sessionWindow,
-            orderIdx: hIdx - 1,
-            handlerIdx: hIdx,
-            dogIdx: dogIdx,
-            utnIdx: utnIdx,
-            divIdx: divIdx,
-            jumpIdx: jumpIdx,
-            totalRuns: 0
-          });
-        }
+          const fieldRuns = [];
+          for (let rIdx = 0; rIdx < rows.length; rIdx++) {
+            const cells = rows[rIdx].c || [];
+            const handler = getCellText(cells[hIdx]);
+            const dog = getCellText(cells[dogIdx]);
 
-        // Count total valid runs in each field group
-        for (const row of rows) {
-          const cells = row.c || [];
-          for (const g of groups) {
-            const hVal = getCellValue(cells, g.handlerIdx);
-            if (hVal && hVal.toLowerCase() !== "handler") {
-              g.totalRuns++;
-            }
-          }
-        }
-
-        // Ingest individual runs
-        for (let rIdx = 0; rIdx < rows.length; rIdx++) {
-          const cells = rows[rIdx].c || [];
-
-          for (const g of groups) {
-            const handler = getCellValue(cells, g.handlerIdx);
-            const dog = getCellValue(cells, g.dogIdx);
-
-            if (!handler || handler.toLowerCase() === "handler") continue;
-
-            const orderRaw = getCellValue(cells, g.orderIdx);
-            let orderNum = parseInt(orderRaw, 10);
-            if (isNaN(orderNum) || orderNum <= 0) {
-              orderNum = rIdx + 1;
+            if (!handler || handler.toLowerCase() === "handler" || handler.toLowerCase() === "lunch") {
+              continue;
             }
 
-            const utn = g.utnIdx !== -1 ? getCellValue(cells, g.utnIdx) : "";
-            const division = g.divIdx !== -1 ? getCellValue(cells, g.divIdx) : "";
-            const jumpHeight = g.jumpIdx !== -1 ? getCellValue(cells, g.jumpIdx) : "";
+            const utn = utnIdx !== -1 ? getCellText(cells[utnIdx]) : "";
+            const division = divIdx !== -1 ? getCellText(cells[divIdx]) : "";
+            const jumpHeight = jumpIdx !== -1 ? getCellText(cells[jumpIdx]) : "";
 
-            if (!handlers.has(handler)) {
-              handlers.set(handler, {
-                name: handler,
-                dogs: new Set(),
-                runs: []
-              });
-            }
+            const key = `${handler.toLowerCase()}_${dog.toLowerCase()}_${tab.mapKey}`;
+            const assignedTime = timeMap.get(key) || null;
 
-            const handlerData = handlers.get(handler);
-            if (dog) handlerData.dogs.add(dog);
-
-            // Canonical Sort Key: Day -> Session Order -> Run Order
-            const sortKey = (tab.dayOrder * 1000000) + (tab.sessionOrder * 10000) + orderNum;
-
-            handlerData.runs.push({
-              game: tab.name,
-              day: tab.day,
-              dayOrder: tab.dayOrder,
-              sessionOrder: tab.sessionOrder,
-              field: g.field,
-              sessionWindow: g.sessionWindow,
-              order: orderNum,
-              totalInField: g.totalRuns,
+            fieldRuns.push({
+              handler: handler,
               dog: dog,
               utn: utn,
               division: division,
               jumpHeight: jumpHeight,
-              sortKey: sortKey
+              time: assignedTime,
+              orderInField: fieldRuns.length + 1
             });
           }
+
+          let lastTime = "8:00";
+          for (const fr of fieldRuns) {
+            if (fr.time) {
+              lastTime = fr.time;
+            } else {
+              fr.time = lastTime;
+            }
+          }
+
+          const blocks = new Map();
+          for (const fr of fieldRuns) {
+            if (!blocks.has(fr.time)) blocks.set(fr.time, []);
+            blocks.get(fr.time).push(fr);
+          }
+
+          blocks.forEach((bRuns, bTime) => {
+            const totalInBlock = bRuns.length;
+            bRuns.forEach((fr, idx) => {
+              const ordinalInBlock = idx + 1;
+              const timeMinutes = parseTimeToMinutes(bTime);
+              const sortKey = (tab.dayOrder * 1000000) + (timeMinutes * 1000) + ordinalInBlock;
+
+              if (!handlers.has(fr.handler)) {
+                handlers.set(fr.handler, {
+                  name: fr.handler,
+                  dogs: new Set(),
+                  runs: []
+                });
+              }
+
+              const hData = handlers.get(fr.handler);
+              if (fr.dog) hData.dogs.add(fr.dog);
+
+              hData.runs.push({
+                game: tab.name,
+                day: tab.day,
+                dayOrder: tab.dayOrder,
+                field: fieldName,
+                blockTime: bTime,
+                blockMinutes: timeMinutes,
+                ordinalInBlock: ordinalInBlock,
+                totalInBlock: totalInBlock,
+                dog: fr.dog,
+                utn: fr.utn,
+                division: fr.division,
+                jumpHeight: fr.jumpHeight,
+                sortKey: sortKey
+              });
+            });
+          });
         }
       }
 
-      // Sort all runs per handler by canonical order
       for (const hData of handlers.values()) {
         hData.runs.sort((a, b) => a.sortKey - b.sortKey);
       }
@@ -1171,9 +1252,7 @@
       }
     }
 
-    function getCellValue(cells, idx) {
-      if (idx < 0 || idx >= cells.length) return "";
-      const cell = cells[idx];
+    function getCellText(cell) {
       if (!cell) return "";
       if (cell.f !== undefined && cell.f !== null) return String(cell.f).trim();
       if (cell.v !== undefined && cell.v !== null) return String(cell.v).trim();
@@ -1195,18 +1274,18 @@
     }
 
     setInterval(() => {
-      fetchAllEventTabs(false);
+      fetchAllEventData(false);
     }, REFRESH_INTERVAL_MS);
 
     window.addEventListener("focus", () => {
       if (!state.lastUpdated || (Date.now() - state.lastUpdated.getTime() > 20000)) {
-        fetchAllEventTabs(false);
+        fetchAllEventData(false);
       }
     });
 
     document.addEventListener("visibilitychange", () => {
       if (document.visibilityState === "visible") {
-        fetchAllEventTabs(false);
+        fetchAllEventData(false);
       }
     });
 
@@ -1342,7 +1421,6 @@
           </div>
 
           <div class="filter-section">
-            <!-- Day Filters -->
             <div class="filter-row">
               <span class="filter-label">Day:</span>
               <button 
@@ -1366,7 +1444,6 @@
               }).join("")}
             </div>
 
-            <!-- Dog Filters -->
             ${dogs.length > 1 ? `
               <div class="filter-row">
                 <span class="filter-label">Dog:</span>
@@ -1391,7 +1468,6 @@
               </div>
             ` : ""}
 
-            <!-- Field Filters -->
             ${activeFields.length > 1 ? `
               <div class="filter-row">
                 <span class="filter-label">Field:</span>
@@ -1429,6 +1505,7 @@
 
       for (let i = 0; i < filteredRuns.length; i++) {
         const run = filteredRuns[i];
+        const prevRun = i > 0 ? filteredRuns[i - 1] : null;
 
         if (run.day !== currentDay) {
           if (currentDay !== null) {
@@ -1444,25 +1521,48 @@
           `;
         }
 
+        if (prevRun && prevRun.day === run.day) {
+          const gapMin = run.blockMinutes - prevRun.blockMinutes;
+          if (gapMin >= 45) {
+            const hrs = Math.floor(gapMin / 60);
+            const mins = gapMin % 60;
+            const gapStr = hrs > 0 ? `${hrs}h ${mins > 0 ? mins + "m" : ""}` : `${mins}m`;
+            timelineHtml += `
+              <div class="break-indicator">
+                <span class="break-line"></span>
+                <span>${gapStr} break</span>
+                <span class="break-line"></span>
+              </div>
+            `;
+          }
+        }
+
+        const blockTime = formatBlockTimeWindow(run.blockTime);
         const fieldClass = getFieldClass(run.field);
 
-        // Check for tight turnaround with another dog handled by this handler in the same event
         let tightTurnaroundNotice = null;
         for (const other of allRuns) {
-          if (other !== run && other.game === run.game && other.field === run.field) {
-            const diff = Math.abs(run.order - other.order);
-            if (diff <= 6) {
-              tightTurnaroundNotice = `${diff} runs apart from ${other.dog}`;
-              break;
+          if (other !== run && other.day === run.day && other.blockTime === run.blockTime) {
+            if (other.field === run.field) {
+              const diff = Math.abs(run.ordinalInBlock - other.ordinalInBlock);
+              tightTurnaroundNotice = `Same block as ${other.dog} (${diff} spot${diff === 1 ? "" : "s"} apart)`;
+            } else {
+              tightTurnaroundNotice = `Concurrent: ${other.dog} on ${other.field}`;
             }
+            break;
           }
         }
 
         timelineHtml += `
           <div class="timeline-item ${tightTurnaroundNotice ? "has-conflict" : ""}">
-            <div class="timeline-order">
-              <span class="order-badge">#${run.order}</span>
-              <span class="order-total">of ${run.totalInField}</span>
+            <div class="timeline-time-col">
+              <div>
+                <span class="block-time">${blockTime.start.formatted}</span>
+                <span class="block-period">${blockTime.start.period}</span>
+              </div>
+              <div class="block-ordinal-badge">
+                #${run.ordinalInBlock} of ${run.totalInBlock}
+              </div>
             </div>
             <div class="timeline-spine">
               <span class="timeline-dot"></span>
@@ -1483,7 +1583,7 @@
               </div>
               <div class="run-card-bottom">
                 <span class="session-time">
-                  ${run.sessionWindow ? `🕒 ${escapeHtml(run.sessionWindow)}` : "Canonical Running Order"}
+                  🕒 ${blockTime.range} Block
                 </span>
                 ${tightTurnaroundNotice ? `
                   <span class="conflict-tag">
@@ -1642,8 +1742,7 @@
         .replace(/'/g, "&#039;");
     }
 
-    // Trigger initial multi-tab load
-    fetchAllEventTabs(false);
+    fetchAllEventData(false);
   </script>
 </body>
 </html>
