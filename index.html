@@ -945,7 +945,7 @@
   <script>
     const SHEET_ID = "11zydir3gG2eQOFpk_N9yVxEW6iRYmbRtJAdeS1R9feI";
     const GID_INDIVIDUAL_SCHEDULES = "1990171013";
-    const REFRESH_INTERVAL_MS = 60000;
+    const REFRESH_INTERVAL_MS = 300000; // 5 minutes relaxed background sync
 
     const EVENT_TABS = [
       { id: "farout", name: "Far Out", mapKey: "far out", gid: "0", day: "Thursday", dayOrder: 0 },
@@ -1301,19 +1301,24 @@
       }
     }
 
+    // Relaxed background check (every 5 minutes, only if screen is on and tab is visible)
     setInterval(() => {
-      fetchAllEventData(false);
-    }, REFRESH_INTERVAL_MS);
-
-    window.addEventListener("focus", () => {
-      if (!state.lastUpdated || (Date.now() - state.lastUpdated.getTime() > 20000)) {
-        fetchAllEventData(false);
-      }
-    });
-
-    document.addEventListener("visibilitychange", () => {
       if (document.visibilityState === "visible") {
         fetchAllEventData(false);
+      }
+    }, REFRESH_INTERVAL_MS);
+
+    // Refresh when unlocking phone or switching back to the tab, with a 90-second cooldown
+    function handleWakeOrFocus() {
+      if (!state.lastUpdated || (Date.now() - state.lastUpdated.getTime() > 90000)) {
+        fetchAllEventData(false);
+      }
+    }
+
+    window.addEventListener("focus", handleWakeOrFocus);
+    document.addEventListener("visibilitychange", () => {
+      if (document.visibilityState === "visible") {
+        handleWakeOrFocus();
       }
     });
 
