@@ -1,0 +1,16 @@
+[
+  {
+    "id": "northeast-classic",
+    "name": "Northeast Classic 2026",
+    "sheetId": "11zydir3gG2eQOFpk_N9yVxEW6iRYmbRtJAdeS1R9feI",
+    "adapterType": "NortheastClassic",
+    "days": ["Thursday", "Friday", "Saturday", "Sunday"]
+  },
+  {
+    "id": "fall-classic",
+    "name": "Fall Classic",
+    "sheetId": "1eDBrcZdUCiIg9hSWnGC0LP0Rds1bVTpNSnE2mjAInE8",
+    "adapterType": "FallClassic",
+    "days": ["Friday (9/20)", "Saturday (9/21)", "Sunday (9/22)"]
+  }
+]

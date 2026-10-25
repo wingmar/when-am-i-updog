@@ -2,74 +2,112 @@
 
 A modern, mobile-first web application for dog handlers to view and track their scheduled block times, block running orders, and fields for UpDog Challenge disc dog competitions.
 
-## Multi-Event Support & Adapter Architecture
+Built with **TypeScript**, **Vite**, and an **Adapter Architecture**, continuously verified and deployed via **GitHub Actions**.
 
-Different UpDog tournaments format their Google Sheets differently (e.g. some put time blocks in dedicated columns, others in divider rows; some run side-by-side fields, others run sequential fields). 
+---
 
-To ensure 100% stability without heuristic guessing, the app uses an **Adapter Architecture**:
+## Architecture Overview
 
-- **`NortheastClassicAdapter`**:
-  - Handles the 4-day Northeast Classic layout (`11zydir3gG2eQOFpk_N9yVxEW6iRYmbRtJAdeS1R9feI`).
-  - Supports side-by-side multi-field columns and subheader divider rows.
-- **`FallClassicAdapter`**:
-  - Handles the Fall Classic layout (`1eDBrcZdUCiIg9hSWnGC0LP0Rds1bVTpNSnE2mjAInE8`).
-  - Supports dedicated Time Block columns, clean event sheet names, and date-in-title detection.
+```
+                      ┌──────────────────────────────┐
+                      │        events.json           │
+                      │ (Event Registry & Config)    │
+                      └──────────────┬───────────────┘
+                                     │
+                      ┌──────────────▼───────────────┐
+                      │    Adapter Factory Router    │
+                      └──────────────┬───────────────┘
+                                     │
+             ┌───────────────────────┴───────────────────────┐
+             ▼                                               ▼
+┌─────────────────────────┐                     ┌─────────────────────────┐
+│ NortheastClassicAdapter │                     │   FallClassicAdapter    │
+│ (Subheader Divider Rows)│                     │ (Dedicated Time Blocks) │
+└────────────┬────────────┘                     └────────────┬────────────┘
+             │                                               │
+             └───────────────────────┬───────────────────────┘
+                                     │ NormalizedRun[]
+                                     ▼
+                      ┌──────────────────────────────┐
+                      │      Decoupled UI Layer      │
+                      │  (Search, Filters, Timeline) │
+                      └──────────────────────────────┘
+```
 
-Both adapters output the exact same **`NormalizedRun` contract**:
-```javascript
-{
-  handler: "Evan Beatty",
-  dog: "Lasso",
-  game: "Far Out",
-  field: "Field 2/3",
-  day: "Thursday",
-  blockTime: "8:00 AM",
-  ordinalInBlock: 1,
-  totalInBlock: 10,
-  division: "Mega",
-  utn: "T29543238"
+### The Clean `NormalizedRun` Contract
+
+All adapters strictly implement `IEventAdapter` and output identical `NormalizedRun` objects:
+
+```typescript
+export interface NormalizedRun {
+  handler: string;
+  dog: string;
+  game: string;
+  field: string;
+  day: string;
+  dayOrder: number;
+  blockTime: string;        // e.g. "8:00 AM"
+  blockMinutes: number;     // e.g. 480 (minutes from midnight)
+  ordinalInBlock: number;   // e.g. 1
+  totalInBlock: number;     // e.g. 10
 }
 ```
 
-### Switching Events
-- **In the UI:** Tap the event badge at the top (`📍 Northeast Classic 2026 ▾`) to switch to `Fall Classic` or another event.
-- **Via URL:** Deep-link directly to an event using `?event=fall-classic` or `?event=northeast-classic`:
-  - `https://wingmar.github.io/when-am-i-updog/?event=fall-classic#handler=Chandler%20Leiby`
+No administrative clutter (`UTN`, `Division`, `Jump Height`), no synthetic keys (`sortKey`), and no `undefined` optional fields. Sorting is handled cleanly using natural chronological properties (`dayOrder`, `blockMinutes`, `ordinalInBlock`).
 
 ---
 
-## Unit Testing
+## Adding a New Event
 
-The repository includes a comprehensive unit test suite with golden fixtures from real competitions:
+To add a new competition, simply add an entry to **`events.json`**:
 
-```bash
-# Run the adapter unit tests:
-python3 test_adapters.py
+```json
+{
+  "id": "fall-classic",
+  "name": "Fall Classic",
+  "sheetId": "1eDBrcZdUCiIg9hSWnGC0LP0Rds1bVTpNSnE2mjAInE8",
+  "adapterType": "FallClassic",
+  "days": ["Friday (9/20)", "Saturday (9/21)", "Sunday (9/22)"]
+}
 ```
-
-Tests verify:
-- Accurate extraction of handlers, dogs, and UTNs.
-- Correct block time parsing and AM/PM calculation.
-- Block ordinal accuracy (ensuring ordinals strictly adhere to `1 <= ordinalInBlock <= totalInBlock`).
-- Multi-field separation and non-runner text filtering.
 
 ---
 
-## Performance & Load Testing
-
-The repository includes a load testing suite to verify Google Sheets concurrency and rate limits:
+## Local Development & Testing
 
 ```bash
-# Run all 4 stepped concurrency tiers (1, 10, 25, 50 users):
-./test_load.py --all
+# Install dependencies:
+npm install
 
-# Run sustained traffic simulation:
-./test_load.py --sustained
+# Run local hot-reloading dev server:
+npm run dev
+
+# Run TypeScript typechecker:
+npm run typecheck
+
+# Run unit test suite:
+npm test
+
+# Build production bundle:
+npm run build
 ```
+
+---
+
+## CI/CD Pipeline (GitHub Actions)
+
+On every `git push origin main`, GitHub Actions automatically:
+1. Installs clean dependencies (`npm ci`).
+2. Runs static type checking (`tsc --noEmit`).
+3. Runs the unit test suite (`npm test`) against golden fixtures.
+4. Compiles and minifies the static production bundle with Vite.
+5. Deploys directly to GitHub Pages via `actions/deploy-pages@v4`.
+
+> **One-Time GitHub Setup:**
+> In your repository, go to **Settings ➔ Pages ➔ Build and deployment ➔ Source**, and select **"GitHub Actions"**.
 
 ---
 
 ## Live Deployment
 
-Hosted directly via GitHub Pages:
 👉 **[https://wingmar.github.io/when-am-i-updog/](https://wingmar.github.io/when-am-i-updog/)**
