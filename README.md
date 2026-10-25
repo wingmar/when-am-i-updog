@@ -1,6 +1,6 @@
-# Northeast Classic - Personal UpDog Schedule
+# When Am I UpDog?
 
-A modern, minimalist web application for dog handlers to view and track their personalized run orders and ring assignments for the Northeast Classic.
+A modern, minimalist web application for dog handlers to view and track their personalized run orders and ring assignments for UpDog Challenge disc dog competitions.
 
 ## Features
 
