@@ -7,24 +7,40 @@
   --text: #09090b;
   --text-muted: #52525b;
   --text-faint: #71717a;
-  --primary: #09090b;
-  --primary-fg: #f8fafc;
-  --accent: #2563eb;
 
-  --field1-bg: #eff6ff;
-  --field1-text: #1d4ed8;
-  --field1-border: #bfdbfe;
+  /* UpDog Brand Accents */
+  --updog-magenta: #f738a7;
+  --updog-magenta-deep: #db2777;
+  --updog-orange: #ff893a;
+  --updog-orange-deep: #ea580c;
+  --updog-cyan: #0284c7;
+  --updog-mint: #059669;
+  --updog-gradient: linear-gradient(135deg, #f738a7 0%, #ff893a 100%);
+  --updog-gradient-hover: linear-gradient(135deg, #e02894 0%, #e67528 100%);
 
-  --field2-bg: #f5f3ff;
-  --field2-text: #6d28d9;
-  --field2-border: #ddd6fe;
+  --primary: #181b22;
+  --primary-fg: #ffffff;
+  --accent: #db2777;
+  --accent-glow: rgba(247, 56, 167, 0.15);
 
+  /* Field 1: UpDog Sky Cyan */
+  --field1-bg: #f0f9ff;
+  --field1-text: #0284c7;
+  --field1-border: #bae6fd;
+
+  /* Field 2: UpDog Hot Magenta */
+  --field2-bg: #fdf2f8;
+  --field2-text: #db2777;
+  --field2-border: #fbcfe8;
+
+  /* Field 3: UpDog Mint Green */
   --field3-bg: #ecfdf5;
-  --field3-text: #047857;
+  --field3-text: #059669;
   --field3-border: #a7f3d0;
 
+  /* Field 2/3: UpDog Electric Orange */
   --field23-bg: #fff7ed;
-  --field23-text: #c2410c;
+  --field23-text: #ea580c;
   --field23-border: #fed7aa;
 
   --warning-bg: #fef2f2;
@@ -39,32 +55,38 @@
 }
 
 [data-theme="dark"] {
-  --bg: #09090b;
-  --surface: #121215;
-  --surface-subtle: #18181b;
-  --border: #27272a;
-  --border-subtle: #1e1e24;
+  --bg: #0c0e14;
+  --surface: #141721;
+  --surface-subtle: #1c202d;
+  --border: #262c3d;
+  --border-subtle: #1e2230;
   --text: #f4f4f5;
-  --text-muted: #a1a1aa;
-  --text-faint: #71717a;
+  --text-muted: #9ba1b5;
+  --text-faint: #6c738a;
+
   --primary: #f4f4f5;
-  --primary-fg: #09090b;
-  --accent: #3b82f6;
+  --primary-fg: #0c0e14;
+  --accent: #f472b6;
+  --accent-glow: rgba(244, 114, 182, 0.2);
 
-  --field1-bg: rgba(30, 58, 138, 0.35);
-  --field1-text: #bfdbfe;
-  --field1-border: rgba(96, 165, 250, 0.35);
+  /* Field 1: Cyan (High Contrast Dark Mode) */
+  --field1-bg: rgba(2, 132, 199, 0.25);
+  --field1-text: #7dd3fc;
+  --field1-border: rgba(56, 189, 248, 0.35);
 
-  --field2-bg: rgba(76, 29, 149, 0.35);
-  --field2-text: #ddd6fe;
-  --field2-border: rgba(167, 139, 250, 0.35);
+  /* Field 2: Magenta (High Contrast Dark Mode) */
+  --field2-bg: rgba(219, 39, 119, 0.25);
+  --field2-text: #f472b6;
+  --field2-border: rgba(244, 114, 182, 0.35);
 
-  --field3-bg: rgba(6, 78, 59, 0.35);
-  --field3-text: #a7f3d0;
+  /* Field 3: Mint Green (High Contrast Dark Mode) */
+  --field3-bg: rgba(5, 150, 105, 0.25);
+  --field3-text: #6ee7b7;
   --field3-border: rgba(52, 211, 153, 0.35);
 
-  --field23-bg: rgba(124, 45, 18, 0.35);
-  --field23-text: #fed7aa;
+  /* Field 2/3: Orange (High Contrast Dark Mode) */
+  --field23-bg: rgba(234, 88, 12, 0.25);
+  --field23-text: #fdba74;
   --field23-border: rgba(251, 146, 60, 0.35);
 
   --warning-bg: rgba(127, 29, 29, 0.4);
@@ -100,12 +122,12 @@ header {
   top: 0;
   z-index: 50;
   background: var(--surface);
-  border-bottom: 1px solid var(--border);
+  border-bottom: 1.5px solid var(--border);
   padding-top: calc(0.65rem + env(safe-area-inset-top));
   padding-bottom: 0.65rem;
   padding-left: max(1rem, env(safe-area-inset-left));
   padding-right: max(1rem, env(safe-area-inset-right));
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.03);
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.04);
 }
 
 .header-inner {
@@ -120,11 +142,11 @@ header {
 .brand {
   display: flex;
   align-items: center;
-  gap: 0.55rem;
+  gap: 0.6rem;
   text-decoration: none;
   color: var(--text);
   font-weight: 800;
-  font-size: 0.98rem;
+  font-size: 1rem;
   letter-spacing: -0.03em;
 }
 
@@ -132,18 +154,19 @@ header {
   width: 32px;
   height: 32px;
   border-radius: var(--radius-sm);
-  background: var(--primary);
-  color: var(--primary-fg);
+  background: var(--updog-gradient);
+  color: #ffffff;
   display: grid;
   place-items: center;
   font-size: 0.9rem;
   flex-shrink: 0;
+  box-shadow: 0 2px 6px rgba(247, 56, 167, 0.35);
 }
 
 .nav-actions {
   display: flex;
   align-items: center;
-  gap: 0.4rem;
+  gap: 0.45rem;
 }
 
 .badge {
@@ -276,6 +299,7 @@ header {
 
 .event-dropdown-item:active, .event-dropdown-item.active {
   background: var(--surface-subtle);
+  color: var(--updog-magenta);
 }
 
 /* Main Container */
@@ -297,7 +321,7 @@ main {
   width: 32px;
   height: 32px;
   border: 3px solid var(--border);
-  border-top-color: var(--primary);
+  border-top-color: var(--updog-magenta);
   border-radius: 50%;
   margin: 0 auto 1.25rem;
   animation: spin 0.7s linear infinite;
@@ -340,8 +364,8 @@ main {
 }
 
 .search-input:focus {
-  border-color: var(--accent);
-  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+  border-color: var(--updog-magenta);
+  box-shadow: 0 0 0 3px var(--accent-glow);
 }
 
 .search-clear {
@@ -369,7 +393,7 @@ main {
   left: 0;
   right: 0;
   background: var(--surface);
-  border: 1px solid var(--border);
+  border: 1.5px solid var(--border);
   border-radius: var(--radius);
   box-shadow: var(--shadow-md);
   z-index: 60;
@@ -637,6 +661,7 @@ main {
   white-space: nowrap;
 }
 
+/* UpDog Color-Coded Field Pills */
 .field-pill {
   font-family: "JetBrains Mono", monospace;
   font-size: 0.8rem;
@@ -809,7 +834,7 @@ main {
 
 .popular-chip:active {
   transform: scale(0.95);
-  border-color: var(--text-muted);
+  border-color: var(--updog-magenta);
 }
 
 .toast {
