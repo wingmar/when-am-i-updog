@@ -1,4 +1,4 @@
-import type { GVizTable, IEventAdapter, NormalizedRun } from "../types";
+import type { GVizTable, IEventAdapter, ScheduleItem } from "../types";
 import { fetchGvizJsonp, formatMinutesToTime, getCellText, parseTimeToMinutes } from "./base";
 
 interface FallTabMeta {
@@ -10,6 +10,7 @@ interface FallTabMeta {
 }
 
 export class FallClassicAdapter implements IEventAdapter {
+  private volunteerGid = "621553388"; // Individual Schedules tab contains volunteer assignments
   private tabs: FallTabMeta[] = [
     { name: "Far Out", sheetName: "Far Out", field: "Field 1", day: "Friday (9/20)", dayOrder: 0 },
     { name: "7Up", sheetName: "7Up", field: "Field 2", day: "Friday (9/20)", dayOrder: 0 },
@@ -30,11 +31,14 @@ export class FallClassicAdapter implements IEventAdapter {
   async fetchSchedule(
     sheetId: string,
     onProgress?: (done: number, total: number) => void
-  ): Promise<NormalizedRun[]> {
-    const queries = this.tabs.map((t, idx) => {
-      const enc = encodeURIComponent(t.sheetName);
-      return fetchGvizJsonp(sheetId, `sheet=${enc}&headers=0`, `fc_${idx}`);
-    });
+  ): Promise<ScheduleItem[]> {
+    const queries = [
+      fetchGvizJsonp(sheetId, `gid=${this.volunteerGid}&headers=0`, "volunteers"),
+      ...this.tabs.map((t, idx) => {
+        const enc = encodeURIComponent(t.sheetName);
+        return fetchGvizJsonp(sheetId, `sheet=${enc}&headers=0`, `fc_${idx}`);
+      })
+    ];
 
     let count = 0;
     queries.forEach((p) =>
@@ -45,11 +49,17 @@ export class FallClassicAdapter implements IEventAdapter {
     );
 
     const results = await Promise.all(queries);
-    return this.parseAll(results);
+    const volRes = results.find((r) => r.id === "volunteers");
+    const eventRes = results.filter((r) => r.id !== "volunteers" && r.table !== null);
+
+    const dogRuns = this.parseDogRuns(eventRes);
+    const volunteerShifts = this.parseVolunteerShifts(volRes ? volRes.table : null);
+
+    return [...dogRuns, ...volunteerShifts];
   }
 
-  parseAll(results: { id: string; table: GVizTable | null }[]): NormalizedRun[] {
-    const allRuns: NormalizedRun[] = [];
+  parseDogRuns(results: { id: string; table: GVizTable | null }[]): ScheduleItem[] {
+    const items: ScheduleItem[] = [];
 
     results.forEach((res, idx) => {
       if (!res.table) return;
@@ -86,7 +96,7 @@ export class FallClassicAdapter implements IEventAdapter {
         const handler = getCellText(cells[handlerCol]);
         const dog = getCellText(cells[dogCol]);
 
-        // Filter out divider / non-runner rows
+        // Filter out non-runner divider rows
         if (!handler || ["handler", "lunch", "none", ""].includes(handler.toLowerCase())) {
           if (col0Text && /\d{1,2}:\d{2}/.test(col0Text)) lastBlock = col0Text;
           continue;
@@ -111,22 +121,83 @@ export class FallClassicAdapter implements IEventAdapter {
         const mins = parseTimeToMinutes(bStr);
         const fmt = formatMinutesToTime(mins);
         bRuns.forEach((r, bIdx) => {
-          allRuns.push({
+          items.push({
+            id: `fc_${tabMeta.name}_${bStr}_${bIdx + 1}_${r.handler}_${r.dog}`,
             handler: r.handler,
-            dog: r.dog,
             game: tabMeta.name,
             field: tabMeta.field,
             day,
             dayOrder: tabMeta.dayOrder,
             blockTime: fmt.raw,
             blockMinutes: mins,
-            ordinalInBlock: bIdx + 1,
-            totalInBlock: bRuns.length
+            activity: {
+              kind: "run",
+              run: {
+                dog: r.dog,
+                ordinalInBlock: bIdx + 1,
+                totalInBlock: bRuns.length
+              }
+            }
           });
         });
       });
     });
 
-    return allRuns;
+    return items;
+  }
+
+  parseVolunteerShifts(volTable: GVizTable | null): ScheduleItem[] {
+    const items: ScheduleItem[] = [];
+    if (!volTable || !volTable.rows) return items;
+
+    const volKeywords = ["judge", "timer", "scribe", "steward", "volunteer", "score", "gate", "field set"];
+
+    for (const r of volTable.rows) {
+      const cells = r.c || [];
+      if (cells.length < 4) continue;
+      const handler = getCellText(cells[0]);
+      const role = getCellText(cells[1]);
+      const timeStr = getCellText(cells[2]);
+      const gameDay = getCellText(cells[3]);
+
+      if (!handler || !role || !timeStr || !gameDay) continue;
+
+      const isVol = volKeywords.some((k) => role.toLowerCase().includes(k));
+      if (!isVol) continue;
+
+      let day = "Friday (9/20)";
+      let dayOrder = 0;
+      if (gameDay.toLowerCase().includes("sat")) {
+        day = "Saturday (9/21)";
+        dayOrder = 1;
+      } else if (gameDay.toLowerCase().includes("sun")) {
+        day = "Sunday (9/22)";
+        dayOrder = 2;
+      }
+
+      const game = gameDay.replace(/\s*-\s*(fri|sat|sun)\b/i, "").trim();
+      const mins = parseTimeToMinutes(timeStr);
+      const fmt = formatMinutesToTime(mins);
+
+      items.push({
+        id: `vol_${handler}_${role}_${dayOrder}_${mins}_${game}`,
+        handler,
+        game,
+        field: "Field 1",
+        day,
+        dayOrder,
+        blockTime: fmt.raw,
+        blockMinutes: mins,
+        activity: {
+          kind: "volunteer",
+          shift: {
+            role,
+            timeWindow: timeStr
+          }
+        }
+      });
+    }
+
+    return items;
   }
 }

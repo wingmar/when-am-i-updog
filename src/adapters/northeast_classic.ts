@@ -1,4 +1,4 @@
-import type { GVizTable, IEventAdapter, NormalizedRun } from "../types";
+import type { GVizTable, IEventAdapter, ScheduleItem } from "../types";
 import { fetchGvizJsonp, formatMinutesToTime, getCellText, parseTimeToMinutes } from "./base";
 
 interface TabMeta {
@@ -31,7 +31,7 @@ export class NortheastClassicAdapter implements IEventAdapter {
   async fetchSchedule(
     sheetId: string,
     onProgress?: (done: number, total: number) => void
-  ): Promise<NormalizedRun[]> {
+  ): Promise<ScheduleItem[]> {
     const queries = [
       fetchGvizJsonp(sheetId, `gid=${this.masterGid}`, "master_grid"),
       ...this.tabs.map((t) => fetchGvizJsonp(sheetId, `gid=${t.gid}`, t.id))
@@ -55,7 +55,7 @@ export class NortheastClassicAdapter implements IEventAdapter {
   parseAll(
     masterTable: GVizTable | null,
     eventResults: { id: string; table: GVizTable | null }[]
-  ): NormalizedRun[] {
+  ): ScheduleItem[] {
     const timeMap = new Map<string, string>();
     if (masterTable && masterTable.rows) {
       const mHeader = (masterTable.rows[0].c || []).map((c) => getCellText(c).toLowerCase());
@@ -80,7 +80,7 @@ export class NortheastClassicAdapter implements IEventAdapter {
       }
     }
 
-    const allRuns: NormalizedRun[] = [];
+    const items: ScheduleItem[] = [];
 
     for (const evRes of eventResults) {
       if (!evRes.table) continue;
@@ -123,7 +123,6 @@ export class NortheastClassicAdapter implements IEventAdapter {
           fieldRuns.push({ handler, dog, time: assignedTime });
         }
 
-        // Fill down missing times from adjacent runs in the block
         let lastTime = "8:00";
         for (const fr of fieldRuns) {
           if (fr.time) lastTime = fr.time;
@@ -141,23 +140,29 @@ export class NortheastClassicAdapter implements IEventAdapter {
           const mins = parseTimeToMinutes(bTime);
           const fmt = formatMinutesToTime(mins);
           bRuns.forEach((fr, idx) => {
-            allRuns.push({
+            items.push({
+              id: `${tab.id}_${fieldName}_${bTime}_${idx + 1}_${fr.handler}_${fr.dog}`,
               handler: fr.handler,
-              dog: fr.dog,
               game: tab.name,
+              field: fieldName,
               day: tab.day,
               dayOrder: tab.dayOrder,
-              field: fieldName,
               blockTime: fmt.raw,
               blockMinutes: mins,
-              ordinalInBlock: idx + 1,
-              totalInBlock: bRuns.length
+              activity: {
+                kind: "run",
+                run: {
+                  dog: fr.dog,
+                  ordinalInBlock: idx + 1,
+                  totalInBlock: bRuns.length
+                }
+              }
             });
           });
         });
       }
     }
 
-    return allRuns;
+    return items;
   }
 }

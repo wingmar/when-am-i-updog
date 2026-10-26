@@ -1,0 +1,12347 @@
+{
+  "cols": [
+    {
+      "id": "A",
+      "label": "",
+      "type": "string"
+    },
+    {
+      "id": "B",
+      "label": "",
+      "type": "string"
+    },
+    {
+      "id": "C",
+      "label": "",
+      "type": "string"
+    },
+    {
+      "id": "D",
+      "label": "",
+      "type": "string"
+    }
+  ],
+  "rows": [
+    {
+      "c": [
+        {
+          "v": "Abby House"
+        },
+        {
+          "v": "Xena"
+        },
+        {
+          "v": "A - 8:00-8:30"
+        },
+        {
+          "v": "7Up - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Abby House"
+        },
+        {
+          "v": "Xena"
+        },
+        {
+          "v": "G - 11:00-11:30"
+        },
+        {
+          "v": "Far Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Abby House"
+        },
+        {
+          "v": "Xena"
+        },
+        {
+          "v": "I - 1:00-1:30"
+        },
+        {
+          "v": "Spaced Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Abby House"
+        },
+        {
+          "v": "Zest"
+        },
+        {
+          "v": "J - 1:30-2:00"
+        },
+        {
+          "v": "Spaced Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Abby House"
+        },
+        {
+          "v": "Xena"
+        },
+        {
+          "v": "K - 2:00-2:30"
+        },
+        {
+          "v": "TimeWarp - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Abby House"
+        },
+        {
+          "v": "Line Judge"
+        },
+        {
+          "v": "2:30-3:30"
+        },
+        {
+          "v": "Spaced Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Abby House"
+        },
+        {
+          "v": "Line Judge"
+        },
+        {
+          "v": "9:00-10:00"
+        },
+        {
+          "v": "Four Way Play - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Abby House"
+        },
+        {
+          "v": "Xena"
+        },
+        {
+          "v": "J - 1:30-2:00"
+        },
+        {
+          "v": "Four Way Play - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Abby House"
+        },
+        {
+          "v": "Zest"
+        },
+        {
+          "v": "L - 2:30-3:00"
+        },
+        {
+          "v": "Four Way Play - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Abby House"
+        },
+        {
+          "v": "Xena"
+        },
+        {
+          "v": "M - 3:00-3:30"
+        },
+        {
+          "v": "Greedy - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Allie Fryer"
+        },
+        {
+          "v": "Paxton"
+        },
+        {
+          "v": "B - 8:30-9:00"
+        },
+        {
+          "v": "Freestyle - C - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Allie Fryer"
+        },
+        {
+          "v": "Paxton"
+        },
+        {
+          "v": "D - 9:30-10:00"
+        },
+        {
+          "v": "FunKey - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Allie Fryer"
+        },
+        {
+          "v": "Paxton"
+        },
+        {
+          "v": "N - 3:30-4:00"
+        },
+        {
+          "v": "Throw N Go - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Allie Fryer"
+        },
+        {
+          "v": "Paxton"
+        },
+        {
+          "v": "TBD"
+        },
+        {
+          "v": "Freestyle - P - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Allie Fryer"
+        },
+        {
+          "v": "Paxton"
+        },
+        {
+          "v": "E - 10:00-10:30"
+        },
+        {
+          "v": "Frizgility - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Allie Fryer"
+        },
+        {
+          "v": "Paxton"
+        },
+        {
+          "v": "J - 1:30-2:00"
+        },
+        {
+          "v": "Greedy - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Ava McDonald"
+        },
+        {
+          "v": "Haze"
+        },
+        {
+          "v": "L - 2:30-3:00"
+        },
+        {
+          "v": "Throw N Go - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Ava McDonald"
+        },
+        {
+          "v": "Haze"
+        },
+        {
+          "v": "M - 3:00-3:30"
+        },
+        {
+          "v": "Boom! - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Ava McDonald"
+        },
+        {
+          "v": "Haze"
+        },
+        {
+          "v": "L - 2:30-3:00"
+        },
+        {
+          "v": "Four Way Play - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Becky Cole"
+        },
+        {
+          "v": "Rico"
+        },
+        {
+          "v": "N - 3:30-4:00"
+        },
+        {
+          "v": "Throw N Go - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Becky Cole"
+        },
+        {
+          "v": "Rico"
+        },
+        {
+          "v": "E - 10:00-10:30"
+        },
+        {
+          "v": "Frizgility - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Becky Cole"
+        },
+        {
+          "v": "Rico"
+        },
+        {
+          "v": "J - 1:30-2:00"
+        },
+        {
+          "v": "Four Way Play - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Becky Knox"
+        },
+        {
+          "v": "Ruckus"
+        },
+        {
+          "v": "C - 9:00-9:30"
+        },
+        {
+          "v": "Far Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Becky Knox"
+        },
+        {
+          "v": "Ruckus"
+        },
+        {
+          "v": "F - 10:30-11:00"
+        },
+        {
+          "v": "TimeWarp - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Becky Knox"
+        },
+        {
+          "v": "Wizard"
+        },
+        {
+          "v": "G - 11:00-11:30"
+        },
+        {
+          "v": "Far Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Becky Knox"
+        },
+        {
+          "v": "Wizard"
+        },
+        {
+          "v": "H - 12:30-1:00"
+        },
+        {
+          "v": "Spaced Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Becky Knox"
+        },
+        {
+          "v": "Ruckus"
+        },
+        {
+          "v": "J - 1:30-2:00"
+        },
+        {
+          "v": "Spaced Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Becky Knox"
+        },
+        {
+          "v": "Wizard"
+        },
+        {
+          "v": "L - 2:30-3:00"
+        },
+        {
+          "v": "TimeWarp - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Bethany Vallangeon"
+        },
+        {
+          "v": "Kylo"
+        },
+        {
+          "v": "A - 8:00-8:30"
+        },
+        {
+          "v": "7Up - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Bethany Vallangeon"
+        },
+        {
+          "v": "Kylo"
+        },
+        {
+          "v": "C - 9:00-9:30"
+        },
+        {
+          "v": "Far Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Bethany Vallangeon"
+        },
+        {
+          "v": "Tuna"
+        },
+        {
+          "v": "D - 9:30-10:00"
+        },
+        {
+          "v": "Far Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Bethany Vallangeon"
+        },
+        {
+          "v": "Kylo"
+        },
+        {
+          "v": "J - 1:30-2:00"
+        },
+        {
+          "v": "TimeWarp - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Bethany Vallangeon"
+        },
+        {
+          "v": "Tuna"
+        },
+        {
+          "v": "K - 2:00-2:30"
+        },
+        {
+          "v": "Spaced Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Bethany Vallangeon"
+        },
+        {
+          "v": "Kylo"
+        },
+        {
+          "v": "L - 2:30-3:00"
+        },
+        {
+          "v": "Spaced Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Bethany Vallangeon"
+        },
+        {
+          "v": "Tuna"
+        },
+        {
+          "v": "A - 8:00-8:30"
+        },
+        {
+          "v": "FunKey - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Bethany Vallangeon"
+        },
+        {
+          "v": "Kylo"
+        },
+        {
+          "v": "C - 9:00-9:30"
+        },
+        {
+          "v": "Freestyle - C - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Bethany Vallangeon"
+        },
+        {
+          "v": "Kylo"
+        },
+        {
+          "v": "E - 10:00-10:30"
+        },
+        {
+          "v": "FunKey - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Bethany Vallangeon"
+        },
+        {
+          "v": "Kylo"
+        },
+        {
+          "v": "H - 12:30-1:00"
+        },
+        {
+          "v": "Boom! - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Bethany Vallangeon"
+        },
+        {
+          "v": "Tuna"
+        },
+        {
+          "v": "J - 1:30-2:00"
+        },
+        {
+          "v": "Throw N Go - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Bethany Vallangeon"
+        },
+        {
+          "v": "Kylo"
+        },
+        {
+          "v": "L - 2:30-3:00"
+        },
+        {
+          "v": "Throw N Go - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Bethany Vallangeon"
+        },
+        {
+          "v": "Foot Fault Judge"
+        },
+        {
+          "v": "3:00-4:00"
+        },
+        {
+          "v": "Throw N Go - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Bethany Vallangeon"
+        },
+        {
+          "v": "Kylo"
+        },
+        {
+          "v": "TBD"
+        },
+        {
+          "v": "Freestyle - P - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Bethany Vallangeon"
+        },
+        {
+          "v": "Kylo"
+        },
+        {
+          "v": "A - 8:00-8:30"
+        },
+        {
+          "v": "Frizgility - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Bethany Vallangeon"
+        },
+        {
+          "v": "Line Judge"
+        },
+        {
+          "v": "12:30-1:30"
+        },
+        {
+          "v": "Four Way Play - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Bethany Vallangeon"
+        },
+        {
+          "v": "Kylo"
+        },
+        {
+          "v": "J - 1:30-2:00"
+        },
+        {
+          "v": "Greedy - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Bethany Vallangeon"
+        },
+        {
+          "v": "Tuna"
+        },
+        {
+          "v": "K - 2:00-2:30"
+        },
+        {
+          "v": "Greedy - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Bethany Vallangeon"
+        },
+        {
+          "v": "Kylo"
+        },
+        {
+          "v": "M - 3:00-3:30"
+        },
+        {
+          "v": "Four Way Play - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Bethany Vallangeon"
+        },
+        {
+          "v": "Tuna"
+        },
+        {
+          "v": "N - 3:30-4:00"
+        },
+        {
+          "v": "Four Way Play - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Birgit Locklear"
+        },
+        {
+          "v": "Luna Skye"
+        },
+        {
+          "v": "A - 8:00-8:30"
+        },
+        {
+          "v": "Freestyle - C - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Birgit Locklear"
+        },
+        {
+          "v": "Luna Skye"
+        },
+        {
+          "v": "C - 9:00-9:30"
+        },
+        {
+          "v": "FunKey - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Birgit Locklear"
+        },
+        {
+          "v": "Pyro"
+        },
+        {
+          "v": "D - 9:30-10:00"
+        },
+        {
+          "v": "Freestyle - C - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Birgit Locklear"
+        },
+        {
+          "v": "Pyro"
+        },
+        {
+          "v": "E - 10:00-10:30"
+        },
+        {
+          "v": "FunKey - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Birgit Locklear"
+        },
+        {
+          "v": "Pyro"
+        },
+        {
+          "v": "H - 12:30-1:00"
+        },
+        {
+          "v": "Boom! - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Birgit Locklear"
+        },
+        {
+          "v": "Luna Skye"
+        },
+        {
+          "v": "J - 1:30-2:00"
+        },
+        {
+          "v": "Throw N Go - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Birgit Locklear"
+        },
+        {
+          "v": "Pyro"
+        },
+        {
+          "v": "K - 2:00-2:30"
+        },
+        {
+          "v": "Throw N Go - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Birgit Locklear"
+        },
+        {
+          "v": "Luna Skye"
+        },
+        {
+          "v": "L - 2:30-3:00"
+        },
+        {
+          "v": "Boom! - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Birgit Locklear"
+        },
+        {
+          "v": "Ahi"
+        },
+        {
+          "v": "M - 3:00-3:30"
+        },
+        {
+          "v": "Throw N Go - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Birgit Locklear"
+        },
+        {
+          "v": "Pyro"
+        },
+        {
+          "v": "TBD"
+        },
+        {
+          "v": "Freestyle - P - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Birgit Locklear"
+        },
+        {
+          "v": "Luna Skye"
+        },
+        {
+          "v": "TBD"
+        },
+        {
+          "v": "Freestyle - P - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Birgit Locklear"
+        },
+        {
+          "v": "Luna Skye"
+        },
+        {
+          "v": "A - 8:00-8:30"
+        },
+        {
+          "v": "Frizgility - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Birgit Locklear"
+        },
+        {
+          "v": "Pyro"
+        },
+        {
+          "v": "C - 9:00-9:30"
+        },
+        {
+          "v": "Frizgility - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Birgit Locklear"
+        },
+        {
+          "v": "Ahi"
+        },
+        {
+          "v": "X - 12:15-1:00"
+        },
+        {
+          "v": "Four Way Play - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Birgit Locklear"
+        },
+        {
+          "v": "Luna Skye"
+        },
+        {
+          "v": "I - 1:00-1:30"
+        },
+        {
+          "v": "Four Way Play - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Birgit Locklear"
+        },
+        {
+          "v": "Pyro"
+        },
+        {
+          "v": "J - 1:30-2:00"
+        },
+        {
+          "v": "Greedy - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Birgit Locklear"
+        },
+        {
+          "v": "Luna Skye"
+        },
+        {
+          "v": "K - 2:00-2:30"
+        },
+        {
+          "v": "Greedy - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Birgit Locklear"
+        },
+        {
+          "v": "Ahi"
+        },
+        {
+          "v": "M - 3:00-3:30"
+        },
+        {
+          "v": "Four Way Play - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Birgit Locklear"
+        },
+        {
+          "v": "Pyro"
+        },
+        {
+          "v": "N - 3:30-4:00"
+        },
+        {
+          "v": "Four Way Play - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Brady Brooks"
+        },
+        {
+          "v": "Arlo"
+        },
+        {
+          "v": "X - 12:15-1:00"
+        },
+        {
+          "v": "Four Way Play - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Brady Brooks"
+        },
+        {
+          "v": "Bonsai"
+        },
+        {
+          "v": "I - 1:00-1:30"
+        },
+        {
+          "v": "Four Way Play - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Brady Brooks"
+        },
+        {
+          "v": "Ducky"
+        },
+        {
+          "v": "I - 1:00-1:30"
+        },
+        {
+          "v": "Four Way Play - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Brady Brooks"
+        },
+        {
+          "v": "Bonsai"
+        },
+        {
+          "v": "L - 2:30-3:00"
+        },
+        {
+          "v": "Greedy - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Brady Brooks"
+        },
+        {
+          "v": "Ducky"
+        },
+        {
+          "v": "M - 3:00-3:30"
+        },
+        {
+          "v": "Greedy - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Brady Brooks"
+        },
+        {
+          "v": "Arlo"
+        },
+        {
+          "v": "N - 3:30-4:00"
+        },
+        {
+          "v": "Greedy - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Bre Famoso"
+        },
+        {
+          "v": "Sto Lat"
+        },
+        {
+          "v": "A - 8:00-8:30"
+        },
+        {
+          "v": "7Up - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Bre Famoso"
+        },
+        {
+          "v": "Finn-Again"
+        },
+        {
+          "v": "B - 8:30-9:00"
+        },
+        {
+          "v": "Far Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Bre Famoso"
+        },
+        {
+          "v": "Sto Lat"
+        },
+        {
+          "v": "C - 9:00-9:30"
+        },
+        {
+          "v": "Far Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Bre Famoso"
+        },
+        {
+          "v": "Finn-Again"
+        },
+        {
+          "v": "D - 9:30-10:00"
+        },
+        {
+          "v": "7Up - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Bre Famoso"
+        },
+        {
+          "v": "Timer"
+        },
+        {
+          "v": "10:00-10:30"
+        },
+        {
+          "v": "7Up - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Bre Famoso"
+        },
+        {
+          "v": "Dani"
+        },
+        {
+          "v": "F - 10:30-11:00"
+        },
+        {
+          "v": "Far Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Bre Famoso"
+        },
+        {
+          "v": "Finn-Again"
+        },
+        {
+          "v": "H - 12:30-1:00"
+        },
+        {
+          "v": "TimeWarp - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Bre Famoso"
+        },
+        {
+          "v": "Sto Lat"
+        },
+        {
+          "v": "I - 1:00-1:30"
+        },
+        {
+          "v": "TimeWarp - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Bre Famoso"
+        },
+        {
+          "v": "Finn-Again"
+        },
+        {
+          "v": "K - 2:00-2:30"
+        },
+        {
+          "v": "Spaced Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Bre Famoso"
+        },
+        {
+          "v": "Sto Lat"
+        },
+        {
+          "v": "L - 2:30-3:00"
+        },
+        {
+          "v": "Spaced Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Bre Famoso"
+        },
+        {
+          "v": "Sto Lat"
+        },
+        {
+          "v": "A - 8:00-8:30"
+        },
+        {
+          "v": "Freestyle - C - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Bre Famoso"
+        },
+        {
+          "v": "Head Judge"
+        },
+        {
+          "v": "8:30-9:00"
+        },
+        {
+          "v": "FunKey - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Bre Famoso"
+        },
+        {
+          "v": "Finn-Again"
+        },
+        {
+          "v": "C - 9:00-9:30"
+        },
+        {
+          "v": "FunKey - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Bre Famoso"
+        },
+        {
+          "v": "Sto Lat"
+        },
+        {
+          "v": "E - 10:00-10:30"
+        },
+        {
+          "v": "FunKey - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Bre Famoso"
+        },
+        {
+          "v": "Sto Lat"
+        },
+        {
+          "v": "H - 12:30-1:00"
+        },
+        {
+          "v": "Boom! - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Bre Famoso"
+        },
+        {
+          "v": "Finn-Again"
+        },
+        {
+          "v": "J - 1:30-2:00"
+        },
+        {
+          "v": "Throw N Go - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Bre Famoso"
+        },
+        {
+          "v": "Sto Lat"
+        },
+        {
+          "v": "K - 2:00-2:30"
+        },
+        {
+          "v": "Throw N Go - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Bre Famoso"
+        },
+        {
+          "v": "Head Judge"
+        },
+        {
+          "v": "2:30-3:00"
+        },
+        {
+          "v": "Throw N Go - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Bre Famoso"
+        },
+        {
+          "v": "Finn-Again"
+        },
+        {
+          "v": "M - 3:00-3:30"
+        },
+        {
+          "v": "Boom! - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Bre Famoso"
+        },
+        {
+          "v": "Sto Lat"
+        },
+        {
+          "v": "TBD"
+        },
+        {
+          "v": "Freestyle - P - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Bre Famoso"
+        },
+        {
+          "v": "Finn-Again"
+        },
+        {
+          "v": "F - 10:30-11:00"
+        },
+        {
+          "v": "Frizgility - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Bre Famoso"
+        },
+        {
+          "v": "Sto Lat"
+        },
+        {
+          "v": "F - 10:30-11:00"
+        },
+        {
+          "v": "Frizgility - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Bre Famoso"
+        },
+        {
+          "v": "Sto Lat"
+        },
+        {
+          "v": "X - 12:15-1:00"
+        },
+        {
+          "v": "Four Way Play - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Bre Famoso"
+        },
+        {
+          "v": "Finn-Again"
+        },
+        {
+          "v": "I - 1:00-1:30"
+        },
+        {
+          "v": "Greedy - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Bre Famoso"
+        },
+        {
+          "v": "Head Judge"
+        },
+        {
+          "v": "1:30-2:00"
+        },
+        {
+          "v": "Greedy - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Bre Famoso"
+        },
+        {
+          "v": "Finn-Again"
+        },
+        {
+          "v": "K - 2:00-2:30"
+        },
+        {
+          "v": "Four Way Play - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Bre Famoso"
+        },
+        {
+          "v": "Sto Lat"
+        },
+        {
+          "v": "L - 2:30-3:00"
+        },
+        {
+          "v": "Greedy - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Brian Walsh"
+        },
+        {
+          "v": "Lyra"
+        },
+        {
+          "v": "A - 8:00-8:30"
+        },
+        {
+          "v": "Far Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Brian Walsh"
+        },
+        {
+          "v": "Line Judge"
+        },
+        {
+          "v": "9:00-10:00"
+        },
+        {
+          "v": "Far Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Brian Walsh"
+        },
+        {
+          "v": "Lyra"
+        },
+        {
+          "v": "H - 12:30-1:00"
+        },
+        {
+          "v": "TimeWarp - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Brian Walsh"
+        },
+        {
+          "v": "Fletcher"
+        },
+        {
+          "v": "I - 1:00-1:30"
+        },
+        {
+          "v": "TimeWarp - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Brian Walsh"
+        },
+        {
+          "v": "Timer"
+        },
+        {
+          "v": "2:00-2:30"
+        },
+        {
+          "v": "TimeWarp - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Brian Walsh"
+        },
+        {
+          "v": "Lyra"
+        },
+        {
+          "v": "L - 2:30-3:00"
+        },
+        {
+          "v": "Spaced Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Brian Walsh"
+        },
+        {
+          "v": "Paxton"
+        },
+        {
+          "v": "L - 2:30-3:00"
+        },
+        {
+          "v": "Spaced Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Brian Walsh"
+        },
+        {
+          "v": "Fletcher"
+        },
+        {
+          "v": "M - 3:00-3:30"
+        },
+        {
+          "v": "Spaced Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Brian Walsh"
+        },
+        {
+          "v": "FS Success Judge"
+        },
+        {
+          "v": "8:00-10:30"
+        },
+        {
+          "v": "Freestyle - C - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Brian Walsh"
+        },
+        {
+          "v": "Fletcher"
+        },
+        {
+          "v": "H - 12:30-1:00"
+        },
+        {
+          "v": "Boom! - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Brian Walsh"
+        },
+        {
+          "v": "Paxton"
+        },
+        {
+          "v": "H - 12:30-1:00"
+        },
+        {
+          "v": "Boom! - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Brian Walsh"
+        },
+        {
+          "v": "Foot Fault Judge"
+        },
+        {
+          "v": "1:00-1:30"
+        },
+        {
+          "v": "Throw N Go - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Brian Walsh"
+        },
+        {
+          "v": "Lyra"
+        },
+        {
+          "v": "K - 2:00-2:30"
+        },
+        {
+          "v": "Boom! - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Brian Walsh"
+        },
+        {
+          "v": "Paxton"
+        },
+        {
+          "v": "M - 3:00-3:30"
+        },
+        {
+          "v": "Throw N Go - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Brian Walsh"
+        },
+        {
+          "v": "Paxton"
+        },
+        {
+          "v": "Z - 7:45-8:00"
+        },
+        {
+          "v": "Frizgility - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Brian Walsh"
+        },
+        {
+          "v": "FS Guest Judge"
+        },
+        {
+          "v": "8:00-10:30"
+        },
+        {
+          "v": "Freestyle - P - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Brian Walsh"
+        },
+        {
+          "v": "Lyra"
+        },
+        {
+          "v": "G - 11:00-11:30"
+        },
+        {
+          "v": "Frizgility - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Brian Walsh"
+        },
+        {
+          "v": "Line Judge"
+        },
+        {
+          "v": "12:30-1:30"
+        },
+        {
+          "v": "Greedy - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Brian Walsh"
+        },
+        {
+          "v": "Lyra"
+        },
+        {
+          "v": "K - 2:00-2:30"
+        },
+        {
+          "v": "Greedy - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Brian Walsh"
+        },
+        {
+          "v": "Line Judge"
+        },
+        {
+          "v": "2:30-3:30"
+        },
+        {
+          "v": "Four Way Play - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Brian Walsh"
+        },
+        {
+          "v": "Lyra"
+        },
+        {
+          "v": "N - 3:30-4:00"
+        },
+        {
+          "v": "Four Way Play - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Brian Walsh"
+        },
+        {
+          "v": "Fletcher"
+        },
+        {
+          "v": "O - 4:00-4:30"
+        },
+        {
+          "v": "Four Way Play - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Brynn Vaettir"
+        },
+        {
+          "v": "Soelis"
+        },
+        {
+          "v": "E - 10:00-10:30"
+        },
+        {
+          "v": "FunKey - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Brynn Vaettir"
+        },
+        {
+          "v": "Snaer"
+        },
+        {
+          "v": "H - 12:30-1:00"
+        },
+        {
+          "v": "Throw N Go - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Brynn Vaettir"
+        },
+        {
+          "v": "Soelis"
+        },
+        {
+          "v": "J - 1:30-2:00"
+        },
+        {
+          "v": "Boom! - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Brynn Vaettir"
+        },
+        {
+          "v": "Snaer"
+        },
+        {
+          "v": "L - 2:30-3:00"
+        },
+        {
+          "v": "Boom! - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Brynn Vaettir"
+        },
+        {
+          "v": "Snaer"
+        },
+        {
+          "v": "H - 12:30-1:00"
+        },
+        {
+          "v": "Throw N Go - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Brynn Vaettir"
+        },
+        {
+          "v": "Soelis"
+        },
+        {
+          "v": "N - 3:30-4:00"
+        },
+        {
+          "v": "Throw N Go - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Brynn Vaettir"
+        },
+        {
+          "v": "Soelis"
+        },
+        {
+          "v": "E - 10:00-10:30"
+        },
+        {
+          "v": "Frizgility - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Brynn Vaettir"
+        },
+        {
+          "v": "Soelis"
+        },
+        {
+          "v": "M - 3:00-3:30"
+        },
+        {
+          "v": "Four Way Play - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Brynn Vaettir"
+        },
+        {
+          "v": "Snaer"
+        },
+        {
+          "v": "N - 3:30-4:00"
+        },
+        {
+          "v": "Greedy - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Brynn Vaettir"
+        },
+        {
+          "v": "Soelis"
+        },
+        {
+          "v": "N - 3:30-4:00"
+        },
+        {
+          "v": "Greedy - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Brynn Vaettir"
+        },
+        {
+          "v": "Snaer"
+        },
+        {
+          "v": "O - 4:00-4:30"
+        },
+        {
+          "v": "Four Way Play - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Casey Rhoten"
+        },
+        {
+          "v": "Chloe"
+        },
+        {
+          "v": "C - 9:00-9:30"
+        },
+        {
+          "v": "7Up - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Casey Rhoten"
+        },
+        {
+          "v": "Chloe"
+        },
+        {
+          "v": "E - 10:00-10:30"
+        },
+        {
+          "v": "Far Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Casey Rhoten"
+        },
+        {
+          "v": "Chloe"
+        },
+        {
+          "v": "J - 1:30-2:00"
+        },
+        {
+          "v": "Spaced Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Casey Rhoten"
+        },
+        {
+          "v": "Chloe"
+        },
+        {
+          "v": "L - 2:30-3:00"
+        },
+        {
+          "v": "TimeWarp - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Casey Rhoten"
+        },
+        {
+          "v": "Chloe"
+        },
+        {
+          "v": "D - 9:30-10:00"
+        },
+        {
+          "v": "FunKey - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Casey Rhoten"
+        },
+        {
+          "v": "Chloe"
+        },
+        {
+          "v": "K - 2:00-2:30"
+        },
+        {
+          "v": "Boom! - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Casey Rhoten"
+        },
+        {
+          "v": "Chloe"
+        },
+        {
+          "v": "M - 3:00-3:30"
+        },
+        {
+          "v": "Throw N Go - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Casey Rhoten"
+        },
+        {
+          "v": "Chloe"
+        },
+        {
+          "v": "D - 9:30-10:00"
+        },
+        {
+          "v": "Frizgility - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Casey Rhoten"
+        },
+        {
+          "v": "Chloe"
+        },
+        {
+          "v": "I - 1:00-1:30"
+        },
+        {
+          "v": "Four Way Play - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Casey Rhoten"
+        },
+        {
+          "v": "Chloe"
+        },
+        {
+          "v": "M - 3:00-3:30"
+        },
+        {
+          "v": "Greedy - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Chandler Leiby"
+        },
+        {
+          "v": "Maple"
+        },
+        {
+          "v": "A - 8:00-8:30"
+        },
+        {
+          "v": "Far Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Chandler Leiby"
+        },
+        {
+          "v": "Rivet"
+        },
+        {
+          "v": "A - 8:00-8:30"
+        },
+        {
+          "v": "Far Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Chandler Leiby"
+        },
+        {
+          "v": "Mingo"
+        },
+        {
+          "v": "A - 8:00-8:30"
+        },
+        {
+          "v": "Far Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Chandler Leiby"
+        },
+        {
+          "v": "Line Judge"
+        },
+        {
+          "v": "9:00-10:00"
+        },
+        {
+          "v": "Far Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Chandler Leiby"
+        },
+        {
+          "v": "Asher"
+        },
+        {
+          "v": "E - 10:00-10:30"
+        },
+        {
+          "v": "Far Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Chandler Leiby"
+        },
+        {
+          "v": "Journey"
+        },
+        {
+          "v": "G - 11:00-11:30"
+        },
+        {
+          "v": "Far Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Chandler Leiby"
+        },
+        {
+          "v": "Asher"
+        },
+        {
+          "v": "H - 12:30-1:00"
+        },
+        {
+          "v": "TimeWarp - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Chandler Leiby"
+        },
+        {
+          "v": "Line Judge"
+        },
+        {
+          "v": "1:30-2:30"
+        },
+        {
+          "v": "Spaced Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Chandler Leiby"
+        },
+        {
+          "v": "Journey"
+        },
+        {
+          "v": "M - 3:00-3:30"
+        },
+        {
+          "v": "TimeWarp - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Chandler Leiby"
+        },
+        {
+          "v": "Floater"
+        },
+        {
+          "v": "8:00-10:30"
+        },
+        {
+          "v": null
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Chandler Leiby"
+        },
+        {
+          "v": "Asher"
+        },
+        {
+          "v": "H - 12:30-1:00"
+        },
+        {
+          "v": "Boom! - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Chandler Leiby"
+        },
+        {
+          "v": "Line Judge"
+        },
+        {
+          "v": "2:00-2:30"
+        },
+        {
+          "v": "Boom! - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Chandler Leiby"
+        },
+        {
+          "v": "Kahl\u00faa"
+        },
+        {
+          "v": "M - 3:00-3:30"
+        },
+        {
+          "v": "Throw N Go - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Chandler Leiby"
+        },
+        {
+          "v": "Asher"
+        },
+        {
+          "v": "Z - 7:45-8:00"
+        },
+        {
+          "v": "Frizgility - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Chandler Leiby"
+        },
+        {
+          "v": "Floater"
+        },
+        {
+          "v": "8:00-10:30"
+        },
+        {
+          "v": null
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Chandler Leiby"
+        },
+        {
+          "v": "Asher"
+        },
+        {
+          "v": "X - 12:15-1:00"
+        },
+        {
+          "v": "Four Way Play - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Chandler Leiby"
+        },
+        {
+          "v": "Maple"
+        },
+        {
+          "v": "K - 2:00-2:30"
+        },
+        {
+          "v": "Greedy - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Chandler Leiby"
+        },
+        {
+          "v": "Maple"
+        },
+        {
+          "v": "L - 2:30-3:00"
+        },
+        {
+          "v": "Four Way Play - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Chandler Leiby"
+        },
+        {
+          "v": "Kahl\u00faa"
+        },
+        {
+          "v": "L - 2:30-3:00"
+        },
+        {
+          "v": "Four Way Play - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Chandler Leiby"
+        },
+        {
+          "v": "Line Judge"
+        },
+        {
+          "v": "3:30-4:00"
+        },
+        {
+          "v": "Four Way Play - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Cheryl Hutchings"
+        },
+        {
+          "v": "Kirra"
+        },
+        {
+          "v": "A - 8:00-8:30"
+        },
+        {
+          "v": "7Up - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Cheryl Hutchings"
+        },
+        {
+          "v": "Hyzer"
+        },
+        {
+          "v": "B - 8:30-9:00"
+        },
+        {
+          "v": "Far Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Cheryl Hutchings"
+        },
+        {
+          "v": "Kirra"
+        },
+        {
+          "v": "D - 9:30-10:00"
+        },
+        {
+          "v": "Far Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Cheryl Hutchings"
+        },
+        {
+          "v": "Hyzer"
+        },
+        {
+          "v": "E - 10:00-10:30"
+        },
+        {
+          "v": "7Up - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Cheryl Hutchings"
+        },
+        {
+          "v": "Line Judge"
+        },
+        {
+          "v": "12:30-1:30"
+        },
+        {
+          "v": "TimeWarp - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Cheryl Hutchings"
+        },
+        {
+          "v": "Hyzer"
+        },
+        {
+          "v": "J - 1:30-2:00"
+        },
+        {
+          "v": "TimeWarp - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Cheryl Hutchings"
+        },
+        {
+          "v": "Hyzer"
+        },
+        {
+          "v": "K - 2:00-2:30"
+        },
+        {
+          "v": "Spaced Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Cheryl Hutchings"
+        },
+        {
+          "v": "Hyzer"
+        },
+        {
+          "v": "B - 8:30-9:00"
+        },
+        {
+          "v": "FunKey - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Cheryl Hutchings"
+        },
+        {
+          "v": "Kirra"
+        },
+        {
+          "v": "D - 9:30-10:00"
+        },
+        {
+          "v": "FunKey - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Cheryl Hutchings"
+        },
+        {
+          "v": "Hyzer"
+        },
+        {
+          "v": "I - 1:00-1:30"
+        },
+        {
+          "v": "Boom! - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Cheryl Hutchings"
+        },
+        {
+          "v": "Foot Fault Judge"
+        },
+        {
+          "v": "1:30-2:30"
+        },
+        {
+          "v": "Throw N Go - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Cheryl Hutchings"
+        },
+        {
+          "v": "Hyzer"
+        },
+        {
+          "v": "L - 2:30-3:00"
+        },
+        {
+          "v": "Throw N Go - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Cheryl Hutchings"
+        },
+        {
+          "v": "Hyzer"
+        },
+        {
+          "v": "A - 8:00-8:30"
+        },
+        {
+          "v": "Frizgility - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Cheryl Hutchings"
+        },
+        {
+          "v": "Kirra"
+        },
+        {
+          "v": "C - 9:00-9:30"
+        },
+        {
+          "v": "Frizgility - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Cheryl Hutchings"
+        },
+        {
+          "v": "Line Judge"
+        },
+        {
+          "v": "10:00-11:00"
+        },
+        {
+          "v": "Frizgility - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Cheryl Hutchings"
+        },
+        {
+          "v": "Hyzer"
+        },
+        {
+          "v": "X - 12:15-1:00"
+        },
+        {
+          "v": "Four Way Play - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Cheryl Hutchings"
+        },
+        {
+          "v": "Hyzer"
+        },
+        {
+          "v": "J - 1:30-2:00"
+        },
+        {
+          "v": "Greedy - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Cheryl Hutchings"
+        },
+        {
+          "v": "Kirra"
+        },
+        {
+          "v": "K - 2:00-2:30"
+        },
+        {
+          "v": "Greedy - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Christine Kasparov"
+        },
+        {
+          "v": "Ponchik"
+        },
+        {
+          "v": "A - 8:00-8:30"
+        },
+        {
+          "v": "FunKey - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Christine Kasparov"
+        },
+        {
+          "v": "Ponchik"
+        },
+        {
+          "v": "D - 9:30-10:00"
+        },
+        {
+          "v": "Freestyle - C - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Christine Kasparov"
+        },
+        {
+          "v": "Kivi"
+        },
+        {
+          "v": "H - 12:30-1:00"
+        },
+        {
+          "v": "Throw N Go - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Christine Kasparov"
+        },
+        {
+          "v": "Ponchik"
+        },
+        {
+          "v": "TBD"
+        },
+        {
+          "v": "Freestyle - P - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Christine Kasparov"
+        },
+        {
+          "v": "Ponchik"
+        },
+        {
+          "v": "D - 9:30-10:00"
+        },
+        {
+          "v": "Frizgility - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Christine Kasparov"
+        },
+        {
+          "v": "Kivi"
+        },
+        {
+          "v": "X - 12:15-1:00"
+        },
+        {
+          "v": "Four Way Play - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Criss Brown"
+        },
+        {
+          "v": "Bullet"
+        },
+        {
+          "v": "B - 8:30-9:00"
+        },
+        {
+          "v": "Freestyle - C - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Criss Brown"
+        },
+        {
+          "v": "Riot"
+        },
+        {
+          "v": "D - 9:30-10:00"
+        },
+        {
+          "v": "FunKey - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Criss Brown"
+        },
+        {
+          "v": "Bullet"
+        },
+        {
+          "v": "E - 10:00-10:30"
+        },
+        {
+          "v": "FunKey - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Criss Brown"
+        },
+        {
+          "v": "Sizzle"
+        },
+        {
+          "v": "H - 12:30-1:00"
+        },
+        {
+          "v": "Throw N Go - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Criss Brown"
+        },
+        {
+          "v": "Riot"
+        },
+        {
+          "v": "I - 1:00-1:30"
+        },
+        {
+          "v": "Throw N Go - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Criss Brown"
+        },
+        {
+          "v": "Riot"
+        },
+        {
+          "v": "K - 2:00-2:30"
+        },
+        {
+          "v": "Boom! - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Criss Brown"
+        },
+        {
+          "v": "Sizzle"
+        },
+        {
+          "v": "M - 3:00-3:30"
+        },
+        {
+          "v": "Boom! - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Criss Brown"
+        },
+        {
+          "v": "Bullet"
+        },
+        {
+          "v": "TBD"
+        },
+        {
+          "v": "Freestyle - P - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Criss Brown"
+        },
+        {
+          "v": "Bullet"
+        },
+        {
+          "v": "B - 8:30-9:00"
+        },
+        {
+          "v": "Frizgility - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Criss Brown"
+        },
+        {
+          "v": "Riot"
+        },
+        {
+          "v": "D - 9:30-10:00"
+        },
+        {
+          "v": "Frizgility - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Criss Brown"
+        },
+        {
+          "v": "Riot"
+        },
+        {
+          "v": "I - 1:00-1:30"
+        },
+        {
+          "v": "Greedy - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Criss Brown"
+        },
+        {
+          "v": "Riot"
+        },
+        {
+          "v": "K - 2:00-2:30"
+        },
+        {
+          "v": "Four Way Play - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Criss Brown"
+        },
+        {
+          "v": "Sizzle"
+        },
+        {
+          "v": "L - 2:30-3:00"
+        },
+        {
+          "v": "Greedy - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Criss Brown"
+        },
+        {
+          "v": "Bullet"
+        },
+        {
+          "v": "M - 3:00-3:30"
+        },
+        {
+          "v": "Four Way Play - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Criss Brown"
+        },
+        {
+          "v": "Sizzle"
+        },
+        {
+          "v": "O - 4:00-4:30"
+        },
+        {
+          "v": "Four Way Play - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Di Matteson"
+        },
+        {
+          "v": "DynoMutt"
+        },
+        {
+          "v": "A - 8:00-8:30"
+        },
+        {
+          "v": "7Up - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Di Matteson"
+        },
+        {
+          "v": "Line Judge"
+        },
+        {
+          "v": "9:00-10:00"
+        },
+        {
+          "v": "7Up - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Di Matteson"
+        },
+        {
+          "v": "Augie"
+        },
+        {
+          "v": "E - 10:00-10:30"
+        },
+        {
+          "v": "7Up - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Di Matteson"
+        },
+        {
+          "v": "Line Judge"
+        },
+        {
+          "v": "10:30-11:30"
+        },
+        {
+          "v": "7 Up Tiebreakers / AM TimeWarp - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Di Matteson"
+        },
+        {
+          "v": "DynoMutt"
+        },
+        {
+          "v": "H - 12:30-1:00"
+        },
+        {
+          "v": "Spaced Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Di Matteson"
+        },
+        {
+          "v": "DynoMutt"
+        },
+        {
+          "v": "I - 1:00-1:30"
+        },
+        {
+          "v": "TimeWarp - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Di Matteson"
+        },
+        {
+          "v": "Augie"
+        },
+        {
+          "v": "L - 2:30-3:00"
+        },
+        {
+          "v": "Spaced Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Di Matteson"
+        },
+        {
+          "v": "Timer"
+        },
+        {
+          "v": "3:00-3:30"
+        },
+        {
+          "v": "TimeWarp - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Di Matteson"
+        },
+        {
+          "v": "DynoMutt"
+        },
+        {
+          "v": "A - 8:00-8:30"
+        },
+        {
+          "v": "Freestyle - C - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Di Matteson"
+        },
+        {
+          "v": "Augie"
+        },
+        {
+          "v": "B - 8:30-9:00"
+        },
+        {
+          "v": "FunKey - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Di Matteson"
+        },
+        {
+          "v": "DynoMutt"
+        },
+        {
+          "v": "C - 9:00-9:30"
+        },
+        {
+          "v": "FunKey - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Di Matteson"
+        },
+        {
+          "v": "Augie"
+        },
+        {
+          "v": "E - 10:00-10:30"
+        },
+        {
+          "v": "Freestyle - C - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Di Matteson"
+        },
+        {
+          "v": "Line Judge"
+        },
+        {
+          "v": "12:30-1:30"
+        },
+        {
+          "v": "Boom! - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Di Matteson"
+        },
+        {
+          "v": "Augie"
+        },
+        {
+          "v": "K - 2:00-2:30"
+        },
+        {
+          "v": "Throw N Go - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Di Matteson"
+        },
+        {
+          "v": "Line Judge"
+        },
+        {
+          "v": "2:30-3:00"
+        },
+        {
+          "v": "Boom! - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Di Matteson"
+        },
+        {
+          "v": "DynoMutt"
+        },
+        {
+          "v": "M - 3:00-3:30"
+        },
+        {
+          "v": "Throw N Go - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Di Matteson"
+        },
+        {
+          "v": "Line Judge"
+        },
+        {
+          "v": "4:00"
+        },
+        {
+          "v": "Tiebreakers - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Di Matteson"
+        },
+        {
+          "v": "Augie"
+        },
+        {
+          "v": "TBD"
+        },
+        {
+          "v": "Freestyle - P - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Di Matteson"
+        },
+        {
+          "v": "DynoMutt"
+        },
+        {
+          "v": "TBD"
+        },
+        {
+          "v": "Freestyle - P - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Di Matteson"
+        },
+        {
+          "v": "Augie"
+        },
+        {
+          "v": "A - 8:00-8:30"
+        },
+        {
+          "v": "Frizgility - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Di Matteson"
+        },
+        {
+          "v": "DynoMutt"
+        },
+        {
+          "v": "B - 8:30-9:00"
+        },
+        {
+          "v": "Frizgility - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Di Matteson"
+        },
+        {
+          "v": "Augie"
+        },
+        {
+          "v": "H - 12:30-1:00"
+        },
+        {
+          "v": "Greedy - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Di Matteson"
+        },
+        {
+          "v": "DynoMutt"
+        },
+        {
+          "v": "I - 1:00-1:30"
+        },
+        {
+          "v": "Greedy - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Di Matteson"
+        },
+        {
+          "v": "Augie"
+        },
+        {
+          "v": "J - 1:30-2:00"
+        },
+        {
+          "v": "Four Way Play - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Di Matteson"
+        },
+        {
+          "v": "DynoMutt"
+        },
+        {
+          "v": "L - 2:30-3:00"
+        },
+        {
+          "v": "Four Way Play - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Doug Kurucz"
+        },
+        {
+          "v": "Mishka"
+        },
+        {
+          "v": "A - 8:00-8:30"
+        },
+        {
+          "v": "7Up - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Doug Kurucz"
+        },
+        {
+          "v": "Head Judge"
+        },
+        {
+          "v": "9:00-10:00"
+        },
+        {
+          "v": "Far Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Doug Kurucz"
+        },
+        {
+          "v": "Tater"
+        },
+        {
+          "v": "F - 10:30-11:00"
+        },
+        {
+          "v": "Far Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Doug Kurucz"
+        },
+        {
+          "v": "Nikita"
+        },
+        {
+          "v": "G - 11:00-11:30"
+        },
+        {
+          "v": "Far Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Doug Kurucz"
+        },
+        {
+          "v": "Mishka"
+        },
+        {
+          "v": "H - 12:30-1:00"
+        },
+        {
+          "v": "Spaced Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Doug Kurucz"
+        },
+        {
+          "v": "Tater"
+        },
+        {
+          "v": "I - 1:00-1:30"
+        },
+        {
+          "v": "Spaced Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Doug Kurucz"
+        },
+        {
+          "v": "Mishka"
+        },
+        {
+          "v": "K - 2:00-2:30"
+        },
+        {
+          "v": "TimeWarp - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Doug Kurucz"
+        },
+        {
+          "v": "Tater"
+        },
+        {
+          "v": "L - 2:30-3:00"
+        },
+        {
+          "v": "TimeWarp - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Doug Kurucz"
+        },
+        {
+          "v": "Mishka"
+        },
+        {
+          "v": "B - 8:30-9:00"
+        },
+        {
+          "v": "Freestyle - C - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Doug Kurucz"
+        },
+        {
+          "v": "Mishka"
+        },
+        {
+          "v": "D - 9:30-10:00"
+        },
+        {
+          "v": "FunKey - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Doug Kurucz"
+        },
+        {
+          "v": "Head Judge"
+        },
+        {
+          "v": "10:00-11:30"
+        },
+        {
+          "v": "FunKey - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Doug Kurucz"
+        },
+        {
+          "v": "Head Judge"
+        },
+        {
+          "v": "12:30-2:30"
+        },
+        {
+          "v": "Boom! - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Doug Kurucz"
+        },
+        {
+          "v": "Nikita"
+        },
+        {
+          "v": "M - 3:00-3:30"
+        },
+        {
+          "v": "Throw N Go - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Doug Kurucz"
+        },
+        {
+          "v": "Mishka"
+        },
+        {
+          "v": "N - 3:30-4:00"
+        },
+        {
+          "v": "Throw N Go - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Doug Kurucz"
+        },
+        {
+          "v": "Tater"
+        },
+        {
+          "v": "N - 3:30-4:00"
+        },
+        {
+          "v": "Throw N Go - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Doug Kurucz"
+        },
+        {
+          "v": "Mishka"
+        },
+        {
+          "v": "TBD"
+        },
+        {
+          "v": "Freestyle - P - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Doug Kurucz"
+        },
+        {
+          "v": "Mishka"
+        },
+        {
+          "v": "C - 9:00-9:30"
+        },
+        {
+          "v": "Frizgility - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Doug Kurucz"
+        },
+        {
+          "v": "Tater"
+        },
+        {
+          "v": "D - 9:30-10:00"
+        },
+        {
+          "v": "Frizgility - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Doug Kurucz"
+        },
+        {
+          "v": "Head Judge"
+        },
+        {
+          "v": "12:30-1:00"
+        },
+        {
+          "v": "Greedy - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Doug Kurucz"
+        },
+        {
+          "v": "Tater"
+        },
+        {
+          "v": "I - 1:00-1:30"
+        },
+        {
+          "v": "Four Way Play - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Doug Kurucz"
+        },
+        {
+          "v": "Mishka"
+        },
+        {
+          "v": "J - 1:30-2:00"
+        },
+        {
+          "v": "Greedy - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Doug Kurucz"
+        },
+        {
+          "v": "Head Judge"
+        },
+        {
+          "v": "2:00-2:30"
+        },
+        {
+          "v": "Four Way Play - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Doug Kurucz"
+        },
+        {
+          "v": "Mishka"
+        },
+        {
+          "v": "L - 2:30-3:00"
+        },
+        {
+          "v": "Four Way Play - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Doug Kurucz"
+        },
+        {
+          "v": "Head Judge"
+        },
+        {
+          "v": "3:00-4:00"
+        },
+        {
+          "v": "Greedy - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Eli McDonald"
+        },
+        {
+          "v": "Journey"
+        },
+        {
+          "v": "C - 9:00-9:30"
+        },
+        {
+          "v": "Far Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Eli McDonald"
+        },
+        {
+          "v": "Mousse"
+        },
+        {
+          "v": "D - 9:30-10:00"
+        },
+        {
+          "v": "7Up - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Eli McDonald"
+        },
+        {
+          "v": "Mousse"
+        },
+        {
+          "v": "E - 10:00-10:30"
+        },
+        {
+          "v": "Far Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Eli McDonald"
+        },
+        {
+          "v": "Mousse"
+        },
+        {
+          "v": "I - 1:00-1:30"
+        },
+        {
+          "v": "TimeWarp - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Eli McDonald"
+        },
+        {
+          "v": "Mousse"
+        },
+        {
+          "v": "A - 8:00-8:30"
+        },
+        {
+          "v": "FunKey - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Eli McDonald"
+        },
+        {
+          "v": "Mousse"
+        },
+        {
+          "v": "E - 10:00-10:30"
+        },
+        {
+          "v": "Freestyle - C - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Eli McDonald"
+        },
+        {
+          "v": "Mousse"
+        },
+        {
+          "v": "H - 12:30-1:00"
+        },
+        {
+          "v": "Throw N Go - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Eli McDonald"
+        },
+        {
+          "v": "Mousse"
+        },
+        {
+          "v": "J - 1:30-2:00"
+        },
+        {
+          "v": "Boom! - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Eli McDonald"
+        },
+        {
+          "v": "Mousse"
+        },
+        {
+          "v": "TBD"
+        },
+        {
+          "v": "Freestyle - P - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Eli McDonald"
+        },
+        {
+          "v": "Mousse"
+        },
+        {
+          "v": "I - 1:00-1:30"
+        },
+        {
+          "v": "Greedy - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Eli McDonald"
+        },
+        {
+          "v": "Mousse"
+        },
+        {
+          "v": "M - 3:00-3:30"
+        },
+        {
+          "v": "Four Way Play - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Emily Leiby"
+        },
+        {
+          "v": "Journey"
+        },
+        {
+          "v": "A - 8:00-8:30"
+        },
+        {
+          "v": "Far Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Emily Leiby"
+        },
+        {
+          "v": "Asher"
+        },
+        {
+          "v": "A - 8:00-8:30"
+        },
+        {
+          "v": "Far Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Emily Leiby"
+        },
+        {
+          "v": "Maple"
+        },
+        {
+          "v": "B - 8:30-9:00"
+        },
+        {
+          "v": "Far Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Emily Leiby"
+        },
+        {
+          "v": "Maple"
+        },
+        {
+          "v": "C - 9:00-9:30"
+        },
+        {
+          "v": "7Up - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Emily Leiby"
+        },
+        {
+          "v": "Head Judge"
+        },
+        {
+          "v": "10:00-11:30"
+        },
+        {
+          "v": "Far Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Emily Leiby"
+        },
+        {
+          "v": "Journey"
+        },
+        {
+          "v": "H - 12:30-1:00"
+        },
+        {
+          "v": "TimeWarp - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Emily Leiby"
+        },
+        {
+          "v": "Head Judge"
+        },
+        {
+          "v": "1:00-1:30"
+        },
+        {
+          "v": "Spaced Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Emily Leiby"
+        },
+        {
+          "v": "Journey"
+        },
+        {
+          "v": "J - 1:30-2:00"
+        },
+        {
+          "v": "Spaced Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Emily Leiby"
+        },
+        {
+          "v": "Head Judge"
+        },
+        {
+          "v": "2:30-3:30"
+        },
+        {
+          "v": "Spaced Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Emily Leiby"
+        },
+        {
+          "v": "Maple"
+        },
+        {
+          "v": "A - 8:00-8:30"
+        },
+        {
+          "v": "FunKey - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Emily Leiby"
+        },
+        {
+          "v": "FS Judge"
+        },
+        {
+          "v": "8:00-10:30"
+        },
+        {
+          "v": "Freestyle - C - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Emily Leiby"
+        },
+        {
+          "v": "Kahl\u00faa"
+        },
+        {
+          "v": "H - 12:30-1:00"
+        },
+        {
+          "v": "Throw N Go - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Emily Leiby"
+        },
+        {
+          "v": "Journey"
+        },
+        {
+          "v": "H - 12:30-1:00"
+        },
+        {
+          "v": "Throw N Go - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Emily Leiby"
+        },
+        {
+          "v": "Maple"
+        },
+        {
+          "v": "I - 1:00-1:30"
+        },
+        {
+          "v": "Throw N Go - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Emily Leiby"
+        },
+        {
+          "v": "Kahl\u00faa"
+        },
+        {
+          "v": "J - 1:30-2:00"
+        },
+        {
+          "v": "Boom! - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Emily Leiby"
+        },
+        {
+          "v": "Maple"
+        },
+        {
+          "v": "L - 2:30-3:00"
+        },
+        {
+          "v": "Boom! - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Emily Leiby"
+        },
+        {
+          "v": "Journey"
+        },
+        {
+          "v": "M - 3:00-3:30"
+        },
+        {
+          "v": "Boom! - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Emily Leiby"
+        },
+        {
+          "v": "Journey"
+        },
+        {
+          "v": "Z - 7:45-8:00"
+        },
+        {
+          "v": "Frizgility - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Emily Leiby"
+        },
+        {
+          "v": "Maple"
+        },
+        {
+          "v": "Z - 7:45-8:00"
+        },
+        {
+          "v": "Frizgility - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Emily Leiby"
+        },
+        {
+          "v": "FS Judge"
+        },
+        {
+          "v": "8:00-10:30"
+        },
+        {
+          "v": "Freestyle - P - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Emily Leiby"
+        },
+        {
+          "v": "Asher"
+        },
+        {
+          "v": "G - 11:00-11:30"
+        },
+        {
+          "v": "Frizgility - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Emily Leiby"
+        },
+        {
+          "v": "Kahl\u00faa"
+        },
+        {
+          "v": "X - 12:15-1:00"
+        },
+        {
+          "v": "Four Way Play - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Emily Leiby"
+        },
+        {
+          "v": "Helix"
+        },
+        {
+          "v": "X - 12:15-1:00"
+        },
+        {
+          "v": "Four Way Play - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Emily Leiby"
+        },
+        {
+          "v": "Journey"
+        },
+        {
+          "v": "H - 12:30-1:00"
+        },
+        {
+          "v": "Greedy - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Emily Leiby"
+        },
+        {
+          "v": "Kahl\u00faa"
+        },
+        {
+          "v": "H - 12:30-1:00"
+        },
+        {
+          "v": "Greedy - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Emily Leiby"
+        },
+        {
+          "v": "Maple"
+        },
+        {
+          "v": "I - 1:00-1:30"
+        },
+        {
+          "v": "Four Way Play - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Emily Leiby"
+        },
+        {
+          "v": "Journey"
+        },
+        {
+          "v": "J - 1:30-2:00"
+        },
+        {
+          "v": "Four Way Play - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Emily Leiby"
+        },
+        {
+          "v": "Head Judge"
+        },
+        {
+          "v": "2:00-3:00"
+        },
+        {
+          "v": "Greedy - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Evan Beatty"
+        },
+        {
+          "v": "Lasso"
+        },
+        {
+          "v": "A - 8:00-8:30"
+        },
+        {
+          "v": "7Up - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Evan Beatty"
+        },
+        {
+          "v": "Lasso"
+        },
+        {
+          "v": "D - 9:30-10:00"
+        },
+        {
+          "v": "Far Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Evan Beatty"
+        },
+        {
+          "v": "Quentin"
+        },
+        {
+          "v": "F - 10:30-11:00"
+        },
+        {
+          "v": "Far Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Evan Beatty"
+        },
+        {
+          "v": "Quentin"
+        },
+        {
+          "v": "I - 1:00-1:30"
+        },
+        {
+          "v": "TimeWarp - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Evan Beatty"
+        },
+        {
+          "v": "Lasso"
+        },
+        {
+          "v": "D - 9:30-10:00"
+        },
+        {
+          "v": "FunKey - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Evan Beatty"
+        },
+        {
+          "v": "Lasso"
+        },
+        {
+          "v": "L - 2:30-3:00"
+        },
+        {
+          "v": "Throw N Go - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Evan Beatty"
+        },
+        {
+          "v": "Quentin"
+        },
+        {
+          "v": "N - 3:30-4:00"
+        },
+        {
+          "v": "Throw N Go - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Evan Beatty"
+        },
+        {
+          "v": "Lasso"
+        },
+        {
+          "v": "C - 9:00-9:30"
+        },
+        {
+          "v": "Frizgility - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Evan Beatty"
+        },
+        {
+          "v": "Quentin"
+        },
+        {
+          "v": "H - 12:30-1:00"
+        },
+        {
+          "v": "Greedy - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Evan Beatty"
+        },
+        {
+          "v": "Lasso"
+        },
+        {
+          "v": "J - 1:30-2:00"
+        },
+        {
+          "v": "Four Way Play - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Evan Beatty"
+        },
+        {
+          "v": "Quentin"
+        },
+        {
+          "v": "O - 4:00-4:30"
+        },
+        {
+          "v": "Four Way Play - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Gabby Scott"
+        },
+        {
+          "v": "FS Judge"
+        },
+        {
+          "v": "8:00-10:30"
+        },
+        {
+          "v": "Freestyle - P - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Gabby Scott"
+        },
+        {
+          "v": "Maple"
+        },
+        {
+          "v": "D - 9:30-10:00"
+        },
+        {
+          "v": "Frizgility - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Gabby Scott"
+        },
+        {
+          "v": "Pierogi"
+        },
+        {
+          "v": "I - 1:00-1:30"
+        },
+        {
+          "v": "Four Way Play - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Gabby Scott"
+        },
+        {
+          "v": "Line Judge"
+        },
+        {
+          "v": "2:00-2:30"
+        },
+        {
+          "v": "Four Way Play - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Gabby Scott"
+        },
+        {
+          "v": "Pierogi"
+        },
+        {
+          "v": "M - 3:00-3:30"
+        },
+        {
+          "v": "Greedy - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Hillary Brown"
+        },
+        {
+          "v": "Paxil"
+        },
+        {
+          "v": "B - 8:30-9:00"
+        },
+        {
+          "v": "FunKey - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Hillary Brown"
+        },
+        {
+          "v": "Sev"
+        },
+        {
+          "v": "C - 9:00-9:30"
+        },
+        {
+          "v": "FunKey - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Hillary Brown"
+        },
+        {
+          "v": "Sev"
+        },
+        {
+          "v": "H - 12:30-1:00"
+        },
+        {
+          "v": "Throw N Go - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Hillary Brown"
+        },
+        {
+          "v": "Paxil"
+        },
+        {
+          "v": "I - 1:00-1:30"
+        },
+        {
+          "v": "Throw N Go - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Hillary Brown"
+        },
+        {
+          "v": "Line Judge"
+        },
+        {
+          "v": "1:30-2:00"
+        },
+        {
+          "v": "Boom! - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Hillary Brown"
+        },
+        {
+          "v": "Paxil"
+        },
+        {
+          "v": "K - 2:00-2:30"
+        },
+        {
+          "v": "Boom! - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Hillary Brown"
+        },
+        {
+          "v": "Sev"
+        },
+        {
+          "v": "L - 2:30-3:00"
+        },
+        {
+          "v": "Boom! - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Hillary Brown"
+        },
+        {
+          "v": "Head Judge"
+        },
+        {
+          "v": "3:00-3:30"
+        },
+        {
+          "v": "Throw N Go - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Hillary Brown"
+        },
+        {
+          "v": "Sev"
+        },
+        {
+          "v": "A - 8:00-8:30"
+        },
+        {
+          "v": "Frizgility - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Hillary Brown"
+        },
+        {
+          "v": "Paxil"
+        },
+        {
+          "v": "B - 8:30-9:00"
+        },
+        {
+          "v": "Frizgility - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Hillary Brown"
+        },
+        {
+          "v": "Head Judge"
+        },
+        {
+          "v": "9:00-10:00"
+        },
+        {
+          "v": "Frizgility - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Hillary Brown"
+        },
+        {
+          "v": "Line Judge"
+        },
+        {
+          "v": "11:00-11:30"
+        },
+        {
+          "v": "Frizgility - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Hillary Brown"
+        },
+        {
+          "v": "Paxil"
+        },
+        {
+          "v": "H - 12:30-1:00"
+        },
+        {
+          "v": "Greedy - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Hillary Brown"
+        },
+        {
+          "v": "Sev"
+        },
+        {
+          "v": "I - 1:00-1:30"
+        },
+        {
+          "v": "Greedy - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Hillary Brown"
+        },
+        {
+          "v": "Paxil"
+        },
+        {
+          "v": "K - 2:00-2:30"
+        },
+        {
+          "v": "Four Way Play - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Hillary Brown"
+        },
+        {
+          "v": "Sev"
+        },
+        {
+          "v": "L - 2:30-3:00"
+        },
+        {
+          "v": "Four Way Play - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Jason Baldwin"
+        },
+        {
+          "v": "Line Judge"
+        },
+        {
+          "v": "8:00-9:00"
+        },
+        {
+          "v": "7Up - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Jason Baldwin"
+        },
+        {
+          "v": "Gracie"
+        },
+        {
+          "v": "E - 10:00-10:30"
+        },
+        {
+          "v": "Far Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Jason Baldwin"
+        },
+        {
+          "v": "Timer"
+        },
+        {
+          "v": "12:30-1:00"
+        },
+        {
+          "v": "TimeWarp - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Jason Baldwin"
+        },
+        {
+          "v": "Gracie"
+        },
+        {
+          "v": "L - 2:30-3:00"
+        },
+        {
+          "v": "TimeWarp - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Jason Baldwin"
+        },
+        {
+          "v": "Gracie"
+        },
+        {
+          "v": "M - 3:00-3:30"
+        },
+        {
+          "v": "Spaced Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Jessie Bustin"
+        },
+        {
+          "v": "Speck"
+        },
+        {
+          "v": "B - 8:30-9:00"
+        },
+        {
+          "v": "7Up - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Jessie Bustin"
+        },
+        {
+          "v": "Speck"
+        },
+        {
+          "v": "D - 9:30-10:00"
+        },
+        {
+          "v": "Far Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Jessie Bustin"
+        },
+        {
+          "v": "Speck"
+        },
+        {
+          "v": "H - 12:30-1:00"
+        },
+        {
+          "v": "Spaced Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Jessie Bustin"
+        },
+        {
+          "v": "Speck"
+        },
+        {
+          "v": "J - 1:30-2:00"
+        },
+        {
+          "v": "TimeWarp - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Jessie Bustin"
+        },
+        {
+          "v": "Speck"
+        },
+        {
+          "v": "A - 8:00-8:30"
+        },
+        {
+          "v": "FunKey - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Jessie Bustin"
+        },
+        {
+          "v": "Speck"
+        },
+        {
+          "v": "C - 9:00-9:30"
+        },
+        {
+          "v": "Freestyle - C - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Jessie Bustin"
+        },
+        {
+          "v": "Speck"
+        },
+        {
+          "v": "I - 1:00-1:30"
+        },
+        {
+          "v": "Boom! - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Jessie Bustin"
+        },
+        {
+          "v": "Speck"
+        },
+        {
+          "v": "L - 2:30-3:00"
+        },
+        {
+          "v": "Throw N Go - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Jessie Bustin"
+        },
+        {
+          "v": "Speck"
+        },
+        {
+          "v": "TBD"
+        },
+        {
+          "v": "Freestyle - P - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Jessie Bustin"
+        },
+        {
+          "v": "Speck"
+        },
+        {
+          "v": "C - 9:00-9:30"
+        },
+        {
+          "v": "Frizgility - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Jessie Bustin"
+        },
+        {
+          "v": "Speck"
+        },
+        {
+          "v": "K - 2:00-2:30"
+        },
+        {
+          "v": "Greedy - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Jessie Bustin"
+        },
+        {
+          "v": "Speck"
+        },
+        {
+          "v": "O - 4:00-4:30"
+        },
+        {
+          "v": "Four Way Play - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Kaia Miller"
+        },
+        {
+          "v": "Line Judge"
+        },
+        {
+          "v": "8:00-9:00"
+        },
+        {
+          "v": "Far Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Kaia Miller"
+        },
+        {
+          "v": "Timer"
+        },
+        {
+          "v": "9:00-10:00"
+        },
+        {
+          "v": "7Up - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Kaia Miller"
+        },
+        {
+          "v": "Gracie"
+        },
+        {
+          "v": "G - 11:00-11:30"
+        },
+        {
+          "v": "Far Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Kaia Miller"
+        },
+        {
+          "v": "Gracie"
+        },
+        {
+          "v": "H - 12:30-1:00"
+        },
+        {
+          "v": "TimeWarp - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Kaia Miller"
+        },
+        {
+          "v": "Gracie"
+        },
+        {
+          "v": "I - 1:00-1:30"
+        },
+        {
+          "v": "Spaced Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Kaia Miller"
+        },
+        {
+          "v": "Head Judge"
+        },
+        {
+          "v": "1:30-2:30"
+        },
+        {
+          "v": "TimeWarp - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Kaia Miller"
+        },
+        {
+          "v": "Timer"
+        },
+        {
+          "v": "2:30-3:00"
+        },
+        {
+          "v": "TimeWarp - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Kalyn Quill"
+        },
+        {
+          "v": "Scythe"
+        },
+        {
+          "v": "C - 9:00-9:30"
+        },
+        {
+          "v": "Far Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Kalyn Quill"
+        },
+        {
+          "v": "Scythe"
+        },
+        {
+          "v": "H - 12:30-1:00"
+        },
+        {
+          "v": "Spaced Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Kalyn Quill"
+        },
+        {
+          "v": "Scythe"
+        },
+        {
+          "v": "K - 2:00-2:30"
+        },
+        {
+          "v": "TimeWarp - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Kalyn Quill"
+        },
+        {
+          "v": "Scythe"
+        },
+        {
+          "v": "A - 8:00-8:30"
+        },
+        {
+          "v": "FunKey - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Kalyn Quill"
+        },
+        {
+          "v": "Scythe"
+        },
+        {
+          "v": "D - 9:30-10:00"
+        },
+        {
+          "v": "Freestyle - C - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Kalyn Quill"
+        },
+        {
+          "v": "Scythe"
+        },
+        {
+          "v": "I - 1:00-1:30"
+        },
+        {
+          "v": "Boom! - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Kalyn Quill"
+        },
+        {
+          "v": "Scythe"
+        },
+        {
+          "v": "L - 2:30-3:00"
+        },
+        {
+          "v": "Throw N Go - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Kalyn Quill"
+        },
+        {
+          "v": "Scythe"
+        },
+        {
+          "v": "TBD"
+        },
+        {
+          "v": "Freestyle - P - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Kalyn Quill"
+        },
+        {
+          "v": "Scythe"
+        },
+        {
+          "v": "D - 9:30-10:00"
+        },
+        {
+          "v": "Frizgility - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Kalyn Quill"
+        },
+        {
+          "v": "Scythe"
+        },
+        {
+          "v": "K - 2:00-2:30"
+        },
+        {
+          "v": "Four Way Play - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Kalyn Quill"
+        },
+        {
+          "v": "Scythe"
+        },
+        {
+          "v": "M - 3:00-3:30"
+        },
+        {
+          "v": "Greedy - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Karen Schutz"
+        },
+        {
+          "v": "Mini"
+        },
+        {
+          "v": "A - 8:00-8:30"
+        },
+        {
+          "v": "7Up - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Karen Schutz"
+        },
+        {
+          "v": "Rubiks"
+        },
+        {
+          "v": "C - 9:00-9:30"
+        },
+        {
+          "v": "Far Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Karen Schutz"
+        },
+        {
+          "v": "Flare"
+        },
+        {
+          "v": "D - 9:30-10:00"
+        },
+        {
+          "v": "7Up - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Karen Schutz"
+        },
+        {
+          "v": "Rubiks"
+        },
+        {
+          "v": "D - 9:30-10:00"
+        },
+        {
+          "v": "7Up - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Karen Schutz"
+        },
+        {
+          "v": "Line Judge"
+        },
+        {
+          "v": "10:00-10:30"
+        },
+        {
+          "v": "7Up - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Karen Schutz"
+        },
+        {
+          "v": "Flare"
+        },
+        {
+          "v": "F - 10:30-11:00"
+        },
+        {
+          "v": "TimeWarp - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Karen Schutz"
+        },
+        {
+          "v": "Rubiks"
+        },
+        {
+          "v": "H - 12:30-1:00"
+        },
+        {
+          "v": "TimeWarp - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Karen Schutz"
+        },
+        {
+          "v": "Timer"
+        },
+        {
+          "v": "1:00-1:30"
+        },
+        {
+          "v": "TimeWarp - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Karen Schutz"
+        },
+        {
+          "v": "Rubiks"
+        },
+        {
+          "v": "K - 2:00-2:30"
+        },
+        {
+          "v": "Spaced Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Karen Schutz"
+        },
+        {
+          "v": "Rubiks"
+        },
+        {
+          "v": "A - 8:00-8:30"
+        },
+        {
+          "v": "FunKey - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Karen Schutz"
+        },
+        {
+          "v": "Flare"
+        },
+        {
+          "v": "B - 8:30-9:00"
+        },
+        {
+          "v": "FunKey - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Karen Schutz"
+        },
+        {
+          "v": "Mini"
+        },
+        {
+          "v": "C - 9:00-9:30"
+        },
+        {
+          "v": "FunKey - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Karen Schutz"
+        },
+        {
+          "v": "Line Judge"
+        },
+        {
+          "v": "10:00-11:30"
+        },
+        {
+          "v": "FunKey - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Karen Schutz"
+        },
+        {
+          "v": "Rubiks"
+        },
+        {
+          "v": "H - 12:30-1:00"
+        },
+        {
+          "v": "Throw N Go - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Karen Schutz"
+        },
+        {
+          "v": "Flare"
+        },
+        {
+          "v": "I - 1:00-1:30"
+        },
+        {
+          "v": "Boom! - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Karen Schutz"
+        },
+        {
+          "v": "Flare"
+        },
+        {
+          "v": "K - 2:00-2:30"
+        },
+        {
+          "v": "Throw N Go - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Karen Schutz"
+        },
+        {
+          "v": "Line Judge"
+        },
+        {
+          "v": "2:30-3:00"
+        },
+        {
+          "v": "Throw N Go - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Karen Schutz"
+        },
+        {
+          "v": "Rubiks"
+        },
+        {
+          "v": "M - 3:00-3:30"
+        },
+        {
+          "v": "Boom! - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Karen Schutz"
+        },
+        {
+          "v": "Rubiks"
+        },
+        {
+          "v": "B - 8:30-9:00"
+        },
+        {
+          "v": "Frizgility - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Karen Schutz"
+        },
+        {
+          "v": "Flare"
+        },
+        {
+          "v": "D - 9:30-10:00"
+        },
+        {
+          "v": "Frizgility - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Karen Schutz"
+        },
+        {
+          "v": "Mini"
+        },
+        {
+          "v": "F - 10:30-11:00"
+        },
+        {
+          "v": "Frizgility - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Karen Schutz"
+        },
+        {
+          "v": "Rubiks"
+        },
+        {
+          "v": "H - 12:30-1:00"
+        },
+        {
+          "v": "Greedy - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Karen Schutz"
+        },
+        {
+          "v": "Rubiks"
+        },
+        {
+          "v": "I - 1:00-1:30"
+        },
+        {
+          "v": "Four Way Play - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Karen Schutz"
+        },
+        {
+          "v": "Line Judge"
+        },
+        {
+          "v": "1:30-2:00"
+        },
+        {
+          "v": "Four Way Play - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Karen Schutz"
+        },
+        {
+          "v": "Flare"
+        },
+        {
+          "v": "K - 2:00-2:30"
+        },
+        {
+          "v": "Greedy - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Karen Schutz"
+        },
+        {
+          "v": "Flare"
+        },
+        {
+          "v": "N - 3:30-4:00"
+        },
+        {
+          "v": "Four Way Play - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Kat Edrington"
+        },
+        {
+          "v": "Fury"
+        },
+        {
+          "v": "A - 8:00-8:30"
+        },
+        {
+          "v": "7Up - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Kat Edrington"
+        },
+        {
+          "v": "Cipher"
+        },
+        {
+          "v": "C - 9:00-9:30"
+        },
+        {
+          "v": "7Up - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Kat Edrington"
+        },
+        {
+          "v": "Fury"
+        },
+        {
+          "v": "H - 12:30-1:00"
+        },
+        {
+          "v": "TimeWarp - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Kat Edrington"
+        },
+        {
+          "v": "Cipher"
+        },
+        {
+          "v": "I - 1:00-1:30"
+        },
+        {
+          "v": "Spaced Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Kat Edrington"
+        },
+        {
+          "v": "Fury"
+        },
+        {
+          "v": "J - 1:30-2:00"
+        },
+        {
+          "v": "Spaced Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Kat Edrington"
+        },
+        {
+          "v": "Cipher"
+        },
+        {
+          "v": "K - 2:00-2:30"
+        },
+        {
+          "v": "TimeWarp - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Kat Edrington"
+        },
+        {
+          "v": "Fury"
+        },
+        {
+          "v": "Z - 7:45-8:00"
+        },
+        {
+          "v": "FunKey - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Kat Edrington"
+        },
+        {
+          "v": "FS Judge"
+        },
+        {
+          "v": "8:00-10:30"
+        },
+        {
+          "v": "Freestyle - C - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Kat Edrington"
+        },
+        {
+          "v": "Cipher"
+        },
+        {
+          "v": "F - 10:30-11:00"
+        },
+        {
+          "v": "FunKey - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Kat Edrington"
+        },
+        {
+          "v": "Fury"
+        },
+        {
+          "v": "H - 12:30-1:00"
+        },
+        {
+          "v": "Throw N Go - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Kat Edrington"
+        },
+        {
+          "v": "Enoki"
+        },
+        {
+          "v": "I - 1:00-1:30"
+        },
+        {
+          "v": "Throw N Go - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Kat Edrington"
+        },
+        {
+          "v": "Cipher"
+        },
+        {
+          "v": "K - 2:00-2:30"
+        },
+        {
+          "v": "Throw N Go - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Kat Edrington"
+        },
+        {
+          "v": "Fury"
+        },
+        {
+          "v": "L - 2:30-3:00"
+        },
+        {
+          "v": "Boom! - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Kat Edrington"
+        },
+        {
+          "v": "Cipher"
+        },
+        {
+          "v": "M - 3:00-3:30"
+        },
+        {
+          "v": "Boom! - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Kat Edrington"
+        },
+        {
+          "v": "Fury"
+        },
+        {
+          "v": "Z - 7:45-8:00"
+        },
+        {
+          "v": "Frizgility - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Kat Edrington"
+        },
+        {
+          "v": "FS Judge"
+        },
+        {
+          "v": "8:00-10:30"
+        },
+        {
+          "v": "Freestyle - P - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Kat Edrington"
+        },
+        {
+          "v": "Cipher"
+        },
+        {
+          "v": "G - 11:00-11:30"
+        },
+        {
+          "v": "Frizgility - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Kat Edrington"
+        },
+        {
+          "v": "Cipher"
+        },
+        {
+          "v": "H - 12:30-1:00"
+        },
+        {
+          "v": "Greedy - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Kat Edrington"
+        },
+        {
+          "v": "Fury"
+        },
+        {
+          "v": "J - 1:30-2:00"
+        },
+        {
+          "v": "Four Way Play - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Kat Edrington"
+        },
+        {
+          "v": "Cipher"
+        },
+        {
+          "v": "L - 2:30-3:00"
+        },
+        {
+          "v": "Four Way Play - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Kat Edrington"
+        },
+        {
+          "v": "Fury"
+        },
+        {
+          "v": "N - 3:30-4:00"
+        },
+        {
+          "v": "Greedy - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Kate Castiglia"
+        },
+        {
+          "v": "Mavis"
+        },
+        {
+          "v": "A - 8:00-8:30"
+        },
+        {
+          "v": "Far Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Kate Castiglia"
+        },
+        {
+          "v": "Sailor"
+        },
+        {
+          "v": "B - 8:30-9:00"
+        },
+        {
+          "v": "Far Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Kate Castiglia"
+        },
+        {
+          "v": "Sev"
+        },
+        {
+          "v": "C - 9:00-9:30"
+        },
+        {
+          "v": "Far Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Kate Castiglia"
+        },
+        {
+          "v": "Paxil"
+        },
+        {
+          "v": "D - 9:30-10:00"
+        },
+        {
+          "v": "Far Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Kate Castiglia"
+        },
+        {
+          "v": "Line Judge"
+        },
+        {
+          "v": "10:00-11:30"
+        },
+        {
+          "v": "Far Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Kate Castiglia"
+        },
+        {
+          "v": "Mavis"
+        },
+        {
+          "v": "H - 12:30-1:00"
+        },
+        {
+          "v": "TimeWarp - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Kate Castiglia"
+        },
+        {
+          "v": "Sailor"
+        },
+        {
+          "v": "I - 1:00-1:30"
+        },
+        {
+          "v": "TimeWarp - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Kate Castiglia"
+        },
+        {
+          "v": "Timer"
+        },
+        {
+          "v": "1:30-2:00"
+        },
+        {
+          "v": "TimeWarp - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Kate Castiglia"
+        },
+        {
+          "v": "Sailor"
+        },
+        {
+          "v": "K - 2:00-2:30"
+        },
+        {
+          "v": "Spaced Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Kate Castiglia"
+        },
+        {
+          "v": "Mavis"
+        },
+        {
+          "v": "L - 2:30-3:00"
+        },
+        {
+          "v": "Spaced Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Kate Castiglia"
+        },
+        {
+          "v": "Mavis"
+        },
+        {
+          "v": "H - 12:30-1:00"
+        },
+        {
+          "v": "Boom! - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Kate Castiglia"
+        },
+        {
+          "v": "Sailor"
+        },
+        {
+          "v": "H - 12:30-1:00"
+        },
+        {
+          "v": "Boom! - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Kate Castiglia"
+        },
+        {
+          "v": "Line Judge"
+        },
+        {
+          "v": "1:30-2:30"
+        },
+        {
+          "v": "Throw N Go - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Kate Castiglia"
+        },
+        {
+          "v": "Head Judge"
+        },
+        {
+          "v": "2:30-3:30"
+        },
+        {
+          "v": "Boom! - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Kate Castiglia"
+        },
+        {
+          "v": "Mavis"
+        },
+        {
+          "v": "N - 3:30-4:00"
+        },
+        {
+          "v": "Throw N Go - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Kate Castiglia"
+        },
+        {
+          "v": "FS Judge"
+        },
+        {
+          "v": "8:00-10:30"
+        },
+        {
+          "v": "Freestyle - P - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Kate Castiglia"
+        },
+        {
+          "v": "Mavis"
+        },
+        {
+          "v": "F - 10:30-11:00"
+        },
+        {
+          "v": "Frizgility - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Kate Castiglia"
+        },
+        {
+          "v": "Sailor"
+        },
+        {
+          "v": "F - 10:30-11:00"
+        },
+        {
+          "v": "Frizgility - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Kate Castiglia"
+        },
+        {
+          "v": "Mavis"
+        },
+        {
+          "v": "H - 12:30-1:00"
+        },
+        {
+          "v": "Greedy - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Kate Castiglia"
+        },
+        {
+          "v": "Sailor"
+        },
+        {
+          "v": "I - 1:00-1:30"
+        },
+        {
+          "v": "Greedy - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Kate Castiglia"
+        },
+        {
+          "v": "Mavis"
+        },
+        {
+          "v": "K - 2:00-2:30"
+        },
+        {
+          "v": "Four Way Play - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Kate Castiglia"
+        },
+        {
+          "v": "Sailor"
+        },
+        {
+          "v": "L - 2:30-3:00"
+        },
+        {
+          "v": "Four Way Play - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Kate Castiglia"
+        },
+        {
+          "v": "Line Judge"
+        },
+        {
+          "v": "3:00-4:00"
+        },
+        {
+          "v": "Greedy - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Kaylyn Jones"
+        },
+        {
+          "v": "Fay"
+        },
+        {
+          "v": "E - 10:00-10:30"
+        },
+        {
+          "v": "Far Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Kaylyn Jones"
+        },
+        {
+          "v": "Fay"
+        },
+        {
+          "v": "L - 2:30-3:00"
+        },
+        {
+          "v": "TimeWarp - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Kaylyn Jones"
+        },
+        {
+          "v": "Fay"
+        },
+        {
+          "v": "M - 3:00-3:30"
+        },
+        {
+          "v": "Throw N Go - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Kaylyn Jones"
+        },
+        {
+          "v": "Fay"
+        },
+        {
+          "v": "I - 1:00-1:30"
+        },
+        {
+          "v": "Four Way Play - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Kristina Everetts"
+        },
+        {
+          "v": "Riot"
+        },
+        {
+          "v": "B - 8:30-9:00"
+        },
+        {
+          "v": "7Up - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Kristina Everetts"
+        },
+        {
+          "v": "Riot"
+        },
+        {
+          "v": "D - 9:30-10:00"
+        },
+        {
+          "v": "Far Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Kristina Everetts"
+        },
+        {
+          "v": "Timer"
+        },
+        {
+          "v": "10:30-11:30"
+        },
+        {
+          "v": "7Up Tiebreakers / AM TimeWarp"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Kristina Everetts"
+        },
+        {
+          "v": "Riot"
+        },
+        {
+          "v": "J - 1:30-2:00"
+        },
+        {
+          "v": "TimeWarp - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Kristina Everetts"
+        },
+        {
+          "v": "Riot"
+        },
+        {
+          "v": "L - 2:30-3:00"
+        },
+        {
+          "v": "Spaced Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Kristina Everetts"
+        },
+        {
+          "v": "Line Judge"
+        },
+        {
+          "v": "8:00-8:30"
+        },
+        {
+          "v": "FunKey - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Kristina Everetts"
+        },
+        {
+          "v": "Riot"
+        },
+        {
+          "v": "C - 9:00-9:30"
+        },
+        {
+          "v": "FunKey - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Kristina Everetts"
+        },
+        {
+          "v": "Line Judge"
+        },
+        {
+          "v": "9:30-10:00"
+        },
+        {
+          "v": "FunKey - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Kristina Everetts"
+        },
+        {
+          "v": "Foot Fault Judge"
+        },
+        {
+          "v": "12:30-1:00"
+        },
+        {
+          "v": "Throw N Go - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Kristina Everetts"
+        },
+        {
+          "v": "Riot"
+        },
+        {
+          "v": "J - 1:30-2:00"
+        },
+        {
+          "v": "Boom! - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Kristina Everetts"
+        },
+        {
+          "v": "Riot"
+        },
+        {
+          "v": "L - 2:30-3:00"
+        },
+        {
+          "v": "Throw N Go - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Kristina Everetts"
+        },
+        {
+          "v": "Riot"
+        },
+        {
+          "v": "C - 9:00-9:30"
+        },
+        {
+          "v": "Frizgility - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Kristina Everetts"
+        },
+        {
+          "v": "Riot"
+        },
+        {
+          "v": "I - 1:00-1:30"
+        },
+        {
+          "v": "Four Way Play - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Kristina Everetts"
+        },
+        {
+          "v": "Line Judge"
+        },
+        {
+          "v": "1:30-2:00"
+        },
+        {
+          "v": "Greedy - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Kristina Everetts"
+        },
+        {
+          "v": "Riot"
+        },
+        {
+          "v": "L - 2:30-3:00"
+        },
+        {
+          "v": "Greedy - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Laura O'Neill"
+        },
+        {
+          "v": "Rogue"
+        },
+        {
+          "v": "B - 8:30-9:00"
+        },
+        {
+          "v": "7Up - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Laura O'Neill"
+        },
+        {
+          "v": "Head Judge"
+        },
+        {
+          "v": "9:00-10:00"
+        },
+        {
+          "v": "7Up - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Laura O'Neill"
+        },
+        {
+          "v": "Keen"
+        },
+        {
+          "v": "F - 10:30-11:00"
+        },
+        {
+          "v": "TimeWarp - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Laura O'Neill"
+        },
+        {
+          "v": "Keen"
+        },
+        {
+          "v": "H - 12:30-1:00"
+        },
+        {
+          "v": "Spaced Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Laura O'Neill"
+        },
+        {
+          "v": "Head Judge"
+        },
+        {
+          "v": "1:00-1:30"
+        },
+        {
+          "v": "TimeWarp - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Laura O'Neill"
+        },
+        {
+          "v": "Rogue"
+        },
+        {
+          "v": "J - 1:30-2:00"
+        },
+        {
+          "v": "Spaced Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Laura O'Neill"
+        },
+        {
+          "v": "Rogue"
+        },
+        {
+          "v": "L - 2:30-3:00"
+        },
+        {
+          "v": "TimeWarp - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Laura O'Neill"
+        },
+        {
+          "v": "Keen"
+        },
+        {
+          "v": "M - 3:00-3:30"
+        },
+        {
+          "v": "TimeWarp - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Laura O'Neill"
+        },
+        {
+          "v": "FS Judge"
+        },
+        {
+          "v": "8:00-10:30"
+        },
+        {
+          "v": "Freestyle - C - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Laura O'Neill"
+        },
+        {
+          "v": "Rogue"
+        },
+        {
+          "v": "E - 10:00-10:30"
+        },
+        {
+          "v": "FunKey - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Laura O'Neill"
+        },
+        {
+          "v": "Head Judge"
+        },
+        {
+          "v": "12:30-1:30"
+        },
+        {
+          "v": "Throw N Go - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Laura O'Neill"
+        },
+        {
+          "v": "Rogue"
+        },
+        {
+          "v": "J - 1:30-2:00"
+        },
+        {
+          "v": "Throw N Go - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Laura O'Neill"
+        },
+        {
+          "v": "Keen"
+        },
+        {
+          "v": "K - 2:00-2:30"
+        },
+        {
+          "v": "Throw N Go - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Laura O'Neill"
+        },
+        {
+          "v": "Rogue"
+        },
+        {
+          "v": "L - 2:30-3:00"
+        },
+        {
+          "v": "Boom! - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Laura O'Neill"
+        },
+        {
+          "v": "Keen"
+        },
+        {
+          "v": "M - 3:00-3:30"
+        },
+        {
+          "v": "Boom! - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Laura O'Neill"
+        },
+        {
+          "v": "Head Judge"
+        },
+        {
+          "v": "3:30-4:00"
+        },
+        {
+          "v": "Throw N Go - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Laura O'Neill"
+        },
+        {
+          "v": "Keen"
+        },
+        {
+          "v": "Z - 7:45-8:00"
+        },
+        {
+          "v": "Frizgility - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Laura O'Neill"
+        },
+        {
+          "v": "FS Judge"
+        },
+        {
+          "v": "8:00-10:30"
+        },
+        {
+          "v": "Freestyle - P - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Laura O'Neill"
+        },
+        {
+          "v": "Rogue"
+        },
+        {
+          "v": "G - 11:00-11:30"
+        },
+        {
+          "v": "Frizgility - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Laura O'Neill"
+        },
+        {
+          "v": "Head Judge"
+        },
+        {
+          "v": "12:30-1:00"
+        },
+        {
+          "v": "Four Way Play - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Laura O'Neill"
+        },
+        {
+          "v": "Rogue"
+        },
+        {
+          "v": "I - 1:00-1:30"
+        },
+        {
+          "v": "Greedy - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Laura O'Neill"
+        },
+        {
+          "v": "Head Judge"
+        },
+        {
+          "v": "1:30-2:00"
+        },
+        {
+          "v": "Four Way Play - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Laura O'Neill"
+        },
+        {
+          "v": "Keen"
+        },
+        {
+          "v": "K - 2:00-2:30"
+        },
+        {
+          "v": "Greedy - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Laura O'Neill"
+        },
+        {
+          "v": "Rogue"
+        },
+        {
+          "v": "M - 3:00-3:30"
+        },
+        {
+          "v": "Four Way Play - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Laura O'Neill"
+        },
+        {
+          "v": "Keen"
+        },
+        {
+          "v": "N - 3:30-4:00"
+        },
+        {
+          "v": "Four Way Play - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Logan Schutz"
+        },
+        {
+          "v": "Rubiks"
+        },
+        {
+          "v": "A - 8:00-8:30"
+        },
+        {
+          "v": "Far Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Logan Schutz"
+        },
+        {
+          "v": "Maple"
+        },
+        {
+          "v": "F - 10:30-11:00"
+        },
+        {
+          "v": "Far Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Logan Schutz"
+        },
+        {
+          "v": "Rivet"
+        },
+        {
+          "v": "F - 10:30-11:00"
+        },
+        {
+          "v": "Far Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Logan Schutz"
+        },
+        {
+          "v": "Mingo"
+        },
+        {
+          "v": "G - 11:00-11:30"
+        },
+        {
+          "v": "Far Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Logan Schutz"
+        },
+        {
+          "v": "Rivet"
+        },
+        {
+          "v": "H - 12:30-1:00"
+        },
+        {
+          "v": "Spaced Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Logan Schutz"
+        },
+        {
+          "v": "Mingo"
+        },
+        {
+          "v": "I - 1:00-1:30"
+        },
+        {
+          "v": "Spaced Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Logan Schutz"
+        },
+        {
+          "v": "Rubiks"
+        },
+        {
+          "v": "J - 1:30-2:00"
+        },
+        {
+          "v": "TimeWarp - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Logan Schutz"
+        },
+        {
+          "v": "Rivet"
+        },
+        {
+          "v": "K - 2:00-2:30"
+        },
+        {
+          "v": "TimeWarp - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Logan Schutz"
+        },
+        {
+          "v": "Mingo"
+        },
+        {
+          "v": "L - 2:30-3:00"
+        },
+        {
+          "v": "TimeWarp - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Logan Schutz"
+        },
+        {
+          "v": "Rubiks"
+        },
+        {
+          "v": "M - 3:00-3:30"
+        },
+        {
+          "v": "Spaced Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Logan Schutz"
+        },
+        {
+          "v": "Rubiks"
+        },
+        {
+          "v": "E - 10:00-10:30"
+        },
+        {
+          "v": "FunKey - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Logan Schutz"
+        },
+        {
+          "v": "Rubiks"
+        },
+        {
+          "v": "I - 1:00-1:30"
+        },
+        {
+          "v": "Throw N Go - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Logan Schutz"
+        },
+        {
+          "v": "Rubiks"
+        },
+        {
+          "v": "L - 2:30-3:00"
+        },
+        {
+          "v": "Boom! - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Logan Schutz"
+        },
+        {
+          "v": "Rubiks"
+        },
+        {
+          "v": "E - 10:00-10:30"
+        },
+        {
+          "v": "Frizgility - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Logan Schutz"
+        },
+        {
+          "v": "Mingo"
+        },
+        {
+          "v": "X - 12:15-1:00"
+        },
+        {
+          "v": "Four Way Play - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Logan Schutz"
+        },
+        {
+          "v": "Rubiks"
+        },
+        {
+          "v": "J - 1:30-2:00"
+        },
+        {
+          "v": "Greedy - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Logan Schutz"
+        },
+        {
+          "v": "Mingo"
+        },
+        {
+          "v": "L - 2:30-3:00"
+        },
+        {
+          "v": "Greedy - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Logan Schutz"
+        },
+        {
+          "v": "Rubiks"
+        },
+        {
+          "v": "M - 3:00-3:30"
+        },
+        {
+          "v": "Four Way Play - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Logan Schutz"
+        },
+        {
+          "v": "Rubiks"
+        },
+        {
+          "v": "N - 3:30-4:00"
+        },
+        {
+          "v": "Greedy - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Merrill Jordan"
+        },
+        {
+          "v": "Mishka"
+        },
+        {
+          "v": "C - 9:00-9:30"
+        },
+        {
+          "v": "7Up - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Merrill Jordan"
+        },
+        {
+          "v": "Quinn"
+        },
+        {
+          "v": "F - 10:30-11:00"
+        },
+        {
+          "v": "Far Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Merrill Jordan"
+        },
+        {
+          "v": "Line Judge"
+        },
+        {
+          "v": "12:30-1:30"
+        },
+        {
+          "v": "Spaced Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Merrill Jordan"
+        },
+        {
+          "v": "Quinn"
+        },
+        {
+          "v": "J - 1:30-2:00"
+        },
+        {
+          "v": "Spaced Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Merrill Jordan"
+        },
+        {
+          "v": "Line Judge"
+        },
+        {
+          "v": "2:30-3:30"
+        },
+        {
+          "v": "TimeWarp - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Merrill Jordan"
+        },
+        {
+          "v": "Line Judge"
+        },
+        {
+          "v": "10:30-11:30"
+        },
+        {
+          "v": "Tiebreakers - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Merrill Jordan"
+        },
+        {
+          "v": "Line Judge"
+        },
+        {
+          "v": "12:30-1:30"
+        },
+        {
+          "v": "Throw N Go - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Merrill Jordan"
+        },
+        {
+          "v": "Quinn"
+        },
+        {
+          "v": "J - 1:30-2:00"
+        },
+        {
+          "v": "Throw N Go - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Merrill Jordan"
+        },
+        {
+          "v": "Mishka"
+        },
+        {
+          "v": "K - 2:00-2:30"
+        },
+        {
+          "v": "Boom! - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Merrill Jordan"
+        },
+        {
+          "v": "Quinn"
+        },
+        {
+          "v": "L - 2:30-3:00"
+        },
+        {
+          "v": "Boom! - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Merrill Jordan"
+        },
+        {
+          "v": "Line Judge"
+        },
+        {
+          "v": "3:00-3:30"
+        },
+        {
+          "v": "Boom! - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Merrill Jordan"
+        },
+        {
+          "v": "Line Judge"
+        },
+        {
+          "v": "8:00-9:00"
+        },
+        {
+          "v": "Frizgility - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Merrill Jordan"
+        },
+        {
+          "v": "Quinn"
+        },
+        {
+          "v": "J - 1:30-2:00"
+        },
+        {
+          "v": "Four Way Play - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Merrill Jordan"
+        },
+        {
+          "v": "Quinn"
+        },
+        {
+          "v": "L - 2:30-3:00"
+        },
+        {
+          "v": "Greedy - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Merrill Jordan"
+        },
+        {
+          "v": "Mishka"
+        },
+        {
+          "v": "N - 3:30-4:00"
+        },
+        {
+          "v": "Greedy - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Michael Meyers"
+        },
+        {
+          "v": "Flirt"
+        },
+        {
+          "v": "J - 1:30-2:00"
+        },
+        {
+          "v": "Boom! - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Michael Meyers"
+        },
+        {
+          "v": "Nimble"
+        },
+        {
+          "v": "K - 2:00-2:30"
+        },
+        {
+          "v": "Boom! - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Michael Meyers"
+        },
+        {
+          "v": "Flirt"
+        },
+        {
+          "v": "M - 3:00-3:30"
+        },
+        {
+          "v": "Throw N Go - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Michael Meyers"
+        },
+        {
+          "v": "Thornton"
+        },
+        {
+          "v": "N - 3:30-4:00"
+        },
+        {
+          "v": "Throw N Go - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Michael Meyers"
+        },
+        {
+          "v": "Thornton"
+        },
+        {
+          "v": "E - 10:00-10:30"
+        },
+        {
+          "v": "Frizgility - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Michael Meyers"
+        },
+        {
+          "v": "Flirt"
+        },
+        {
+          "v": "G - 11:00-11:30"
+        },
+        {
+          "v": "Frizgility - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Michael Meyers"
+        },
+        {
+          "v": "Flirt"
+        },
+        {
+          "v": "I - 1:00-1:30"
+        },
+        {
+          "v": "Four Way Play - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Michael Meyers"
+        },
+        {
+          "v": "Thornton"
+        },
+        {
+          "v": "K - 2:00-2:30"
+        },
+        {
+          "v": "Four Way Play - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Michele Cardone"
+        },
+        {
+          "v": "Dani"
+        },
+        {
+          "v": "B - 8:30-9:00"
+        },
+        {
+          "v": "Far Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Michele Cardone"
+        },
+        {
+          "v": "Zack"
+        },
+        {
+          "v": "D - 9:30-10:00"
+        },
+        {
+          "v": "Far Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Michele Cardone"
+        },
+        {
+          "v": "Dani"
+        },
+        {
+          "v": "E - 10:00-10:30"
+        },
+        {
+          "v": "7Up - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Michele Cardone"
+        },
+        {
+          "v": "Dani"
+        },
+        {
+          "v": "I - 1:00-1:30"
+        },
+        {
+          "v": "TimeWarp - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Michele Cardone"
+        },
+        {
+          "v": "Zack"
+        },
+        {
+          "v": "J - 1:30-2:00"
+        },
+        {
+          "v": "TimeWarp - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Michele Cardone"
+        },
+        {
+          "v": "Dani"
+        },
+        {
+          "v": "L - 2:30-3:00"
+        },
+        {
+          "v": "Spaced Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Michele Cardone"
+        },
+        {
+          "v": "Dani"
+        },
+        {
+          "v": "B - 8:30-9:00"
+        },
+        {
+          "v": "FunKey - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Michele Cardone"
+        },
+        {
+          "v": "Zack"
+        },
+        {
+          "v": "I - 1:00-1:30"
+        },
+        {
+          "v": "Boom! - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Michele Cardone"
+        },
+        {
+          "v": "Dani"
+        },
+        {
+          "v": "J - 1:30-2:00"
+        },
+        {
+          "v": "Throw N Go - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Michele Cardone"
+        },
+        {
+          "v": "Zack"
+        },
+        {
+          "v": "L - 2:30-3:00"
+        },
+        {
+          "v": "Throw N Go - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Michele Cardone"
+        },
+        {
+          "v": "Dani"
+        },
+        {
+          "v": "M - 3:00-3:30"
+        },
+        {
+          "v": "Boom! - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Michele Cardone"
+        },
+        {
+          "v": "Dani"
+        },
+        {
+          "v": "B - 8:30-9:00"
+        },
+        {
+          "v": "Frizgility - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Michele Cardone"
+        },
+        {
+          "v": "Dani"
+        },
+        {
+          "v": "X - 12:15-1:00"
+        },
+        {
+          "v": "Four Way Play - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Michele Cardone"
+        },
+        {
+          "v": "Zack"
+        },
+        {
+          "v": "J - 1:30-2:00"
+        },
+        {
+          "v": "Greedy - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Michele Cardone"
+        },
+        {
+          "v": "Dani"
+        },
+        {
+          "v": "K - 2:00-2:30"
+        },
+        {
+          "v": "Greedy - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Michele Cardone"
+        },
+        {
+          "v": "Zack"
+        },
+        {
+          "v": "M - 3:00-3:30"
+        },
+        {
+          "v": "Four Way Play - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Nick Sikora"
+        },
+        {
+          "v": "Jack"
+        },
+        {
+          "v": "E - 10:00-10:30"
+        },
+        {
+          "v": "Far Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Nick Sikora"
+        },
+        {
+          "v": "Jack"
+        },
+        {
+          "v": "N - 3:30-4:00"
+        },
+        {
+          "v": "Throw N Go - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Nikki McDonald"
+        },
+        {
+          "v": "Haze"
+        },
+        {
+          "v": "A - 8:00-8:30"
+        },
+        {
+          "v": "7Up - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Nikki McDonald"
+        },
+        {
+          "v": "Royal"
+        },
+        {
+          "v": "B - 8:30-9:00"
+        },
+        {
+          "v": "7Up - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Nikki McDonald"
+        },
+        {
+          "v": "Haze"
+        },
+        {
+          "v": "C - 9:00-9:30"
+        },
+        {
+          "v": "Far Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Nikki McDonald"
+        },
+        {
+          "v": "Royal"
+        },
+        {
+          "v": "H - 12:30-1:00"
+        },
+        {
+          "v": "Spaced Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Nikki McDonald"
+        },
+        {
+          "v": "Royal"
+        },
+        {
+          "v": "J - 1:30-2:00"
+        },
+        {
+          "v": "TimeWarp - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Nikki McDonald"
+        },
+        {
+          "v": "Haze"
+        },
+        {
+          "v": "L - 2:30-3:00"
+        },
+        {
+          "v": "Spaced Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Nikki McDonald"
+        },
+        {
+          "v": "Haze"
+        },
+        {
+          "v": "A - 8:00-8:30"
+        },
+        {
+          "v": "Freestyle - C - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Nikki McDonald"
+        },
+        {
+          "v": "Royal"
+        },
+        {
+          "v": "C - 9:00-9:30"
+        },
+        {
+          "v": "Freestyle - C - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Nikki McDonald"
+        },
+        {
+          "v": "Haze"
+        },
+        {
+          "v": "D - 9:30-10:00"
+        },
+        {
+          "v": "FunKey - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Nikki McDonald"
+        },
+        {
+          "v": "Royal"
+        },
+        {
+          "v": "E - 10:00-10:30"
+        },
+        {
+          "v": "FunKey - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Nikki McDonald"
+        },
+        {
+          "v": "Haze"
+        },
+        {
+          "v": "H - 12:30-1:00"
+        },
+        {
+          "v": "Boom! - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Nikki McDonald"
+        },
+        {
+          "v": "Royal"
+        },
+        {
+          "v": "I - 1:00-1:30"
+        },
+        {
+          "v": "Boom! - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Nikki McDonald"
+        },
+        {
+          "v": "Haze"
+        },
+        {
+          "v": "J - 1:30-2:00"
+        },
+        {
+          "v": "Throw N Go - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Nikki McDonald"
+        },
+        {
+          "v": "Royal"
+        },
+        {
+          "v": "K - 2:00-2:30"
+        },
+        {
+          "v": "Throw N Go - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Nikki McDonald"
+        },
+        {
+          "v": "Haze"
+        },
+        {
+          "v": "TBD"
+        },
+        {
+          "v": "Freestyle - P - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Nikki McDonald"
+        },
+        {
+          "v": "Royal"
+        },
+        {
+          "v": "TBD"
+        },
+        {
+          "v": "Freestyle - P - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Nikki McDonald"
+        },
+        {
+          "v": "Royal"
+        },
+        {
+          "v": "C - 9:00-9:30"
+        },
+        {
+          "v": "Frizgility - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Nikki McDonald"
+        },
+        {
+          "v": "Haze"
+        },
+        {
+          "v": "D - 9:30-10:00"
+        },
+        {
+          "v": "Frizgility - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Nikki McDonald"
+        },
+        {
+          "v": "Haze"
+        },
+        {
+          "v": "J - 1:30-2:00"
+        },
+        {
+          "v": "Greedy - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Nikki McDonald"
+        },
+        {
+          "v": "Royal"
+        },
+        {
+          "v": "J - 1:30-2:00"
+        },
+        {
+          "v": "Greedy - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Nikki McDonald"
+        },
+        {
+          "v": "Royal"
+        },
+        {
+          "v": "M - 3:00-3:30"
+        },
+        {
+          "v": "Four Way Play - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Nikki McDonald"
+        },
+        {
+          "v": "Haze"
+        },
+        {
+          "v": "N - 3:30-4:00"
+        },
+        {
+          "v": "Four Way Play - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Nikki Sheckells"
+        },
+        {
+          "v": "Nimble"
+        },
+        {
+          "v": "A - 8:00-8:30"
+        },
+        {
+          "v": "FunKey - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Nikki Sheckells"
+        },
+        {
+          "v": "Flirt"
+        },
+        {
+          "v": "B - 8:30-9:00"
+        },
+        {
+          "v": "FunKey - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Nikki Sheckells"
+        },
+        {
+          "v": "Nimble"
+        },
+        {
+          "v": "C - 9:00-9:30"
+        },
+        {
+          "v": "Freestyle - C - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Nikki Sheckells"
+        },
+        {
+          "v": "Thornton"
+        },
+        {
+          "v": "D - 9:30-10:00"
+        },
+        {
+          "v": "FunKey - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Nikki Sheckells"
+        },
+        {
+          "v": "Bigby"
+        },
+        {
+          "v": "E - 10:00-10:30"
+        },
+        {
+          "v": "Freestyle - C - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Nikki Sheckells"
+        },
+        {
+          "v": "Bigby"
+        },
+        {
+          "v": "I - 1:00-1:30"
+        },
+        {
+          "v": "Boom! - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Nikki Sheckells"
+        },
+        {
+          "v": "Thornton"
+        },
+        {
+          "v": "J - 1:30-2:00"
+        },
+        {
+          "v": "Boom! - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Nikki Sheckells"
+        },
+        {
+          "v": "Bigby"
+        },
+        {
+          "v": "M - 3:00-3:30"
+        },
+        {
+          "v": "Throw N Go - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Nikki Sheckells"
+        },
+        {
+          "v": "Nimble"
+        },
+        {
+          "v": "TBD"
+        },
+        {
+          "v": "Freestyle - P - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Nikki Sheckells"
+        },
+        {
+          "v": "Bigby"
+        },
+        {
+          "v": "TBD"
+        },
+        {
+          "v": "Freestyle - P - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Nikki Sheckells"
+        },
+        {
+          "v": "Nimble"
+        },
+        {
+          "v": "E - 10:00-10:30"
+        },
+        {
+          "v": "Frizgility - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Nikki Sheckells"
+        },
+        {
+          "v": "Bigby"
+        },
+        {
+          "v": "F - 10:30-11:00"
+        },
+        {
+          "v": "Frizgility - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Nikki Sheckells"
+        },
+        {
+          "v": "Thornton"
+        },
+        {
+          "v": "G - 11:00-11:30"
+        },
+        {
+          "v": "Frizgility - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Nikki Sheckells"
+        },
+        {
+          "v": "Thornton"
+        },
+        {
+          "v": "X - 12:15-1:00"
+        },
+        {
+          "v": "Four Way Play - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Nikki Sheckells"
+        },
+        {
+          "v": "Flirt"
+        },
+        {
+          "v": "X - 12:15-1:00"
+        },
+        {
+          "v": "Four Way Play - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Nikki Sheckells"
+        },
+        {
+          "v": "Nimble"
+        },
+        {
+          "v": "I - 1:00-1:30"
+        },
+        {
+          "v": "Four Way Play - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Nikki Sheckells"
+        },
+        {
+          "v": "Bigby"
+        },
+        {
+          "v": "J - 1:30-2:00"
+        },
+        {
+          "v": "Four Way Play - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Nikki Sheckells"
+        },
+        {
+          "v": "Flirt"
+        },
+        {
+          "v": "M - 3:00-3:30"
+        },
+        {
+          "v": "Greedy - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Nikki Sheckells"
+        },
+        {
+          "v": "Bigby"
+        },
+        {
+          "v": "N - 3:30-4:00"
+        },
+        {
+          "v": "Greedy - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Rachel Ortiz"
+        },
+        {
+          "v": "Zealous"
+        },
+        {
+          "v": "D - 9:30-10:00"
+        },
+        {
+          "v": "Freestyle - C - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Rachel Ortiz"
+        },
+        {
+          "v": "Layla"
+        },
+        {
+          "v": "B - 8:30-9:00"
+        },
+        {
+          "v": "Freestyle - C - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Rachel Ortiz"
+        },
+        {
+          "v": "Riddle"
+        },
+        {
+          "v": "E - 10:00-10:30"
+        },
+        {
+          "v": "FunKey - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Rachel Ortiz"
+        },
+        {
+          "v": "Layla"
+        },
+        {
+          "v": "H - 12:30-1:00"
+        },
+        {
+          "v": "Throw N Go - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Rachel Ortiz"
+        },
+        {
+          "v": "Zealous"
+        },
+        {
+          "v": "I - 1:00-1:30"
+        },
+        {
+          "v": "Throw N Go - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Rachel Ortiz"
+        },
+        {
+          "v": "Riddle"
+        },
+        {
+          "v": "J - 1:30-2:00"
+        },
+        {
+          "v": "Throw N Go - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Rachel Ortiz"
+        },
+        {
+          "v": "Zealous"
+        },
+        {
+          "v": "TBD"
+        },
+        {
+          "v": "Freestyle - P - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Rachel Ortiz"
+        },
+        {
+          "v": "Layla"
+        },
+        {
+          "v": "TBD"
+        },
+        {
+          "v": "Freestyle - P - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Rachel Ortiz"
+        },
+        {
+          "v": "Riddle"
+        },
+        {
+          "v": "B - 8:30-9:00"
+        },
+        {
+          "v": "Frizgility - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Rachel Ortiz"
+        },
+        {
+          "v": "Layla"
+        },
+        {
+          "v": "G - 11:00-11:30"
+        },
+        {
+          "v": "Frizgility - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Rachel Ortiz"
+        },
+        {
+          "v": "Zealous"
+        },
+        {
+          "v": "I - 1:00-1:30"
+        },
+        {
+          "v": "Four Way Play - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Rachel Ortiz"
+        },
+        {
+          "v": "Riddle"
+        },
+        {
+          "v": "K - 2:00-2:30"
+        },
+        {
+          "v": "Four Way Play - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Sam Taylor"
+        },
+        {
+          "v": "Nero"
+        },
+        {
+          "v": "A - 8:00-8:30"
+        },
+        {
+          "v": "Far Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Sam Taylor"
+        },
+        {
+          "v": "Cinder"
+        },
+        {
+          "v": "B - 8:30-9:00"
+        },
+        {
+          "v": "7Up - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Sam Taylor"
+        },
+        {
+          "v": "Cinder"
+        },
+        {
+          "v": "C - 9:00-9:30"
+        },
+        {
+          "v": "Far Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Sam Taylor"
+        },
+        {
+          "v": "Atlas"
+        },
+        {
+          "v": "D - 9:30-10:00"
+        },
+        {
+          "v": "7Up - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Sam Taylor"
+        },
+        {
+          "v": "Nero"
+        },
+        {
+          "v": "E - 10:00-10:30"
+        },
+        {
+          "v": "7Up - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Sam Taylor"
+        },
+        {
+          "v": "Cinder"
+        },
+        {
+          "v": "F - 10:30-11:00"
+        },
+        {
+          "v": "TimeWarp - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Sam Taylor"
+        },
+        {
+          "v": "Atlas"
+        },
+        {
+          "v": "G - 11:00-11:30"
+        },
+        {
+          "v": "Far Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Sam Taylor"
+        },
+        {
+          "v": "Atlas"
+        },
+        {
+          "v": "H - 12:30-1:00"
+        },
+        {
+          "v": "Spaced Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Sam Taylor"
+        },
+        {
+          "v": "Cinder"
+        },
+        {
+          "v": "I - 1:00-1:30"
+        },
+        {
+          "v": "Spaced Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Sam Taylor"
+        },
+        {
+          "v": "Atlas"
+        },
+        {
+          "v": "K - 2:00-2:30"
+        },
+        {
+          "v": "TimeWarp - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Sam Taylor"
+        },
+        {
+          "v": "Cinder"
+        },
+        {
+          "v": "B - 8:30-9:00"
+        },
+        {
+          "v": "FunKey - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Sam Taylor"
+        },
+        {
+          "v": "Atlas"
+        },
+        {
+          "v": "C - 9:00-9:30"
+        },
+        {
+          "v": "FunKey - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Sam Taylor"
+        },
+        {
+          "v": "Nero"
+        },
+        {
+          "v": "D - 9:30-10:00"
+        },
+        {
+          "v": "FunKey - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Sam Taylor"
+        },
+        {
+          "v": "Atlas"
+        },
+        {
+          "v": "I - 1:00-1:30"
+        },
+        {
+          "v": "Throw N Go - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Sam Taylor"
+        },
+        {
+          "v": "Cinder"
+        },
+        {
+          "v": "J - 1:30-2:00"
+        },
+        {
+          "v": "Throw N Go - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Sam Taylor"
+        },
+        {
+          "v": "Atlas"
+        },
+        {
+          "v": "K - 2:00-2:30"
+        },
+        {
+          "v": "Boom! - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Sam Taylor"
+        },
+        {
+          "v": "Cinder"
+        },
+        {
+          "v": "L - 2:30-3:00"
+        },
+        {
+          "v": "Boom! - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Sam Taylor"
+        },
+        {
+          "v": "Line Judge"
+        },
+        {
+          "v": "3:00-4:00"
+        },
+        {
+          "v": "Throw N Go - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Sam Taylor"
+        },
+        {
+          "v": "Head Judge"
+        },
+        {
+          "v": "8:00-9:00"
+        },
+        {
+          "v": "Frizgility - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Sam Taylor"
+        },
+        {
+          "v": "Nero"
+        },
+        {
+          "v": "D - 9:30-10:00"
+        },
+        {
+          "v": "Frizgility - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Sam Taylor"
+        },
+        {
+          "v": "Atlas"
+        },
+        {
+          "v": "E - 10:00-10:30"
+        },
+        {
+          "v": "Frizgility - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Sam Taylor"
+        },
+        {
+          "v": "Cinder"
+        },
+        {
+          "v": "F - 10:30-11:00"
+        },
+        {
+          "v": "Frizgility - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Sam Taylor"
+        },
+        {
+          "v": "Nero"
+        },
+        {
+          "v": "X - 12:15-1:00"
+        },
+        {
+          "v": "Four Way Play - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Sam Taylor"
+        },
+        {
+          "v": "Atlas"
+        },
+        {
+          "v": "J - 1:30-2:00"
+        },
+        {
+          "v": "Four Way Play - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Sam Taylor"
+        },
+        {
+          "v": "Cinder"
+        },
+        {
+          "v": "K - 2:00-2:30"
+        },
+        {
+          "v": "Four Way Play - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Sam Taylor"
+        },
+        {
+          "v": "Atlas"
+        },
+        {
+          "v": "L - 2:30-3:00"
+        },
+        {
+          "v": "Greedy - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Sam Taylor"
+        },
+        {
+          "v": "Cinder"
+        },
+        {
+          "v": "M - 3:00-3:30"
+        },
+        {
+          "v": "Greedy - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Sandra Taylor"
+        },
+        {
+          "v": "Atlas"
+        },
+        {
+          "v": "B - 8:30-9:00"
+        },
+        {
+          "v": "Far Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Sandra Taylor"
+        },
+        {
+          "v": "Nero"
+        },
+        {
+          "v": "C - 9:00-9:30"
+        },
+        {
+          "v": "7Up - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Sandra Taylor"
+        },
+        {
+          "v": "Nero"
+        },
+        {
+          "v": "F - 10:30-11:00"
+        },
+        {
+          "v": "Far Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Sandra Taylor"
+        },
+        {
+          "v": "Cinder"
+        },
+        {
+          "v": "G - 11:00-11:30"
+        },
+        {
+          "v": "Far Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Sandra Taylor"
+        },
+        {
+          "v": "Head Judge"
+        },
+        {
+          "v": "12:30-1:00"
+        },
+        {
+          "v": "TimeWarp - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Sandra Taylor"
+        },
+        {
+          "v": "Nero"
+        },
+        {
+          "v": "I - 1:00-1:30"
+        },
+        {
+          "v": "Spaced Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Sandra Taylor"
+        },
+        {
+          "v": "Line Judge"
+        },
+        {
+          "v": "1:30-2:30"
+        },
+        {
+          "v": "TimeWarp - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Sandra Taylor"
+        },
+        {
+          "v": "Nero"
+        },
+        {
+          "v": "L - 2:30-3:00"
+        },
+        {
+          "v": "TimeWarp - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Sandra Taylor"
+        },
+        {
+          "v": "Nero"
+        },
+        {
+          "v": "A - 8:00-8:30"
+        },
+        {
+          "v": "FunKey - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Sandra Taylor"
+        },
+        {
+          "v": "Head Judge"
+        },
+        {
+          "v": "9:00-9:30"
+        },
+        {
+          "v": "FunKey - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Sandra Taylor"
+        },
+        {
+          "v": "Nero"
+        },
+        {
+          "v": "I - 1:00-1:30"
+        },
+        {
+          "v": "Throw N Go - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Sandra Taylor"
+        },
+        {
+          "v": "Nero"
+        },
+        {
+          "v": "K - 2:00-2:30"
+        },
+        {
+          "v": "Boom! - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Sandra Taylor"
+        },
+        {
+          "v": "Nero"
+        },
+        {
+          "v": "F - 10:30-11:00"
+        },
+        {
+          "v": "Frizgility - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Sandra Taylor"
+        },
+        {
+          "v": "Head Judge"
+        },
+        {
+          "v": "1:00-1:30"
+        },
+        {
+          "v": "Greedy - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Sandra Taylor"
+        },
+        {
+          "v": "Nero"
+        },
+        {
+          "v": "K - 2:00-2:30"
+        },
+        {
+          "v": "Four Way Play - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Sandra Taylor"
+        },
+        {
+          "v": "Line Judge"
+        },
+        {
+          "v": "2:30-3:00"
+        },
+        {
+          "v": "Greedy - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Sandra Taylor"
+        },
+        {
+          "v": "Nero"
+        },
+        {
+          "v": "N - 3:30-4:00"
+        },
+        {
+          "v": "Greedy - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Sarah Indano"
+        },
+        {
+          "v": "Head Judge"
+        },
+        {
+          "v": "8:00-9:00"
+        },
+        {
+          "v": "7Up - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Sarah Indano"
+        },
+        {
+          "v": "Lyra"
+        },
+        {
+          "v": "D - 9:30-10:00"
+        },
+        {
+          "v": "7Up - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Sarah Indano"
+        },
+        {
+          "v": "Lyra"
+        },
+        {
+          "v": "F - 10:30-11:00"
+        },
+        {
+          "v": "TimeWarp - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Sarah Indano"
+        },
+        {
+          "v": "Head Judge"
+        },
+        {
+          "v": "12:30-1:00"
+        },
+        {
+          "v": "Spaced Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Sarah Indano"
+        },
+        {
+          "v": "Paxton"
+        },
+        {
+          "v": "I - 1:00-1:30"
+        },
+        {
+          "v": "Spaced Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Sarah Indano"
+        },
+        {
+          "v": "Lyra"
+        },
+        {
+          "v": "J - 1:30-2:00"
+        },
+        {
+          "v": "Spaced Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Sarah Indano"
+        },
+        {
+          "v": "Head Judge"
+        },
+        {
+          "v": "2:00-2:30"
+        },
+        {
+          "v": "Spaced Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Sarah Indano"
+        },
+        {
+          "v": "Paxton"
+        },
+        {
+          "v": "A - 8:00-8:30"
+        },
+        {
+          "v": "Freestyle - C - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Sarah Indano"
+        },
+        {
+          "v": "Lyra"
+        },
+        {
+          "v": "C - 9:00-9:30"
+        },
+        {
+          "v": "Freestyle - C - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Sarah Indano"
+        },
+        {
+          "v": "Lyra"
+        },
+        {
+          "v": "E - 10:00-10:30"
+        },
+        {
+          "v": "FunKey - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Sarah Indano"
+        },
+        {
+          "v": "Head or Line Judge"
+        },
+        {
+          "v": "11:30-12:00"
+        },
+        {
+          "v": "Tiebreakers - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Sarah Indano"
+        },
+        {
+          "v": "Bijou"
+        },
+        {
+          "v": "H - 12:30-1:00"
+        },
+        {
+          "v": "Throw N Go - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Sarah Indano"
+        },
+        {
+          "v": "Paxton"
+        },
+        {
+          "v": "I - 1:00-1:30"
+        },
+        {
+          "v": "Throw N Go - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Sarah Indano"
+        },
+        {
+          "v": "Fletcher"
+        },
+        {
+          "v": "J - 1:30-2:00"
+        },
+        {
+          "v": "Throw N Go - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Sarah Indano"
+        },
+        {
+          "v": "Paxton"
+        },
+        {
+          "v": "K - 2:00-2:30"
+        },
+        {
+          "v": "Boom! - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Sarah Indano"
+        },
+        {
+          "v": "Fletcher"
+        },
+        {
+          "v": "L - 2:30-3:00"
+        },
+        {
+          "v": "Boom! - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Sarah Indano"
+        },
+        {
+          "v": "Lyra"
+        },
+        {
+          "v": "M - 3:00-3:30"
+        },
+        {
+          "v": "Boom! - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Sarah Indano"
+        },
+        {
+          "v": "Lyra"
+        },
+        {
+          "v": "N - 3:30-4:00"
+        },
+        {
+          "v": "Throw N Go - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Sarah Indano"
+        },
+        {
+          "v": "Head or Line Judge"
+        },
+        {
+          "v": "4:00"
+        },
+        {
+          "v": "Tiebreakers - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Sarah Indano"
+        },
+        {
+          "v": "Lyra"
+        },
+        {
+          "v": "TBD"
+        },
+        {
+          "v": "Freestyle - P - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Sarah Indano"
+        },
+        {
+          "v": "Paxton"
+        },
+        {
+          "v": "TBD"
+        },
+        {
+          "v": "Freestyle - P - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Sarah Indano"
+        },
+        {
+          "v": "Bijou"
+        },
+        {
+          "v": "A - 8:00-8:30"
+        },
+        {
+          "v": "Frizgility - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Sarah Indano"
+        },
+        {
+          "v": "Fletcher"
+        },
+        {
+          "v": "B - 8:30-9:00"
+        },
+        {
+          "v": "Frizgility - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Sarah Indano"
+        },
+        {
+          "v": "Lyra"
+        },
+        {
+          "v": "F - 10:30-11:00"
+        },
+        {
+          "v": "Frizgility - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Sarah Indano"
+        },
+        {
+          "v": "Paxton"
+        },
+        {
+          "v": "G - 11:00-11:30"
+        },
+        {
+          "v": "Frizgility - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Sarah Indano"
+        },
+        {
+          "v": "Lyra"
+        },
+        {
+          "v": "H - 12:30-1:00"
+        },
+        {
+          "v": "Greedy - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Sarah Indano"
+        },
+        {
+          "v": "Paxton"
+        },
+        {
+          "v": "I - 1:00-1:30"
+        },
+        {
+          "v": "Greedy - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Sarah Indano"
+        },
+        {
+          "v": "Lyra"
+        },
+        {
+          "v": "J - 1:30-2:00"
+        },
+        {
+          "v": "Four Way Play - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Sarah Indano"
+        },
+        {
+          "v": "Fletcher"
+        },
+        {
+          "v": "J - 1:30-2:00"
+        },
+        {
+          "v": "Four Way Play - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Sarah Indano"
+        },
+        {
+          "v": "Paxton"
+        },
+        {
+          "v": "K - 2:00-2:30"
+        },
+        {
+          "v": "Four Way Play - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Sarah Indano"
+        },
+        {
+          "v": "Bijou"
+        },
+        {
+          "v": "L - 2:30-3:00"
+        },
+        {
+          "v": "Four Way Play - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Sarah Indano"
+        },
+        {
+          "v": "Head Judge"
+        },
+        {
+          "v": "3:00-4:00"
+        },
+        {
+          "v": "Four Way Play - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Sarah Stoodley"
+        },
+        {
+          "v": "Head Judge"
+        },
+        {
+          "v": "8:00-9:00"
+        },
+        {
+          "v": "Far Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Sarah Stoodley"
+        },
+        {
+          "v": "Rivet"
+        },
+        {
+          "v": "D - 9:30-10:00"
+        },
+        {
+          "v": "7Up - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Sarah Stoodley"
+        },
+        {
+          "v": "Head Judge"
+        },
+        {
+          "v": "10:00-10:30"
+        },
+        {
+          "v": "7Up - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Sarah Stoodley"
+        },
+        {
+          "v": "Head Judge"
+        },
+        {
+          "v": "10:30-11:30"
+        },
+        {
+          "v": "Tiebreakers / AM TimeWarp - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Sarah Stoodley"
+        },
+        {
+          "v": "Mingo"
+        },
+        {
+          "v": "H - 12:30-1:00"
+        },
+        {
+          "v": "TimeWarp - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Sarah Stoodley"
+        },
+        {
+          "v": "Rivet"
+        },
+        {
+          "v": "I - 1:00-1:30"
+        },
+        {
+          "v": "TimeWarp - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Sarah Stoodley"
+        },
+        {
+          "v": "Mingo"
+        },
+        {
+          "v": "K - 2:00-2:30"
+        },
+        {
+          "v": "Spaced Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Sarah Stoodley"
+        },
+        {
+          "v": "Rivet"
+        },
+        {
+          "v": "M - 3:00-3:30"
+        },
+        {
+          "v": "Spaced Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Sarah Stoodley"
+        },
+        {
+          "v": "Rivet"
+        },
+        {
+          "v": "TBD"
+        },
+        {
+          "v": "Freestyle - P - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Sarah Stoodley"
+        },
+        {
+          "v": "Mingo"
+        },
+        {
+          "v": "A - 8:00-8:30"
+        },
+        {
+          "v": "Frizgility - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Sarah Stoodley"
+        },
+        {
+          "v": "Head or Line Judge"
+        },
+        {
+          "v": "11:30-12:00"
+        },
+        {
+          "v": "Tiebreakers - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Sarah Stoodley"
+        },
+        {
+          "v": "Rivet"
+        },
+        {
+          "v": "H - 12:30-1:00"
+        },
+        {
+          "v": "Greedy - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Sarah Stoodley"
+        },
+        {
+          "v": "Mingo"
+        },
+        {
+          "v": "I - 1:00-1:30"
+        },
+        {
+          "v": "Greedy - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Sarah Stoodley"
+        },
+        {
+          "v": "Rivet"
+        },
+        {
+          "v": "K - 2:00-2:30"
+        },
+        {
+          "v": "Four Way Play - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Sarah Stoodley"
+        },
+        {
+          "v": "Head Judge"
+        },
+        {
+          "v": "2:30-3:00"
+        },
+        {
+          "v": "Four Way Play - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Sarah Stoodley"
+        },
+        {
+          "v": "Mingo"
+        },
+        {
+          "v": "M - 3:00-3:30"
+        },
+        {
+          "v": "Four Way Play - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Sarah Stoodley"
+        },
+        {
+          "v": "Head or Line Judge"
+        },
+        {
+          "v": "4:00"
+        },
+        {
+          "v": "Tiebreakers - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Sonja Adams"
+        },
+        {
+          "v": "Meg"
+        },
+        {
+          "v": "C - 9:00-9:30"
+        },
+        {
+          "v": "FunKey - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Sonja Adams"
+        },
+        {
+          "v": "Breeze"
+        },
+        {
+          "v": "D - 9:30-10:00"
+        },
+        {
+          "v": "FunKey - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Sonja Adams"
+        },
+        {
+          "v": "Breeze"
+        },
+        {
+          "v": "I - 1:00-1:30"
+        },
+        {
+          "v": "Boom! - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Sonja Adams"
+        },
+        {
+          "v": "Meg"
+        },
+        {
+          "v": "J - 1:30-2:00"
+        },
+        {
+          "v": "Boom! - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Sonja Adams"
+        },
+        {
+          "v": "Meg"
+        },
+        {
+          "v": "L - 2:30-3:00"
+        },
+        {
+          "v": "Throw N Go - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Sonja Adams"
+        },
+        {
+          "v": "Breeze"
+        },
+        {
+          "v": "N - 3:30-4:00"
+        },
+        {
+          "v": "Throw N Go - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Tabitha Wise"
+        },
+        {
+          "v": "Rico"
+        },
+        {
+          "v": "C - 9:00-9:30"
+        },
+        {
+          "v": "7Up - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Tabitha Wise"
+        },
+        {
+          "v": "Rico"
+        },
+        {
+          "v": "J - 1:30-2:00"
+        },
+        {
+          "v": "TimeWarp - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Tabitha Wise"
+        },
+        {
+          "v": "Rico"
+        },
+        {
+          "v": "L - 2:30-3:00"
+        },
+        {
+          "v": "Spaced Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Tabitha Wise"
+        },
+        {
+          "v": "Rico"
+        },
+        {
+          "v": "C - 9:00-9:30"
+        },
+        {
+          "v": "FunKey - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Tabitha Wise"
+        },
+        {
+          "v": "Rico"
+        },
+        {
+          "v": "E - 10:00-10:30"
+        },
+        {
+          "v": "Freestyle - C - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Tabitha Wise"
+        },
+        {
+          "v": "Rico"
+        },
+        {
+          "v": "I - 1:00-1:30"
+        },
+        {
+          "v": "Boom! - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Tabitha Wise"
+        },
+        {
+          "v": "Rico"
+        },
+        {
+          "v": "L - 2:30-3:00"
+        },
+        {
+          "v": "Throw N Go - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Tabitha Wise"
+        },
+        {
+          "v": "Rico"
+        },
+        {
+          "v": "TBD"
+        },
+        {
+          "v": "Freestyle - P - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Tabitha Wise"
+        },
+        {
+          "v": "Rico"
+        },
+        {
+          "v": "C - 9:00-9:30"
+        },
+        {
+          "v": "Frizgility - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Tabitha Wise"
+        },
+        {
+          "v": "Rico"
+        },
+        {
+          "v": "X - 12:15-1:00"
+        },
+        {
+          "v": "Four Way Play - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Tabitha Wise"
+        },
+        {
+          "v": "Rico"
+        },
+        {
+          "v": "L - 2:30-3:00"
+        },
+        {
+          "v": "Greedy - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "TayShon Hill"
+        },
+        {
+          "v": "Line Judge"
+        },
+        {
+          "v": "8:00-9:00"
+        },
+        {
+          "v": "Far Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "TayShon Hill"
+        },
+        {
+          "v": "Cru"
+        },
+        {
+          "v": "C - 9:00-9:30"
+        },
+        {
+          "v": "Far Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "TayShon Hill"
+        },
+        {
+          "v": "Cru"
+        },
+        {
+          "v": "F - 10:30-11:00"
+        },
+        {
+          "v": "TimeWarp - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "TayShon Hill"
+        },
+        {
+          "v": "Helix"
+        },
+        {
+          "v": "G - 11:00-11:30"
+        },
+        {
+          "v": "Far Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "TayShon Hill"
+        },
+        {
+          "v": "Cru"
+        },
+        {
+          "v": "H - 12:30-1:00"
+        },
+        {
+          "v": "Spaced Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "TayShon Hill"
+        },
+        {
+          "v": "Helix"
+        },
+        {
+          "v": "J - 1:30-2:00"
+        },
+        {
+          "v": "TimeWarp - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "TayShon Hill"
+        },
+        {
+          "v": "Helix"
+        },
+        {
+          "v": "L - 2:30-3:00"
+        },
+        {
+          "v": "Spaced Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "TayShon Hill"
+        },
+        {
+          "v": "Floater"
+        },
+        {
+          "v": "All Day"
+        },
+        {
+          "v": "Saturday"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "TayShon Hill"
+        },
+        {
+          "v": "Line Judge"
+        },
+        {
+          "v": "8:30-9:30"
+        },
+        {
+          "v": "FunKey - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "TayShon Hill"
+        },
+        {
+          "v": "Helix"
+        },
+        {
+          "v": "J - 1:30-2:00"
+        },
+        {
+          "v": "Boom! - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "TayShon Hill"
+        },
+        {
+          "v": "Cru"
+        },
+        {
+          "v": "J - 1:30-2:00"
+        },
+        {
+          "v": "Boom! - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "TayShon Hill"
+        },
+        {
+          "v": "Foot Fault Judge"
+        },
+        {
+          "v": "2:30-3:00"
+        },
+        {
+          "v": "Throw N Go - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "TayShon Hill"
+        },
+        {
+          "v": "Helix"
+        },
+        {
+          "v": "N - 3:30-4:00"
+        },
+        {
+          "v": "Throw N Go - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "TayShon Hill"
+        },
+        {
+          "v": "Cru"
+        },
+        {
+          "v": "N - 3:30-4:00"
+        },
+        {
+          "v": "Throw N Go - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "TayShon Hill"
+        },
+        {
+          "v": "Floater"
+        },
+        {
+          "v": "All Day"
+        },
+        {
+          "v": "Sunday"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "TayShon Hill"
+        },
+        {
+          "v": "Cru"
+        },
+        {
+          "v": "C - 9:00-9:30"
+        },
+        {
+          "v": "Frizgility - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "TayShon Hill"
+        },
+        {
+          "v": "Cru"
+        },
+        {
+          "v": "L - 2:30-3:00"
+        },
+        {
+          "v": "Greedy - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "TayShon Hill"
+        },
+        {
+          "v": "Helix"
+        },
+        {
+          "v": "N - 3:30-4:00"
+        },
+        {
+          "v": "Four Way Play - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "TayShon Hill"
+        },
+        {
+          "v": "Cru"
+        },
+        {
+          "v": "O - 4:00-4:30"
+        },
+        {
+          "v": "Four Way Play - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Tina Diehl"
+        },
+        {
+          "v": "Koda"
+        },
+        {
+          "v": "B - 8:30-9:00"
+        },
+        {
+          "v": "Frizgility - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Tina Diehl"
+        },
+        {
+          "v": "Koda"
+        },
+        {
+          "v": "K - 2:00-2:30"
+        },
+        {
+          "v": "Four Way Play - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Tina Diehl"
+        },
+        {
+          "v": "Koda"
+        },
+        {
+          "v": "N - 3:30-4:00"
+        },
+        {
+          "v": "Greedy - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Tina van Schilt"
+        },
+        {
+          "v": "Marceaux"
+        },
+        {
+          "v": "A - 8:00-8:30"
+        },
+        {
+          "v": "Far Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Tina van Schilt"
+        },
+        {
+          "v": "Airielle"
+        },
+        {
+          "v": "B - 8:30-9:00"
+        },
+        {
+          "v": "7Up - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Tina van Schilt"
+        },
+        {
+          "v": "Miquette"
+        },
+        {
+          "v": "C - 9:00-9:30"
+        },
+        {
+          "v": "7Up - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Tina van Schilt"
+        },
+        {
+          "v": "Marceaux"
+        },
+        {
+          "v": "D - 9:30-10:00"
+        },
+        {
+          "v": "7Up - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Tina van Schilt"
+        },
+        {
+          "v": "Line Judge"
+        },
+        {
+          "v": "10:00-11:30"
+        },
+        {
+          "v": "Far Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Tina van Schilt"
+        },
+        {
+          "v": "Airielle"
+        },
+        {
+          "v": "H - 12:30-1:00"
+        },
+        {
+          "v": "TimeWarp - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Tina van Schilt"
+        },
+        {
+          "v": "Marceaux"
+        },
+        {
+          "v": "I - 1:00-1:30"
+        },
+        {
+          "v": "TimeWarp - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Tina van Schilt"
+        },
+        {
+          "v": "Airielle"
+        },
+        {
+          "v": "K - 2:00-2:30"
+        },
+        {
+          "v": "Spaced Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Tina van Schilt"
+        },
+        {
+          "v": "Head Judge"
+        },
+        {
+          "v": "2:30-3:30"
+        },
+        {
+          "v": "TimeWarp - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Tina van Schilt"
+        },
+        {
+          "v": "Head Judge"
+        },
+        {
+          "v": "8:00-8:30"
+        },
+        {
+          "v": "FunKey - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Tina van Schilt"
+        },
+        {
+          "v": "Airielle"
+        },
+        {
+          "v": "B - 8:30-9:00"
+        },
+        {
+          "v": "FunKey - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Tina van Schilt"
+        },
+        {
+          "v": "Miquette"
+        },
+        {
+          "v": "B - 8:30-9:00"
+        },
+        {
+          "v": "FunKey - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Tina van Schilt"
+        },
+        {
+          "v": "Marceaux"
+        },
+        {
+          "v": "C - 9:00-9:30"
+        },
+        {
+          "v": "FunKey - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Tina van Schilt"
+        },
+        {
+          "v": "Head Judge"
+        },
+        {
+          "v": "9:30-10:00"
+        },
+        {
+          "v": "FunKey - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Tina van Schilt"
+        },
+        {
+          "v": "Head Judge"
+        },
+        {
+          "v": "10:30-11:30"
+        },
+        {
+          "v": "Spaced Out Tiebreakers - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Tina van Schilt"
+        },
+        {
+          "v": "Airielle"
+        },
+        {
+          "v": "H - 12:30-1:00"
+        },
+        {
+          "v": "Throw N Go - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Tina van Schilt"
+        },
+        {
+          "v": "Marceaux"
+        },
+        {
+          "v": "I - 1:00-1:30"
+        },
+        {
+          "v": "Throw N Go - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Tina van Schilt"
+        },
+        {
+          "v": "Head Judge"
+        },
+        {
+          "v": "1:30-2:30"
+        },
+        {
+          "v": "Throw N Go - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Tina van Schilt"
+        },
+        {
+          "v": "Line Judge"
+        },
+        {
+          "v": "4:00"
+        },
+        {
+          "v": "Tiebreakers - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Tina van Schilt"
+        },
+        {
+          "v": "Airielle"
+        },
+        {
+          "v": "M - 3:00-3:30"
+        },
+        {
+          "v": "Boom! - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Tina van Schilt"
+        },
+        {
+          "v": "Airielle"
+        },
+        {
+          "v": "A - 8:00-8:30"
+        },
+        {
+          "v": "Frizgility - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Tina van Schilt"
+        },
+        {
+          "v": "Miquette"
+        },
+        {
+          "v": "A - 8:00-8:30"
+        },
+        {
+          "v": "Frizgility - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Tina van Schilt"
+        },
+        {
+          "v": "Marceaux"
+        },
+        {
+          "v": "B - 8:30-9:00"
+        },
+        {
+          "v": "Frizgility - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Tina van Schilt"
+        },
+        {
+          "v": "Head Judge"
+        },
+        {
+          "v": "10:00-11:30"
+        },
+        {
+          "v": "Frizgility - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Tina van Schilt"
+        },
+        {
+          "v": "Airielle"
+        },
+        {
+          "v": "H - 12:30-1:00"
+        },
+        {
+          "v": "Greedy - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Tina van Schilt"
+        },
+        {
+          "v": "Miquette"
+        },
+        {
+          "v": "H - 12:30-1:00"
+        },
+        {
+          "v": "Greedy - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Tina van Schilt"
+        },
+        {
+          "v": "Head Judge"
+        },
+        {
+          "v": "1:00-1:30"
+        },
+        {
+          "v": "Four Way Play - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Tina van Schilt"
+        },
+        {
+          "v": "Line Judge"
+        },
+        {
+          "v": "2:00-2:30"
+        },
+        {
+          "v": "Greedy - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Tina van Schilt"
+        },
+        {
+          "v": "Marceaux"
+        },
+        {
+          "v": "M - 3:00-3:30"
+        },
+        {
+          "v": "Four Way Play - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Tina van Schilt"
+        },
+        {
+          "v": "Airielle"
+        },
+        {
+          "v": "N - 3:30-4:00"
+        },
+        {
+          "v": "Four Way Play - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Tina van Schilt"
+        },
+        {
+          "v": "Miquette"
+        },
+        {
+          "v": "N - 3:30-4:00"
+        },
+        {
+          "v": "Four Way Play - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Wendi Chapman"
+        },
+        {
+          "v": "Dewey"
+        },
+        {
+          "v": "A - 8:00-8:30"
+        },
+        {
+          "v": "Frizgility - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Wendi Chapman"
+        },
+        {
+          "v": "Dublin"
+        },
+        {
+          "v": "C - 9:00-9:30"
+        },
+        {
+          "v": "Frizgility - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Wendi Chapman"
+        },
+        {
+          "v": "Dublin"
+        },
+        {
+          "v": "H - 12:30-1:00"
+        },
+        {
+          "v": "Greedy - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Wendi Chapman"
+        },
+        {
+          "v": "Dewey"
+        },
+        {
+          "v": "J - 1:30-2:00"
+        },
+        {
+          "v": "Greedy - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Wendi Chapman"
+        },
+        {
+          "v": "Dewey"
+        },
+        {
+          "v": "N - 3:30-4:00"
+        },
+        {
+          "v": "Four Way Play - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Wendi Chapman"
+        },
+        {
+          "v": "Dublin"
+        },
+        {
+          "v": "O - 4:00-4:30"
+        },
+        {
+          "v": "Four Way Play - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Zack McDonald"
+        },
+        {
+          "v": "Mousse"
+        },
+        {
+          "v": "B - 8:30-9:00"
+        },
+        {
+          "v": "Far Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Zack McDonald"
+        },
+        {
+          "v": "Royal"
+        },
+        {
+          "v": "D - 9:30-10:00"
+        },
+        {
+          "v": "Far Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Zack McDonald"
+        },
+        {
+          "v": "Haze"
+        },
+        {
+          "v": "E - 10:00-10:30"
+        },
+        {
+          "v": "Far Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Zack McDonald"
+        },
+        {
+          "v": "Mousse"
+        },
+        {
+          "v": "F - 10:30-11:00"
+        },
+        {
+          "v": "TimeWarp - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Zack McDonald"
+        },
+        {
+          "v": "Mousse"
+        },
+        {
+          "v": "K - 2:00-2:30"
+        },
+        {
+          "v": "Spaced Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Zack McDonald"
+        },
+        {
+          "v": "Mousse"
+        },
+        {
+          "v": "K - 2:00-2:30"
+        },
+        {
+          "v": "Throw N Go - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Zack McDonald"
+        },
+        {
+          "v": "Mousse"
+        },
+        {
+          "v": "M - 3:00-3:30"
+        },
+        {
+          "v": "Boom! - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Zack McDonald"
+        },
+        {
+          "v": "Mousse"
+        },
+        {
+          "v": "L - 2:30-3:00"
+        },
+        {
+          "v": "Greedy - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Zack McDonald"
+        },
+        {
+          "v": "Mousse"
+        },
+        {
+          "v": "O - 4:00-4:30"
+        },
+        {
+          "v": "Four Way Play - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Zack Schutz"
+        },
+        {
+          "v": "Rubiks"
+        },
+        {
+          "v": "E - 10:00-10:30"
+        },
+        {
+          "v": "Far Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Zack Schutz"
+        },
+        {
+          "v": "Rubiks"
+        },
+        {
+          "v": "I - 1:00-1:30"
+        },
+        {
+          "v": "Spaced Out - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Zack Schutz"
+        },
+        {
+          "v": "Rubiks"
+        },
+        {
+          "v": "L - 2:30-3:00"
+        },
+        {
+          "v": "TimeWarp - Fri"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Zack Schutz"
+        },
+        {
+          "v": "Rubiks"
+        },
+        {
+          "v": "J - 1:30-2:00"
+        },
+        {
+          "v": "Boom! - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Zack Schutz"
+        },
+        {
+          "v": "Rubiks"
+        },
+        {
+          "v": "K - 2:00-2:30"
+        },
+        {
+          "v": "Throw N Go - Sat"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Zack Schutz"
+        },
+        {
+          "v": "Rubiks"
+        },
+        {
+          "v": "F - 10:30-11:00"
+        },
+        {
+          "v": "Frizgility - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Zack Schutz"
+        },
+        {
+          "v": "Rubiks"
+        },
+        {
+          "v": "L - 2:30-3:00"
+        },
+        {
+          "v": "Greedy - Sun"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "Zack Schutz"
+        },
+        {
+          "v": "Rubiks"
+        },
+        {
+          "v": "O - 4:00-4:30"
+        },
+        {
+          "v": "Four Way Play - Sun"
+        }
+      ]
+    }
+  ],
+  "parsedNumHeaders": 0
+}

@@ -41,9 +41,10 @@
           <div class="suggestion-meta">
             <span v-if="item.matchedDog">Matches dog: 🐾 <strong>{{ item.matchedDog }}</strong> &bull; </span>
             {{ item.dogs.join(", ") }}
+            <span v-if="item.hasVolunteer"> &bull; 📋 Volunteer</span>
           </div>
         </div>
-        <span class="suggestion-meta">{{ item.runsCount }} runs</span>
+        <span class="suggestion-meta">{{ item.itemsCount }} entries</span>
       </li>
       <li v-if="suggestions.length === 0" class="suggestion-item">
         <span class="suggestion-meta">No matching handlers or dogs</span>
@@ -54,11 +55,11 @@
 
 <script setup lang="ts">
 import { computed, onMounted, onUnmounted, ref } from "vue";
-import type { NormalizedRun } from "../types";
+import type { ScheduleItem } from "../types";
 
 const props = defineProps<{
   modelValue: string;
-  allHandlers: { name: string; dogs: Set<string>; runs: NormalizedRun[] }[];
+  allHandlers: { name: string; dogs: Set<string>; items: ScheduleItem[] }[];
 }>();
 
 const emit = defineEmits<{
@@ -74,25 +75,33 @@ const searchSectionRef = ref<HTMLElement | null>(null);
 const suggestions = computed(() => {
   const q = query.value.trim().toLowerCase();
   if (!q) {
-    // Top 10 handlers by run count
     return props.allHandlers.slice(0, 10).map((h) => ({
       name: h.name,
-      runsCount: h.runs.length,
+      itemsCount: h.items.length,
       dogs: Array.from(h.dogs),
-      matchedDog: null
+      matchedDog: null,
+      hasVolunteer: h.items.some((i) => i.activity.kind === "volunteer")
     }));
   }
 
-  const matches: { name: string; runsCount: number; dogs: string[]; matchedDog: string | null }[] = [];
+  const matches: {
+    name: string;
+    itemsCount: number;
+    dogs: string[];
+    matchedDog: string | null;
+    hasVolunteer: boolean;
+  }[] = [];
+
   for (const h of props.allHandlers) {
     const handlerMatch = h.name.toLowerCase().includes(q);
     const matchingDogs = Array.from(h.dogs).filter((d) => d.toLowerCase().includes(q));
     if (handlerMatch || matchingDogs.length > 0) {
       matches.push({
         name: h.name,
-        runsCount: h.runs.length,
+        itemsCount: h.items.length,
         dogs: Array.from(h.dogs),
-        matchedDog: !handlerMatch && matchingDogs.length > 0 ? matchingDogs[0] : null
+        matchedDog: !handlerMatch && matchingDogs.length > 0 ? matchingDogs[0] : null,
+        hasVolunteer: h.items.some((i) => i.activity.kind === "volunteer")
       });
     }
   }

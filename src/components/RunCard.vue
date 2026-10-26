@@ -8,13 +8,13 @@
       </div>
       <div class="card-badges-right">
         <span class="ordinal-pill">#{{ run.ordinalInBlock }} of {{ run.totalInBlock }}</span>
-        <span class="field-pill" :class="fieldClass">{{ run.field }}</span>
+        <span class="field-pill" :class="fieldClass">{{ item.field }}</span>
       </div>
     </div>
 
     <!-- Card Body: Game Title & Dog -->
     <div class="card-main-info">
-      <h4 class="game-title">{{ run.game }}</h4>
+      <h4 class="game-title">{{ item.game }}</h4>
       <div class="dog-specs-row">
         <span class="dog-badge">
           <span>🐾</span>
@@ -43,17 +43,24 @@
 <script setup lang="ts">
 import { computed } from "vue";
 import { formatBlockTimeWindow } from "../adapters/base";
-import type { NormalizedRun } from "../types";
+import type { DogRun, ScheduleItem } from "../types";
 
 const props = defineProps<{
-  run: NormalizedRun;
-  tightTurnaroundNotice: string | null;
+  item: ScheduleItem;
+  tightTurnaroundNotice?: string | null;
 }>();
 
-const blockTime = computed(() => formatBlockTimeWindow(props.run.blockTime));
+const run = computed<DogRun>(() => {
+  if (props.item.activity.kind === "run") {
+    return props.item.activity.run;
+  }
+  return { dog: "", ordinalInBlock: 1, totalInBlock: 1 };
+});
+
+const blockTime = computed(() => formatBlockTimeWindow(props.item.blockTime));
 
 const fieldClass = computed(() => {
-  const f = props.run.field.toLowerCase();
+  const f = props.item.field.toLowerCase();
   if (f.includes("2/3")) return "field-23";
   if (f.includes("3")) return "field-3";
   if (f.includes("2")) return "field-2";

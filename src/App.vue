@@ -36,12 +36,13 @@
         :days-order="activeEvent.days"
         v-model:selected-day="selectedDay"
         v-model:selected-dog="selectedDog"
+        v-model:selected-volunteer-only="selectedVolunteerOnly"
         v-model:selected-field="selectedField"
       />
 
       <!-- Runs List Grouped by Day -->
       <div v-if="selectedHandlerData">
-        <div v-if="filteredRuns.length === 0" class="empty-state">
+        <div v-if="filteredItems.length === 0" class="empty-state">
           <p>No runs match the current filter selection.</p>
         </div>
 
@@ -53,18 +54,20 @@
             </div>
 
             <div class="run-list">
-              <template v-for="item in group.runs" :key="`${item.run.game}_${item.run.field}_${item.run.ordinalInBlock}`">
+              <template v-for="entry in group.items" :key="entry.item.id">
                 <!-- Break Indicator -->
-                <div v-if="item.breakNotice" class="break-indicator">
+                <div v-if="entry.breakNotice" class="break-indicator">
                   <span class="break-line"></span>
-                  <span>{{ item.breakNotice }}</span>
+                  <span>{{ entry.breakNotice }}</span>
                   <span class="break-line"></span>
                 </div>
 
-                <!-- Run Card Component -->
-                <RunCard
-                  :run="item.run"
-                  :tight-turnaround-notice="item.tightTurnaroundNotice"
+                <!-- Polymorphic Dynamic Component: Zero v-if checks! -->
+                <component
+                  :is="activityCardMap[entry.item.activity.kind]"
+                  :item="entry.item"
+                  :tight-turnaround-notice="entry.conflictNotice"
+                  :conflict-notice="entry.conflictNotice"
                 />
               </template>
             </div>
@@ -86,7 +89,7 @@
             class="popular-chip"
             @click="selectHandler(h.name)"
           >
-            {{ h.name }} ({{ h.runs.length }})
+            {{ h.name }} ({{ h.items.length }})
           </button>
         </div>
       </div>
@@ -102,19 +105,20 @@
 <script setup lang="ts">
 import { computed, onMounted, ref } from "vue";
 import { getAdapter } from "./adapters/registry";
+import { activityCardMap } from "./components/activityRegistry";
 import AppHeader from "./components/AppHeader.vue";
 import ProfileCard from "./components/ProfileCard.vue";
-import RunCard from "./components/RunCard.vue";
 import SearchBox from "./components/SearchBox.vue";
-import type { EventConfig, NormalizedRun } from "./types";
+import type { EventConfig, ScheduleItem } from "./types";
 
 const events = ref<EventConfig[]>([]);
 const activeEvent = ref<EventConfig | null>(null);
-const handlersMap = ref<Map<string, { name: string; dogs: Set<string>; runs: NormalizedRun[] }>>(new Map());
-const allHandlers = ref<{ name: string; dogs: Set<string>; runs: NormalizedRun[] }[]>([]);
+const handlersMap = ref<Map<string, { name: string; dogs: Set<string>; items: ScheduleItem[] }>>(new Map());
+const allHandlers = ref<{ name: string; dogs: Set<string>; items: ScheduleItem[] }[]>([]);
 
 const selectedHandler = ref<string | null>(null);
 const selectedDog = ref<string | null>(null);
+const selectedVolunteerOnly = ref(false);
 const selectedDay = ref("all");
 const selectedField = ref("all");
 
@@ -135,55 +139,59 @@ const selectedHandlerData = computed(() => {
 });
 
 const topHandlers = computed(() => {
-  return [...allHandlers.value].sort((a, b) => b.runs.length - a.runs.length).slice(0, 8);
+  return [...allHandlers.value].sort((a, b) => b.items.length - a.items.length).slice(0, 8);
 });
 
-const filteredRuns = computed(() => {
+const filteredItems = computed(() => {
   if (!selectedHandlerData.value) return [];
-  let runs = selectedHandlerData.value.runs;
-  if (selectedDog.value) {
-    runs = runs.filter((r) => r.dog === selectedDog.value);
+  let items = selectedHandlerData.value.items;
+
+  if (selectedVolunteerOnly.value) {
+    items = items.filter((i) => i.activity.kind === "volunteer");
+  } else if (selectedDog.value) {
+    items = items.filter((i) => i.activity.kind === "run" && i.activity.run.dog === selectedDog.value);
   }
+
   if (selectedDay.value !== "all") {
-    runs = runs.filter((r) => r.day === selectedDay.value);
+    items = items.filter((i) => i.day === selectedDay.value);
   }
   if (selectedField.value !== "all") {
-    runs = runs.filter((r) => r.field === selectedField.value);
+    items = items.filter((i) => i.field === selectedField.value);
   }
-  return runs;
+  return items;
 });
 
 interface DayGroup {
   day: string;
-  runs: {
-    run: NormalizedRun;
+  items: {
+    item: ScheduleItem;
     breakNotice: string | null;
-    tightTurnaroundNotice: string | null;
+    conflictNotice: string | null;
   }[];
 }
 
 const dayGroups = computed<DayGroup[]>(() => {
   const groups: DayGroup[] = [];
-  const runs = filteredRuns.value;
-  const allHandlerRuns = selectedHandlerData.value ? selectedHandlerData.value.runs : [];
+  const items = filteredItems.value;
+  const allHandlerItems = selectedHandlerData.value ? selectedHandlerData.value.items : [];
 
   let currentDay: string | null = null;
   let currentGroup: DayGroup | null = null;
 
-  for (let i = 0; i < runs.length; i++) {
-    const run = runs[i];
-    const prevRun = i > 0 ? runs[i - 1] : null;
+  for (let i = 0; i < items.length; i++) {
+    const item = items[i];
+    const prevItem = i > 0 ? items[i - 1] : null;
 
-    if (run.day !== currentDay) {
-      currentDay = run.day;
-      currentGroup = { day: run.day, runs: [] };
+    if (item.day !== currentDay) {
+      currentDay = item.day;
+      currentGroup = { day: item.day, items: [] };
       groups.push(currentGroup);
     }
 
     // Break indicator
     let breakNotice: string | null = null;
-    if (prevRun && prevRun.day === run.day) {
-      const gapMin = run.blockMinutes - prevRun.blockMinutes;
+    if (prevItem && prevItem.day === item.day) {
+      const gapMin = item.blockMinutes - prevItem.blockMinutes;
       if (gapMin >= 45) {
         const hrs = Math.floor(gapMin / 60);
         const mins = gapMin % 60;
@@ -191,24 +199,45 @@ const dayGroups = computed<DayGroup[]>(() => {
       }
     }
 
-    // Tight Turnaround check across all dogs
-    let tightTurnaroundNotice: string | null = null;
-    for (const other of allHandlerRuns) {
-      if (other !== run && other.day === run.day && other.blockTime === run.blockTime) {
-        if (other.field === run.field) {
-          const diff = Math.abs(run.ordinalInBlock - other.ordinalInBlock);
-          tightTurnaroundNotice = `Same block as ${other.dog} (${diff} spot${diff === 1 ? "" : "s"} apart)`;
-        } else {
-          tightTurnaroundNotice = `Concurrent: ${other.dog} on ${other.field}`;
+    // Cross-item Conflict Detection (Dog run vs Dog run tight turnaround OR Volunteer conflict)
+    let conflictNotice: string | null = null;
+
+    for (const other of allHandlerItems) {
+      if (other.id === item.id || other.day !== item.day) continue;
+
+      if (item.activity.kind === "run") {
+        if (other.activity.kind === "volunteer") {
+          // Check if dog run falls within volunteer shift window
+          if (Math.abs(item.blockMinutes - other.blockMinutes) < 60) {
+            conflictNotice = `⚠️ Conflict: Assigned to ${other.activity.shift.role}`;
+            break;
+          }
+        } else if (other.activity.kind === "run") {
+          // Dog-to-dog tight turnaround in same block
+          if (other.blockTime === item.blockTime) {
+            if (other.field === item.field) {
+              const diff = Math.abs(item.activity.run.ordinalInBlock - other.activity.run.ordinalInBlock);
+              conflictNotice = `Same block as ${other.activity.run.dog} (${diff} spot${diff === 1 ? "" : "s"} apart)`;
+            } else {
+              conflictNotice = `Concurrent: ${other.activity.run.dog} on ${other.field}`;
+            }
+            break;
+          }
         }
-        break;
+      } else if (item.activity.kind === "volunteer") {
+        if (other.activity.kind === "run") {
+          if (Math.abs(item.blockMinutes - other.blockMinutes) < 60) {
+            conflictNotice = `⚠️ Conflict: Running ${other.activity.run.dog} at ${other.blockTime}`;
+            break;
+          }
+        }
       }
     }
 
-    currentGroup?.runs.push({
-      run,
+    currentGroup?.items.push({
+      item,
       breakNotice,
-      tightTurnaroundNotice
+      conflictNotice
     });
   }
 
@@ -224,29 +253,33 @@ async function loadActiveEvent(manual = false) {
 
   try {
     const adapter = getAdapter(activeEvent.value.adapterType);
-    const runs = await adapter.fetchSchedule(activeEvent.value.sheetId, (done, total) => {
+    const items = await adapter.fetchSchedule(activeEvent.value.sheetId, (done, total) => {
       loadingMsg.value = `Loading event sheets (${done}/${total})...`;
     });
 
-    const map = new Map<string, { name: string; dogs: Set<string>; runs: NormalizedRun[] }>();
-    runs.forEach((r) => {
-      if (!map.has(r.handler)) {
-        map.set(r.handler, {
-          name: r.handler,
+    const map = new Map<string, { name: string; dogs: Set<string>; items: ScheduleItem[] }>();
+    items.forEach((item) => {
+      if (!map.has(item.handler)) {
+        map.set(item.handler, {
+          name: item.handler,
           dogs: new Set(),
-          runs: []
+          items: []
         });
       }
-      const hData = map.get(r.handler)!;
-      if (r.dog) hData.dogs.add(r.dog);
-      hData.runs.push(r);
+      const hData = map.get(item.handler)!;
+      if (item.activity.kind === "run" && item.activity.run.dog) {
+        hData.dogs.add(item.activity.run.dog);
+      }
+      hData.items.push(item);
     });
 
-    // Natural sort: Day order -> block minutes -> ordinal in block
+    // Natural sort: Day order -> block minutes -> ordinal
     map.forEach((hData) => {
-      hData.runs.sort(
-        (a, b) => a.dayOrder - b.dayOrder || a.blockMinutes - b.blockMinutes || a.ordinalInBlock - b.ordinalInBlock
-      );
+      hData.items.sort((a, b) => {
+        const ordA = a.activity.kind === "run" ? a.activity.run.ordinalInBlock : 0;
+        const ordB = b.activity.kind === "run" ? b.activity.run.ordinalInBlock : 0;
+        return a.dayOrder - b.dayOrder || a.blockMinutes - b.blockMinutes || ordA - ordB;
+      });
     });
 
     handlersMap.value = map;
@@ -254,7 +287,7 @@ async function loadActiveEvent(manual = false) {
     lastUpdated.value = new Date();
     isLoadingInitial.value = false;
 
-    // Check if URL or storage handler exists in this event
+    // Check URL or storage handler
     const hash = window.location.hash.substring(1);
     const hashParam = new URLSearchParams(hash).get("handler");
     const savedHandler = hashParam || localStorage.getItem("updog_selected_handler");
@@ -265,7 +298,7 @@ async function loadActiveEvent(manual = false) {
       clearHandlerSelection();
     }
 
-    if (manual) showToast(`Updated ${runs.length} runs`);
+    if (manual) showToast(`Updated ${items.length} entries`);
   } catch (err) {
     console.error("Error loading event:", err);
     syncError.value = true;
@@ -281,7 +314,6 @@ function switchEvent(eventId: string) {
   activeEvent.value = ev;
   localStorage.setItem("updog_active_event", ev.id);
 
-  // Update query param
   const params = new URLSearchParams(window.location.search);
   params.set("event", ev.id);
   window.history.replaceState(null, "", `${window.location.pathname}?${params.toString()}${window.location.hash}`);
@@ -293,6 +325,7 @@ function switchEvent(eventId: string) {
 function selectHandler(name: string) {
   selectedHandler.value = name;
   selectedDog.value = null;
+  selectedVolunteerOnly.value = false;
   selectedDay.value = "all";
   selectedField.value = "all";
   searchQuery.value = name;
@@ -306,6 +339,7 @@ function selectHandler(name: string) {
 function clearHandlerSelection() {
   selectedHandler.value = null;
   selectedDog.value = null;
+  selectedVolunteerOnly.value = false;
   selectedDay.value = "all";
   selectedField.value = "all";
   searchQuery.value = "";
@@ -342,13 +376,11 @@ function toggleTheme() {
 }
 
 onMounted(async () => {
-  // Init Theme
   const savedTheme = (localStorage.getItem("updog_theme") as "light" | "dark") ||
     (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
   theme.value = savedTheme;
   document.documentElement.setAttribute("data-theme", savedTheme);
 
-  // Load events.json
   try {
     const resp = await fetch("./events.json");
     events.value = await resp.json();

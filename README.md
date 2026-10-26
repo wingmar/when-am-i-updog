@@ -2,109 +2,88 @@
 
 A modern, mobile-first web application for dog handlers to view and track their scheduled block times, block running orders, and fields for UpDog Challenge disc dog competitions.
 
-Built with **TypeScript**, **Vite**, and an **Adapter Architecture**, continuously verified and deployed via **GitHub Actions**.
+Built with **Vue 3**, **TypeScript**, **Vite**, and an **Adapter Architecture**, continuously verified and deployed via **GitHub Actions**.
 
 ---
 
-## Architecture Overview
+## Architectural Principles
 
-```
-                      ┌──────────────────────────────┐
-                      │        events.json           │
-                      │ (Event Registry & Config)    │
-                      └──────────────┬───────────────┘
-                                     │
-                      ┌──────────────▼───────────────┐
-                      │    Adapter Factory Router    │
-                      └──────────────┬───────────────┘
-                                     │
-             ┌───────────────────────┴───────────────────────┐
-             ▼                                               ▼
-┌─────────────────────────┐                     ┌─────────────────────────┐
-│ NortheastClassicAdapter │                     │   FallClassicAdapter    │
-│ (Subheader Divider Rows)│                     │ (Dedicated Time Blocks) │
-└────────────┬────────────┘                     └────────────┬────────────┘
-             │                                               │
-             └───────────────────────┬───────────────────────┘
-                                     │ NormalizedRun[]
-                                     ▼
-                      ┌──────────────────────────────┐
-                      │      Decoupled UI Layer      │
-                      │  (Search, Filters, Timeline) │
-                      └──────────────────────────────┘
-```
-
-### The Clean `NormalizedRun` Contract
-
-All adapters strictly implement `IEventAdapter` and output identical `NormalizedRun` objects:
+### 1. Composition Over Inheritance (`src/types.ts`)
+Instead of subclassing or shoehorning volunteer shifts into a dog run type with dummy properties, activities are modeled as pure compositions:
 
 ```typescript
-export interface NormalizedRun {
-  handler: string;
+// Specific Dog Competition Run
+export interface DogRun {
   dog: string;
+  ordinalInBlock: number;
+  totalInBlock: number;
+}
+
+// Specific Volunteer Duty (No dog, no run ordinal)
+export interface VolunteerShift {
+  role: string;         // e.g. "Line Judge", "Timer", "Head Judge"
+  timeWindow: string;   // e.g. "2:30 PM – 3:30 PM"
+}
+
+// Composed Activity
+export type Activity =
+  | { kind: "run"; run: DogRun }
+  | { kind: "volunteer"; shift: VolunteerShift };
+
+// The Unified Scheduled Item
+export interface ScheduleItem {
+  id: string;
+  handler: string;
   game: string;
   field: string;
   day: string;
   dayOrder: number;
-  blockTime: string;        // e.g. "8:00 AM"
-  blockMinutes: number;     // e.g. 480 (minutes from midnight)
-  ordinalInBlock: number;   // e.g. 1
-  totalInBlock: number;     // e.g. 10
+  blockTime: string;      // e.g. "9:00 AM"
+  blockMinutes: number;   // Minutes from midnight for sorting
+  activity: Activity;     // <-- Composed here!
 }
 ```
 
-No administrative clutter (`UTN`, `Division`, `Jump Height`), no synthetic keys (`sortKey`), and no `undefined` optional fields. Sorting is handled cleanly using natural chronological properties (`dayOrder`, `blockMinutes`, `ordinalInBlock`).
+### 2. Polymorphic Rendering: Zero `v-if` Checks (`src/components/activityRegistry.ts`)
+In accordance with the **Open/Closed Principle**, the UI renders cards polymorphically using Vue's native `<component :is="...">` mapped through a clean Strategy Registry:
 
----
-
-## Adding a New Event
-
-To add a new competition, simply add an entry to **`events.json`**:
-
-```json
-{
-  "id": "fall-classic",
-  "name": "Fall Classic",
-  "sheetId": "1eDBrcZdUCiIg9hSWnGC0LP0Rds1bVTpNSnE2mjAInE8",
-  "adapterType": "FallClassic",
-  "days": ["Friday (9/20)", "Saturday (9/21)", "Sunday (9/22)"]
-}
+```typescript
+export const activityCardMap: Record<string, Component> = {
+  run: RunCard,
+  volunteer: VolunteerCard
+};
+```
+```html
+<!-- Inside template: Zero v-if checks! -->
+<component
+  :is="activityCardMap[entry.item.activity.kind]"
+  :item="entry.item"
+  :tight-turnaround-notice="entry.conflictNotice"
+  :conflict-notice="entry.conflictNotice"
+/>
 ```
 
+### 3. Cross-Duty Conflict Detection
+The engine automatically detects and flags:
+- **Dog-to-Dog Tight Turnarounds:** Multiple dogs handled by the same handler in the same block.
+- **Dog-to-Volunteer Conflicts:** An alert if a handler is scheduled to run a dog while assigned to be a `Line Judge` or `Timer` in the same hour window.
+
 ---
 
-## Local Development & Testing
+## Unit Testing & CI/CD
 
 ```bash
-# Install dependencies:
-npm install
-
-# Run local hot-reloading dev server:
-npm run dev
-
-# Run TypeScript typechecker:
+# Run strict TypeScript compiler checks:
 npm run typecheck
 
-# Run unit test suite:
+# Run unit tests against golden competition fixtures:
 npm test
 
 # Build production bundle:
 npm run build
 ```
 
----
-
-## CI/CD Pipeline (GitHub Actions)
-
-On every `git push origin main`, GitHub Actions automatically:
-1. Installs clean dependencies (`npm ci`).
-2. Runs static type checking (`tsc --noEmit`).
-3. Runs the unit test suite (`npm test`) against golden fixtures.
-4. Compiles and minifies the static production bundle with Vite.
-5. Deploys directly to GitHub Pages via `actions/deploy-pages@v4`.
-
-> **One-Time GitHub Setup:**
-> In your repository, go to **Settings ➔ Pages ➔ Build and deployment ➔ Source**, and select **"GitHub Actions"**.
+Every push to `main` triggers automated GitHub Actions CI/CD to verify typecheck, tests, and deployment to GitHub Pages.
 
 ---
 
